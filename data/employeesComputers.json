@@ -1,0 +1,362 @@
+[
+	{
+		"assign_date": "2016-10-16T01:13:05.331Z",
+		"computer_id": "1",
+		"created_at": "2017-08-06T09:03:40.326Z",
+		"employee_id": "11",
+		"id": "1",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.677Z"
+	},
+	{
+		"assign_date": "2017-09-12T12:11:50.210Z",
+		"computer_id": "2",
+		"created_at": "2016-12-26T03:20:56.008Z",
+		"employee_id": "8",
+		"id": "2",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-20T18:59:06.987Z",
+		"computer_id": "3",
+		"created_at": "2017-02-14T02:58:44.187Z",
+		"employee_id": "6",
+		"id": "3",
+		"return_date": "2017-08-16T22:51:09.947Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-28T06:48:57.347Z",
+		"computer_id": "4",
+		"created_at": "2016-12-28T07:39:22.071Z",
+		"employee_id": "16",
+		"id": "4",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-03-13T22:52:53.828Z",
+		"computer_id": "5",
+		"created_at": "2016-10-20T22:23:36.130Z",
+		"employee_id": "16",
+		"id": "5",
+		"return_date": "2017-09-05T16:05:04.540Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-05-26T08:21:40.221Z",
+		"computer_id": "6",
+		"created_at": "2017-09-23T12:58:55.838Z",
+		"employee_id": "10",
+		"id": "6",
+		"return_date": "2017-09-18T08:12:09.236Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-11-22T11:53:31.823Z",
+		"computer_id": "7",
+		"created_at": "2017-09-13T01:12:49.061Z",
+		"employee_id": "14",
+		"id": "7",
+		"return_date": "2017-03-03T06:33:15.012Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-12-14T02:28:16.060Z",
+		"computer_id": "8",
+		"created_at": "2017-02-24T01:15:49.417Z",
+		"employee_id": "18",
+		"id": "8",
+		"return_date": "2017-02-21T19:29:34.656Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-08-29T02:19:53.701Z",
+		"computer_id": "9",
+		"created_at": "2017-09-30T08:19:20.333Z",
+		"employee_id": "7",
+		"id": "9",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-05-07T21:57:50.406Z",
+		"computer_id": "10",
+		"created_at": "2017-05-26T00:01:29.506Z",
+		"employee_id": "13",
+		"id": "10",
+		"return_date": "2017-05-23T16:55:49.239Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-02-26T05:37:33.927Z",
+		"computer_id": "11",
+		"created_at": "2017-03-13T21:20:16.247Z",
+		"employee_id": "12",
+		"id": "11",
+		"return_date": "2017-08-24T11:51:31.829Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-11-08T12:54:23.146Z",
+		"computer_id": "12",
+		"created_at": "2016-11-14T20:04:01.562Z",
+		"employee_id": "24",
+		"id": "12",
+		"return_date": "2017-03-03T18:55:22.750Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-12-25T11:49:19.070Z",
+		"computer_id": "13",
+		"created_at": "2017-07-03T12:47:22.775Z",
+		"employee_id": "8",
+		"id": "13",
+		"return_date": "2017-09-03T00:05:06.770Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-10T05:21:07.403Z",
+		"computer_id": "14",
+		"created_at": "2017-10-05T14:44:37.341Z",
+		"employee_id": "19",
+		"id": "14",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-10-29T02:57:28.042Z",
+		"computer_id": "15",
+		"created_at": "2017-07-08T05:44:11.284Z",
+		"employee_id": "17",
+		"id": "15",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-14T15:12:37.742Z",
+		"computer_id": "16",
+		"created_at": "2017-06-06T01:01:52.717Z",
+		"employee_id": "18",
+		"id": "16",
+		"return_date": "2017-10-07T02:19:27.538Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-30T05:51:37.649Z",
+		"computer_id": "17",
+		"created_at": "2017-04-21T12:12:51.967Z",
+		"employee_id": "22",
+		"id": "17",
+		"return_date": "2017-06-11T16:59:46.620Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-14T12:41:56.151Z",
+		"computer_id": "18",
+		"created_at": "2017-08-30T04:58:14.361Z",
+		"employee_id": "11",
+		"id": "18",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-06-29T10:11:09.612Z",
+		"computer_id": "19",
+		"created_at": "2017-07-26T10:49:38.493Z",
+		"employee_id": "14",
+		"id": "19",
+		"return_date": "2017-09-30T12:45:38.788Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-08-15T20:41:45.588Z",
+		"computer_id": "20",
+		"created_at": "2016-12-15T21:38:27.175Z",
+		"employee_id": "21",
+		"id": "20",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-02-18T07:35:45.333Z",
+		"computer_id": "21",
+		"created_at": "2016-12-22T15:19:27.899Z",
+		"employee_id": "8",
+		"id": "21",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-09-13T19:34:44.202Z",
+		"computer_id": "22",
+		"created_at": "2017-03-31T09:37:39.600Z",
+		"employee_id": "4",
+		"id": "22",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-12-19T18:11:08.047Z",
+		"computer_id": "23",
+		"created_at": "2017-01-19T19:32:12.082Z",
+		"employee_id": "10",
+		"id": "23",
+		"return_date": "2017-03-05T20:14:48.748Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-09-05T15:10:47.228Z",
+		"computer_id": "24",
+		"created_at": "2017-09-11T15:43:23.845Z",
+		"employee_id": "6",
+		"id": "24",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-16T06:06:35.274Z",
+		"computer_id": "25",
+		"created_at": "2016-12-30T23:08:37.451Z",
+		"employee_id": "25",
+		"id": "25",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-06-30T01:03:02.079Z",
+		"computer_id": "26",
+		"created_at": "2017-02-10T17:15:09.220Z",
+		"employee_id": "22",
+		"id": "26",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-12-04T14:01:30.403Z",
+		"computer_id": "27",
+		"created_at": "2016-10-13T09:54:07.226Z",
+		"employee_id": "3",
+		"id": "27",
+		"return_date": "2017-08-21T00:16:26.399Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-11-24T20:46:42.322Z",
+		"computer_id": "28",
+		"created_at": "2016-11-03T00:44:25.634Z",
+		"employee_id": "8",
+		"id": "28",
+		"return_date": "2017-04-27T13:16:16.878Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-12T03:34:32.771Z",
+		"computer_id": "29",
+		"created_at": "2017-03-14T03:55:52.895Z",
+		"employee_id": "23",
+		"id": "29",
+		"return_date": "2017-02-26T10:58:16.898Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-06-22T00:27:07.677Z",
+		"computer_id": "30",
+		"created_at": "2017-02-11T10:21:05.939Z",
+		"employee_id": "14",
+		"id": "30",
+		"return_date": "2017-09-13T14:25:11.578Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-14T04:54:38.665Z",
+		"computer_id": "31",
+		"created_at": "2017-01-23T09:59:11.742Z",
+		"employee_id": "22",
+		"id": "31",
+		"return_date": "2017-01-29T10:48:47.209Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-14T20:59:33.348Z",
+		"computer_id": "32",
+		"created_at": "2017-06-05T19:36:25.361Z",
+		"employee_id": "21",
+		"id": "32",
+		"return_date": "2017-07-05T23:38:38.512Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-03-21T19:02:07.631Z",
+		"computer_id": "33",
+		"created_at": "2017-10-09T13:00:31.365Z",
+		"employee_id": "4",
+		"id": "33",
+		"return_date": "2017-03-28T18:34:30.223Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-02-27T10:15:29.475Z",
+		"computer_id": "34",
+		"created_at": "2017-02-19T18:32:16.687Z",
+		"employee_id": "21",
+		"id": "34",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-03-22T05:25:35.007Z",
+		"computer_id": "35",
+		"created_at": "2017-07-28T00:56:04.628Z",
+		"employee_id": "23",
+		"id": "35",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-23T10:51:42.165Z",
+		"computer_id": "36",
+		"created_at": "2016-11-25T19:44:52.625Z",
+		"employee_id": "25",
+		"id": "36",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-26T18:39:09.554Z",
+		"computer_id": "37",
+		"created_at": "2017-09-18T19:25:22.106Z",
+		"employee_id": "1",
+		"id": "37",
+		"return_date": "2017-04-02T11:39:40.002Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-04-19T04:30:32.787Z",
+		"computer_id": "38",
+		"created_at": "2017-07-03T22:31:56.807Z",
+		"employee_id": "9",
+		"id": "38",
+		"return_date": "2017-10-01T18:39:03.687Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-15T23:11:25.067Z",
+		"computer_id": "39",
+		"created_at": "2017-02-16T04:39:03.570Z",
+		"employee_id": "19",
+		"id": "39",
+		"return_date": "2017-07-09T17:29:31.537Z",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-08-31T12:46:26.564Z",
+		"computer_id": "40",
+		"created_at": "2017-01-01T17:56:21.069Z",
+		"employee_id": "16",
+		"id": "40",
+		"return_date": "null",
+		"updated_at": "2017-10-10T20:06:39.678Z"
+	}
+]
