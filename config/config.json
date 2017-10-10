@@ -1,8 +1,10 @@
 {
   "development": {
-    "database": "bangazon-workforce",
+    "database": "bangazon",
     "host": "127.0.0.1",
-    "dialect": "postgres"
+    "dialect": "postgres",
+    "username": "postgres",
+    "password": "arwask"
   },
   "test": {
     "username": "root",
