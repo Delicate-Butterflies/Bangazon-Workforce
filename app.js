@@ -3,8 +3,6 @@
 const express = require('express');
 const app = express();
 let bodyParser = require('body-parser');
-let employees = require('./data/employees');
-console.log('employees', employees);
 
 require('dotenv').config();
 const port = process.env.PORT || 8080;
