@@ -3,22 +3,13 @@
 /** @module Employee List Controller */
 
 module.exports.getEmployees = (req, res, next) => {
-  let employees = [
-    {
-      first_name: 'Megan',
-      last_name: 'Brown',
-      department: 'Finance'
-    },
-    {
-      first_name: 'Josh',
-      last_name: 'Lloyd',
-      department: 'Janitorial'
-    },
-    {
-      first_name: 'Arwa',
-      last_name: 'Kuterwadliwala',
-      department: 'Executive'
-    }
-  ];
-  res.render('employees-list', { employees });
+  const { employee, department } = req.app.get('models');
+  employee
+    .findAll({ include: [{ model: department }] })
+    .then(employees => {
+      res.render('employees-list', { employees });
+    })
+    .catch(err => {
+      next(err); //Ship this nastyness off to our error handler at the bottom of the middleware stack in app.js
+    });
 };
