@@ -1,17 +1,20 @@
 extends index.pug
 
 block content
-  h1 Employee List
-  .employees-table
-    table(class="table")
-      thead
-        tr
-          th First Name
-          th Last Name
-          th Department
-      tbody
-        each employee in employees
-          tr
-            td #{employee.first_name}
-            td #{employee.last_name}
-            td #{employee.department}
+	h1 Employee List
+	.employees-table
+		table(class="table")
+			thead
+				tr
+					th First Name
+					th Last Name
+					th Department
+					th Details
+			tbody
+				each employee in employees
+					tr
+						td #{employee.first_name}
+						td #{employee.last_name}
+						td #{employee.department}
+						td #{employee.id}
+							//- a(type="button" class="btn btn-link" href="/employees/#{employee.id}") View #{employee.id}
