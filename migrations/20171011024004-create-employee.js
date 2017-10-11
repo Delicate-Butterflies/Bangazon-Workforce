@@ -38,6 +38,7 @@ module.exports = {
 			job_title: {
 				type: Sequelize.STRING
 			},
+			// changed these to snake_case from default camelCase. (option in model def)
 			created_at: {
 				allowNull: false,
 				type: Sequelize.DATE

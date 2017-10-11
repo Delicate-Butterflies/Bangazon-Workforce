@@ -17,6 +17,7 @@ module.exports = (sequelize, DataTypes) => {
 			job_title: DataTypes.STRING
 		},
 		{
+			// sets updatedAt, createdAt to use underscores.
 			underscored: true
 		}
 	);
