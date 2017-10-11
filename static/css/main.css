@@ -1,0 +1,4 @@
+.employees-table thead tr th,
+.employees-table tbody tr td {
+  width: 200px;
+}
