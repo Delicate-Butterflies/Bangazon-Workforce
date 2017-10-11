@@ -1,4 +1,12 @@
-extends header.pug
+doctype html
+html
+  head
+    title Bangazon Workforce Managament
+    link(rel='stylesheet', href='public/bootstrap/css/bootstrap.min.css')
+    include stylesheets.pug
+  body
 
-block content
-  h1 Bangazon Workforce Managament
+    block content
+    script(src='public/jQuery/jquery.min.js')
+    script(src='public/popper/popper.min.js')
+    script(src='public/bootstrap/js/bootstrap.min.js')
