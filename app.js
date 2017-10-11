@@ -15,6 +15,9 @@ app.set('models', require('./models')); //pulls in models/index.js by default. I
 app.set('view engine', 'pug');
 app.locals.globalWow = 'Express is, like, MAGIC'; //If we end up needing some value to be available to every pug template, look into using something like this that can be accessed in the templates just like any variable we pass directly to the template.
 
+//static assets
+app.use('/public', express.static(__dirname + '/static'));
+
 let routes = require('./routes/');
 
 // Begin middleware stack
@@ -24,5 +27,5 @@ app.use(routes);
 // Add error handler to pipe all server errors to from the routing middleware
 
 app.listen(port, () => {
-	console.log(`listening on port ${port}`);
+  console.log(`listening on port ${port}`);
 });
