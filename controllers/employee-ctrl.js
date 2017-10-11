@@ -1,5 +1,7 @@
 'use strict';
 
+/** @module Employee List Controller */
+
 module.exports.getEmployees = (req, res, next) => {
   let employees = [
     {
