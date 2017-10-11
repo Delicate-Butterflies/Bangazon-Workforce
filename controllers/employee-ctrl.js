@@ -7,7 +7,6 @@ module.exports.getEmployees = (req, res, next) => {
   employee
     .findAll({ include: [{ model: department }] })
     .then(employees => {
-      console.log(employees);
       res.render('employees-list', { employees });
     })
     .catch(err => {
