@@ -3,16 +3,13 @@
 /** @module Employee List Controller */
 
 module.exports.getDepartments = (req, res, next) => {
-  let departments = [
-    {
-      name: 'Finance'
-    },
-    {
-      name: 'Janitorial'
-    },
-    {
-      name: 'Executive'
-    }
-  ];
-  res.render('departments-list', { departments });
+  const { department } = req.app.get('models');
+  department
+    .findAll()
+    .then(departments => {
+      res.render('departments-list', { departments });
+    })
+    .catch(err => {
+      next(err); //Ship this nastyness off to our error handler at the bottom of the middleware stack in app.js
+    });
 };
