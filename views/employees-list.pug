@@ -1,0 +1,7 @@
+extends header.pug
+
+block content
+  h1 Employee List
+  .employees
+    each employee in employees
+      p #{employee.first_name} #{employee.last_name} #{employee.department}

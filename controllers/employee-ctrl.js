@@ -19,5 +19,5 @@ module.exports.getEmployees = (req, res, next) => {
     }
   ];
   console.log(employees);
-  res.render('index', { employees });
+  res.render('employees-list', { employees });
 };
