@@ -52,4 +52,4 @@ Thumbs.db
 /dist/***
 
 .env
-
+/config/config.json
