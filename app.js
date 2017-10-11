@@ -27,5 +27,5 @@ app.use(routes);
 // Add error handler to pipe all server errors to from the routing middleware
 
 app.listen(port, () => {
-  console.log(`listening on port ${port}`);
+	console.log(`listening on port ${port}`);
 });
