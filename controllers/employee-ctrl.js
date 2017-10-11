@@ -20,6 +20,5 @@ module.exports.getEmployees = (req, res, next) => {
       department: 'Executive'
     }
   ];
-  console.log(employees);
   res.render('employees-list', { employees });
 };
