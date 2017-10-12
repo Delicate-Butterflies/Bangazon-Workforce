@@ -1,0 +1,21 @@
+extends index.pug
+
+block content
+	h1 Training Programs List
+	.trainingProgram-table
+		table(class="table")
+			thead
+				tr
+					th Title
+					th Start Date
+					th End Date
+					th Maximum Attendance
+			tbody
+				each program in programs
+					tr
+						td #{program.title}
+						td #{program.start_date}
+						td #{program.end_date}
+						td #{program.max_attendance}
+						td
+							a(type="button" class="btn btn-link" href=`/training/${program.id}`) View
