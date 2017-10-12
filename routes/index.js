@@ -10,6 +10,6 @@ router.get('/', (req, res, next) => {
 // pipe all other requests through the route modules
 router.use(require('./computerRoute'));
 router.use(require('./employees'));
-// router.use(require('./foo'));
+router.use(require('./training-programs'));
 
 module.exports = router;
