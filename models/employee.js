@@ -21,6 +21,14 @@ module.exports = (sequelize, DataTypes) => {
       onDelete: 'CASCADE',
       onUpdate: 'CASCASE'
     });
+
+    employee.belongsToMany(models.computer, {
+      through: 'employee_computer'
+    });
+
+    employee.belongsToMany(models.training_program, {
+      through: 'employee_training'
+    });
   };
   return employee;
 };
