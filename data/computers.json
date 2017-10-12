@@ -5,7 +5,9 @@
     "id": "1",
     "purchase_date": "2017-08-14T16:31:47.585Z",
     "serial_number": "8310a465-64f5-4ddc-8c73-99b4e3fea914",
-    "updatedAt": "2017-10-10T20:06:39.671Z"
+    "updatedAt": "2017-10-10T20:06:39.671Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-07-29T12:42:44.658Z",
@@ -13,7 +15,9 @@
     "id": "2",
     "purchase_date": "2017-04-26T09:33:57.095Z",
     "serial_number": "bcbb5cbd-d0c1-4de0-b119-2c43c180d526",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-09-17T16:07:20.046Z",
@@ -21,7 +25,9 @@
     "id": "3",
     "purchase_date": "2017-09-28T02:07:17.318Z",
     "serial_number": "940061f4-143b-488e-9178-41c486e358c6",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-21T10:11:16.341Z",
@@ -29,7 +35,9 @@
     "id": "4",
     "purchase_date": "2017-08-10T10:58:47.600Z",
     "serial_number": "3253d4f6-c0c4-44fe-a09f-746a89d9e5db",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-09T23:27:01.678Z",
@@ -37,7 +45,9 @@
     "id": "5",
     "purchase_date": "2017-10-03T09:27:13.728Z",
     "serial_number": "88bf4b6a-9f1e-4214-a3c2-17e76bd1e3ec",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-24T04:04:04.118Z",
@@ -45,7 +55,9 @@
     "id": "6",
     "purchase_date": "2017-06-17T05:39:12.379Z",
     "serial_number": "b6c022fc-0d67-47fb-b072-b74f7e82c533",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-10T23:04:45.635Z",
@@ -53,7 +65,9 @@
     "id": "7",
     "purchase_date": "2017-05-09T08:13:38.426Z",
     "serial_number": "3b243e23-4348-4559-848d-cd8b992d1560",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-02-09T20:23:21.310Z",
@@ -61,7 +75,9 @@
     "id": "8",
     "purchase_date": "2017-03-06T19:14:03.574Z",
     "serial_number": "2e5fa552-683d-4cc3-9b75-25d40c2fb419",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-04-17T17:19:11.569Z",
@@ -69,7 +85,9 @@
     "id": "9",
     "purchase_date": "2017-07-05T22:41:01.331Z",
     "serial_number": "4b355328-a67e-483e-8f06-1530755ab421",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-02T01:17:17.645Z",
@@ -77,7 +95,9 @@
     "id": "10",
     "purchase_date": "2016-12-28T13:18:40.686Z",
     "serial_number": "18652380-2247-483f-83c4-592e2ab5f353",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-29T01:44:53.341Z",
@@ -85,7 +105,9 @@
     "id": "11",
     "purchase_date": "2016-11-10T14:20:17.460Z",
     "serial_number": "1d23dcc4-a0da-4eda-9b30-29a2d6b9df7d",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-02T23:33:08.799Z",
@@ -93,7 +115,9 @@
     "id": "12",
     "purchase_date": "2016-11-12T02:04:24.918Z",
     "serial_number": "06695462-e60f-4e89-9b09-bc83cf20283e",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-30T13:41:33.905Z",
@@ -101,7 +125,9 @@
     "id": "13",
     "purchase_date": "2017-06-28T13:26:10.464Z",
     "serial_number": "b01e5eb9-dfad-4199-abe2-06a251192cbd",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-23T16:28:04.677Z",
@@ -109,7 +135,9 @@
     "id": "14",
     "purchase_date": "2016-10-11T20:04:26.304Z",
     "serial_number": "193fcac0-c721-49ed-a66f-ba60b5706fa9",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-15T14:33:44.136Z",
@@ -117,7 +145,9 @@
     "id": "15",
     "purchase_date": "2016-10-29T08:02:47.355Z",
     "serial_number": "57f8b295-a939-4801-93e3-cb95d03e5ffb",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-03T13:39:19.064Z",
@@ -125,7 +155,9 @@
     "id": "16",
     "purchase_date": "2017-03-27T21:07:40.777Z",
     "serial_number": "19bc1184-82c8-4fe9-9819-4d2c8c88215a",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-03T23:50:25.718Z",
@@ -133,7 +165,9 @@
     "id": "17",
     "purchase_date": "2017-03-14T17:44:20.334Z",
     "serial_number": "b139fac4-d175-4be0-ad1b-27e4eae6064c",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-26T21:54:05.779Z",
@@ -141,7 +175,9 @@
     "id": "18",
     "purchase_date": "2016-12-25T23:43:15.707Z",
     "serial_number": "88b89ac1-ed7d-4eb4-ab14-4fa8d1b944db",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-09-10T13:56:26.111Z",
@@ -149,7 +185,9 @@
     "id": "19",
     "purchase_date": "2017-04-13T00:45:05.598Z",
     "serial_number": "58e18791-15c3-4465-b758-c750d62cfad8",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-04-06T14:18:31.746Z",
@@ -157,7 +195,9 @@
     "id": "20",
     "purchase_date": "2017-04-24T23:17:42.375Z",
     "serial_number": "7f96ee9c-c250-413a-a4d8-23211bd0cd8e",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-01-09T23:41:46.320Z",
@@ -165,7 +205,9 @@
     "id": "21",
     "purchase_date": "2017-08-20T11:41:26.131Z",
     "serial_number": "d1cf98ca-0106-4456-8860-712eda9ccda4",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-11T03:42:41.714Z",
@@ -173,7 +215,9 @@
     "id": "22",
     "purchase_date": "2017-04-04T07:07:41.760Z",
     "serial_number": "f3b65053-23ff-48bb-b32f-8e545d059c68",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-23T13:09:21.934Z",
@@ -181,7 +225,9 @@
     "id": "23",
     "purchase_date": "2016-11-16T01:54:35.570Z",
     "serial_number": "0e1d0cc0-c61f-4e0a-9d1c-9a4b81da4380",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-09-21T21:12:48.470Z",
@@ -189,7 +235,9 @@
     "id": "24",
     "purchase_date": "2016-11-13T10:32:05.066Z",
     "serial_number": "3e08e034-514b-4425-b0db-84bf0b8b3c4e",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-01-28T16:26:23.747Z",
@@ -197,7 +245,9 @@
     "id": "25",
     "purchase_date": "2017-02-13T18:50:19.890Z",
     "serial_number": "5b84bd31-8481-46fb-a12c-afbab5cae61c",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-07-07T00:39:06.547Z",
@@ -205,7 +255,9 @@
     "id": "26",
     "purchase_date": "2017-01-09T07:22:19.732Z",
     "serial_number": "c0ed38a8-ef83-43f4-9c6e-4fa36a27264b",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-07-25T15:22:34.111Z",
@@ -213,7 +265,9 @@
     "id": "27",
     "purchase_date": "2017-01-28T07:36:44.969Z",
     "serial_number": "400ca462-bcf6-447a-b865-f0dddad2dcd5",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-23T17:05:27.059Z",
@@ -221,7 +275,9 @@
     "id": "28",
     "purchase_date": "2017-04-13T11:12:11.680Z",
     "serial_number": "3adf9c3e-5777-4c5c-8f1f-24acf1d29e56",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-04T07:37:34.996Z",
@@ -229,7 +285,9 @@
     "id": "29",
     "purchase_date": "2017-03-07T12:46:21.707Z",
     "serial_number": "061f8451-021a-4fa9-bf03-14c72533ab75",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-06-12T16:30:47.029Z",
@@ -237,7 +295,9 @@
     "id": "30",
     "purchase_date": "2017-02-06T18:57:20.695Z",
     "serial_number": "d99e363c-67ee-4539-97be-80d32cb0103b",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-27T02:46:59.396Z",
@@ -245,7 +305,9 @@
     "id": "31",
     "purchase_date": "2017-04-30T22:50:14.751Z",
     "serial_number": "6fdbeeee-bb61-4d86-b169-ee383223634c",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-06-23T06:18:14.287Z",
@@ -253,7 +315,9 @@
     "id": "32",
     "purchase_date": "2017-04-10T00:59:34.673Z",
     "serial_number": "bee2993f-cda0-43c3-b6be-736a92ca9e70",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-26T00:54:50.950Z",
@@ -261,7 +325,9 @@
     "id": "33",
     "purchase_date": "2017-02-25T21:32:15.977Z",
     "serial_number": "45dc35d2-045d-4dbf-adce-3bcd74ec898f",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-07-14T16:21:44.224Z",
@@ -269,7 +335,9 @@
     "id": "34",
     "purchase_date": "2017-05-31T02:49:49.213Z",
     "serial_number": "9e73a569-28d9-4c3e-a818-0b307faee0ea",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-26T08:55:16.545Z",
@@ -277,7 +345,9 @@
     "id": "35",
     "purchase_date": "2016-11-14T10:40:27.950Z",
     "serial_number": "49f25eef-e2ff-4d3a-8449-0d92af6ad8f6",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-02-22T12:02:08.748Z",
@@ -285,7 +355,9 @@
     "id": "36",
     "purchase_date": "2017-04-25T20:19:21.231Z",
     "serial_number": "aa4454fe-e8bc-41ec-b0ed-aaf967915627",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-02-08T23:47:31.040Z",
@@ -293,7 +365,9 @@
     "id": "37",
     "purchase_date": "2016-12-02T23:44:40.327Z",
     "serial_number": "9a05b102-8d0f-4c4d-ad89-d97650fe8fdc",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-18T18:52:42.000Z",
@@ -301,7 +375,9 @@
     "id": "38",
     "purchase_date": "2017-05-26T06:28:00.110Z",
     "serial_number": "beb6beb1-c7eb-407e-955f-7204ae8a7e38",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-21T10:29:34.909Z",
@@ -309,7 +385,9 @@
     "id": "39",
     "purchase_date": "2017-05-30T05:26:48.710Z",
     "serial_number": "f547b74c-7bf4-478b-a0d6-88ce62348aea",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-03T16:17:11.036Z",
@@ -317,6 +395,8 @@
     "id": "40",
     "purchase_date": "2017-02-25T17:30:15.715Z",
     "serial_number": "79e008ac-bdbb-4347-ac7e-6a8332695fda",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   }
 ]

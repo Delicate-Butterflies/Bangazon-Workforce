@@ -1,15 +1,16 @@
 extends index.pug
 
 block content
-	h1 Computer List
-	.computers-table
-		table(class="table")
-			thead
-				tr
-					th ID
-					th Serial #
-			tbody
-				each computer in computers
+	.container
+		h1 Computer List
+		.computers-table
+			table(class="table")
+				thead
 					tr
-						td #{computer.id}
-						td: a(href="#") #{computer.serial_number}
+						th ID
+						th Serial #
+				tbody
+					each computer in computers
+						tr
+							td #{computer.id}
+							td: a(href=`/computers/${computer.id}`) #{computer.serial_number}

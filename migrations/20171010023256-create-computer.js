@@ -9,7 +9,7 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       purchase_date: {
-        type: Sequelize.DATEONLY
+        type: Sequelize.DATE
       },
       createdAt: {
         allowNull: false,

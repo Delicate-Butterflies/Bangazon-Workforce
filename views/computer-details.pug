@@ -1,0 +1,27 @@
+extends index.pug
+
+block content
+  .container
+    h1 Computer Details
+    .computers-table
+      table(class="table")
+        thead
+          tr
+            th(colspan="2") #{computer.serial_number}
+        tbody
+          tr
+            td ID
+            td #{computer.id}
+          tr
+            td Manufacturer
+            td #{computer.manufacturer}
+          tr
+            td Model
+            td #{computer.model}
+          tr
+            td Purchase Date
+            td #{computer.purchase_date}
+          tr
+            td Decommission Date
+            td #{computer.decommission_date}
+      a(href="#") Create New
