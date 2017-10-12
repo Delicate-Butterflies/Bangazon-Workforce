@@ -7,6 +7,7 @@ module.exports.getDepartments = (req, res, next) => {
   department
     .findAll()
     .then(departments => {
+      console.log('departments', departments);
       res.render('departments-list', { departments });
     })
     .catch(err => {
