@@ -1,0 +1,15 @@
+extends index.pug
+
+block content
+	h1 Department
+	.employees-table
+			table(class="table")
+				thead
+					tr
+						th First Name
+						th Last Name
+				tbody
+					each employee in deptEmployees
+						tr
+							td #{employee.first_name}
+							td #{employee.last_name}
