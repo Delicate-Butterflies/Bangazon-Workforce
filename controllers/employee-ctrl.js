@@ -29,10 +29,12 @@ module.exports.getEmployeeById = (req, res, next) => {
 };
 
 module.exports.showEmployeeForm = (req, res, next) => {
-	res.render('employee-add');
+	const { department } = req.app.get('models');
+	department.findAll().then(departments => {
+		res.render('employee-add', { departments });
+	});
 };
 
 module.exports.addEmployee = (req, res, next) => {
-	// res.render('employee-add');
-	console.log('not set up yet!');
+	// send post object to database employees.
 };

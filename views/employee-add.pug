@@ -1,5 +1,43 @@
 extends index.pug
-
 block content
 	h1 Add Employee:
-	p test
+	form
+		div(class="form-group")
+			label(class="form-control-label" for="first_name") First Name
+			input(type="text" class="form-control" id="first_name" placeholder="First Name")
+		div(class="form-group")
+			label(class="form-control-label" for="last_name") Last Name
+			input(type="text" class="form-control" id="last_name" placeholder="Last Name")
+		div(class="form-group")
+			label(class="form-control-label" for="start_date") Start Date
+			input(type="text" class="form-control" id="start_date" placeholder="Start Date")
+		div(class="form-group")
+			label(for="department_id") Department
+			select(class="form-control" id="department_id")
+				each department in departments
+					option(value=department.id) #{department.name}
+		div(class="form-group")
+			label(class="form-control-label" for="job_title") Job Title
+			input(type="text" class="form-control" id="job_title" placeholder="Job Title")
+		div(class="form-group")
+			label(class="form-control-label" for="email") Email
+			input(type="text" class="form-control" id="email" placeholder="Email")
+		div(class="form-group")
+			label(class="form-control-label" for="phone_number") Phone Number
+			input(type="text" class="form-control" id="phone_number" placeholder="Phone Number")
+		div(class="form-group")
+			label(class="form-control-label" for="street_address") Street Address
+			input(type="text" class="form-control" id="street_address" placeholder="Street Address")
+		div(class="form-group")
+			label(class="form-control-label" for="city_address") City
+			input(type="text" class="form-control" id="city_address" placeholder="City")
+		div(class="form-group")
+			label(class="form-control-label" for="state_code") State Code (2 letter)
+			input(type="text" class="form-control" id="state_code" placeholder="XX")
+		div(class="form-group")
+			label(class="form-control-label" for="zip_code") Zip Code
+			input(type="text" class="form-control" id="zip_code" placeholder="Zip Code")
+		button(type="submit" class="btn btn-primary") Submit
+
+
+
