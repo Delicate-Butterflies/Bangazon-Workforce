@@ -7,7 +7,7 @@ let bodyParser = require('body-parser');
 require('dotenv').config();
 const port = process.env.PORT || 8080;
 
-// app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
 // using require('./models') to get the models may create more than one connection to the database. To avoid that, the models variable must be somehow singleton-esque. This can be achieved by attaching the models module to the application:
