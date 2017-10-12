@@ -5,6 +5,7 @@ const { assert } = require('chai');
 const db = require("../models/index.js");
 
 describe('Get a list of departments', () => {
+  //https://nick-tomlin.com/2015/09/04/programmatically-running-npm-scripts/
   before(function () {
     npm.load({}, function (er) {
       if (er) { return; }
