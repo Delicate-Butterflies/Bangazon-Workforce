@@ -10,20 +10,34 @@ module.exports.getEmployees = (req, res, next) => {
 			res.render('employees-list', { employees });
 		})
 		.catch(err => {
-			next(err); //Ship this nastyness off to our error handler at the bottom of the middleware stack in app.js
+			next(err);
 		});
 };
 
 module.exports.getEmployeeById = (req, res, next) => {
-	const { employee, department, computer } = req.app.get('models');
+	const { employee, department } = req.app.get('models');
 	employee
 		.findById(req.params.id, {
-			include: [{ model: department }, { model: computer }]
+			include: [{ model: department }]
 		})
 		.then(employee => {
 			res.render('employee-edit', { employee });
 		})
 		.catch(err => {
-			next(err); //Ship this nastyness off to our error handler at the bottom of the middleware stack in app.js
+			next(err);
+		});
+};
+
+module.exports.addEmployee = (req, res, next) => {
+	const { employee } = req.app.get('models');
+	employee
+		.add(req.params.id, {
+			include: [{ model: department }]
+		})
+		.then(employee => {
+			res.render('employee-edit', { employee });
+		})
+		.catch(err => {
+			next(err);
 		});
 };
