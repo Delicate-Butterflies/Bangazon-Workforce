@@ -9,10 +9,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       start_date: {
-        type: Sequelize.STRING
+        type: Sequelize.DATE
       },
       end_date: {
-        type: Sequelize.STRING
+        type: Sequelize.DATE
       },
       max_attendance: {
         type: Sequelize.INTEGER

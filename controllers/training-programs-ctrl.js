@@ -3,9 +3,16 @@
 /** @module TrainingPrograms List Controller */
 
 module.exports.getTrainingPrograms = (req, res, next) => {
-  const { training_programs } = req.app.get('models');
-  training_programs
-    .findAll()
+  const { training_program } = req.app.get('models');
+  let currentDate = new Date().toISOString();
+  training_program
+    .findAll({
+      where: {
+        start_date: {
+          $gt: currentDate
+        }
+      }
+    })
     .then(programs => {
       res.render('programs-list', { programs });
     })

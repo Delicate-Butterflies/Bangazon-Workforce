@@ -7,6 +7,7 @@ block content
 			thead
 				tr
 					th Title
+					th Description
 					th Start Date
 					th End Date
 					th Maximum Attendance
@@ -14,6 +15,7 @@ block content
 				each program in programs
 					tr
 						td #{program.title}
+						td #{program.description}
 						td #{program.start_date}
 						td #{program.end_date}
 						td #{program.max_attendance}
