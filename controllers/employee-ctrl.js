@@ -36,5 +36,5 @@ module.exports.showEmployeeForm = (req, res, next) => {
 };
 
 module.exports.addEmployee = (req, res, next) => {
-	// send post object to database employees.
+	console.log('running add', req.body);
 };
