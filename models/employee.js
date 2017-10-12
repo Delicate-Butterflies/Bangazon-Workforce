@@ -23,11 +23,11 @@ module.exports = (sequelize, DataTypes) => {
     });
 
     employee.belongsToMany(models.computer, {
-      through: 'employee_computer'
+      through: 'employees_computers'
     });
 
     employee.belongsToMany(models.training_program, {
-      through: 'employee_training'
+      through: 'employees_trainings'
     });
   };
   return employee;

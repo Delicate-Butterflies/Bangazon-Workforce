@@ -18,8 +18,8 @@ module.exports = {
           model: 'employees',
           key: 'id'
         },
-        onUpdate: 'cascade',
-        onDelete: 'cascade'
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       program_id: {
         type: Sequelize.INTEGER,
@@ -28,8 +28,8 @@ module.exports = {
           model: 'training_programs',
           key: 'id'
         },
-        onUpdate: 'cascade',
-        onDelete: 'cascade'
+        onUpdate: 'CASCADE',
+        onDelete: 'CASCADE'
       },
       createdAt: {
         allowNull: false,

@@ -3,7 +3,7 @@
     "createdAt": "2017-07-03T14:41:02.570Z",
     "end_date": "2018-02-16T03:10:34.967Z",
     "id": "1",
-    "maxAttendance": "19",
+    "max_attendance": "19",
     "start_date": "2018-02-02T03:10:34.967Z",
     "title": "granular cultivate portals",
     "updatedAt": "2017-10-10T20:06:39.671Z"
@@ -12,7 +12,7 @@
     "createdAt": "2016-10-15T23:58:05.504Z",
     "end_date": "2018-03-15T14:44:45.141Z",
     "id": "2",
-    "maxAttendance": "54",
+    "max_attendance": "54",
     "start_date": "2018-03-01T15:44:45.141Z",
     "title": "collaborative synthesize web services",
     "updatedAt": "2017-10-10T20:06:39.671Z"
@@ -21,7 +21,7 @@
     "createdAt": "2017-05-31T11:27:06.586Z",
     "end_date": "2018-04-21T16:51:27.768Z",
     "id": "3",
-    "maxAttendance": "35",
+    "max_attendance": "35",
     "start_date": "2018-04-07T16:51:27.768Z",
     "title": "open-source generate deliverables",
     "updatedAt": "2017-10-10T20:06:39.671Z"
@@ -30,7 +30,7 @@
     "createdAt": "2016-12-25T12:22:48.072Z",
     "end_date": "2017-10-27T21:45:32.676Z",
     "id": "4",
-    "maxAttendance": "38",
+    "max_attendance": "38",
     "start_date": "2017-10-13T21:45:32.676Z",
     "title": "web-enabled streamline web services",
     "updatedAt": "2017-10-10T20:06:39.671Z"
@@ -39,7 +39,7 @@
     "createdAt": "2017-01-07T07:00:29.538Z",
     "end_date": "2018-10-03T21:12:21.307Z",
     "id": "5",
-    "maxAttendance": "43",
+    "max_attendance": "43",
     "start_date": "2018-09-19T21:12:21.307Z",
     "title": "scalable maximize methodologies",
     "updatedAt": "2017-10-10T20:06:39.671Z"
@@ -48,7 +48,7 @@
     "createdAt": "2017-02-22T11:33:46.982Z",
     "end_date": "2018-03-23T07:04:48.608Z",
     "id": "6",
-    "maxAttendance": "26",
+    "max_attendance": "26",
     "start_date": "2018-03-09T08:04:48.608Z",
     "title": "proactive harness deliverables",
     "updatedAt": "2017-10-10T20:06:39.671Z"
@@ -57,7 +57,7 @@
     "createdAt": "2017-05-20T17:14:31.127Z",
     "end_date": "2017-11-08T16:08:23.419Z",
     "id": "7",
-    "maxAttendance": "73",
+    "max_attendance": "73",
     "start_date": "2017-10-25T15:08:23.419Z",
     "title": "real-time strategize channels",
     "updatedAt": "2017-10-10T20:06:39.671Z"
@@ -66,7 +66,7 @@
     "createdAt": "2017-07-17T12:06:16.474Z",
     "end_date": "2018-04-26T11:00:54.606Z",
     "id": "8",
-    "maxAttendance": "50",
+    "max_attendance": "50",
     "start_date": "2018-04-12T11:00:54.606Z",
     "title": "world-class reinvent action-items",
     "updatedAt": "2017-10-10T20:06:39.671Z"
@@ -75,7 +75,7 @@
     "createdAt": "2017-07-11T15:45:40.393Z",
     "end_date": "2017-11-22T05:16:52.367Z",
     "id": "9",
-    "maxAttendance": "83",
+    "max_attendance": "83",
     "start_date": "2017-11-08T05:16:52.367Z",
     "title": "interactive disintermediate infrastructures",
     "updatedAt": "2017-10-10T20:06:39.671Z"
@@ -84,7 +84,7 @@
     "createdAt": "2017-09-02T07:31:51.783Z",
     "end_date": "2018-02-26T06:18:18.445Z",
     "id": "10",
-    "maxAttendance": "93",
+    "max_attendance": "93",
     "start_date": "2018-02-12T06:18:18.445Z",
     "title": "best-of-breed redefine eyeballs",
     "updatedAt": "2017-10-10T20:06:39.671Z"
