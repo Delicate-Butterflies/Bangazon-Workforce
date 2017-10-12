@@ -15,18 +15,20 @@ module.exports.getDepartments = (req, res, next) => {
 };
 
 module.exports.getDepartmentById = (req, res, next) => {
-  // const { employee, department } = req.app.get('models');
-  const deptEmployees = [
-    {
-      first_name: 'Ali',
-      last_name: 'Smith'
-    },
-    {
-      first_name: 'Carrie',
-      last_name: 'Dayton'
-    }
-  ];
-  res.render('department-detail', { deptEmployees });
+  const { employee, department } = req.app.get('models');
+  let data = {};
+  department.findById(req.params.id)
+    .then(department => {
+      data.department = department;
+      return employee.findAll({ department_id: req.params.id })
+    })
+    .then(deptEmployees => {
+      data.deptEmployees = deptEmployees;
+      res.render('department-detail', data);
+    })
+    .catch(err => {
+      next(err);
+    });
 };
 
 module.exports.getEmployeeById = (req, res, next) => {
