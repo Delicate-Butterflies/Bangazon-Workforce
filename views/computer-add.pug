@@ -3,3 +3,18 @@ extends index.pug
 block content
 	.container
 		h1 Create New Computer
+			form
+				input(type="text" class="form-control" placeholder="Enter Manufacturer")
+				input(type="text" class="form-control" placeholder="Enter Model")
+				input(type="text" class="form-control" placeholder="Enter Serial Number")
+				input(type="text" class="form-control" placeholder="Enter Purchase Date")
+				button(type="submit" class="btn btn-primary") Submit
+
+
+
+
+//- purchase_date: DataTypes.DATE,
+//- decommission_date: DataTypes.DATE,
+//- serial_number: DataTypes.STRING,
+//- manufacturer: DataTypes.STRING,
+//- model: DataTypes.STRING

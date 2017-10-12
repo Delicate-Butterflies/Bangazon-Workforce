@@ -24,3 +24,11 @@ module.exports.getComputerById = (req, res, next) => {
       next(err);
     });
 };
+
+module.exports.showComputerForm = (req, res, next) => {
+  res.render('computer-add');
+};
+
+module.exports.addComputer = (req, res, next) => {
+  console.log('in progress');
+};

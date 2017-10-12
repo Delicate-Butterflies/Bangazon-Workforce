@@ -3,10 +3,16 @@
 const { Router } = require('express');
 const router = Router();
 
-const { getComputers, getComputerById } = require('../controllers/computer-ctrl');
+const { getComputers, getComputerById, showComputerForm, addComputer } = require('../controllers/computer-ctrl');
 
-// When the request is a GET on the computers route, call get Computers
+// get all computers
 router.get('/computers', getComputers);
+
+// show computer details by id
 router.get('/computers/:id', getComputerById);
+
+// add computer (form)
+router.get('/computers-add', showComputerForm);
+router.post('/computers-add', addComputer);
 
 module.exports = router;
