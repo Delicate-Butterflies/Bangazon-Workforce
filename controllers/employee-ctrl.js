@@ -28,16 +28,11 @@ module.exports.getEmployeeById = (req, res, next) => {
 		});
 };
 
+module.exports.showEmployeeForm = (req, res, next) => {
+	res.render('employee-add');
+};
+
 module.exports.addEmployee = (req, res, next) => {
-	const { employee } = req.app.get('models');
-	employee
-		.add(req.params.id, {
-			include: [{ model: department }]
-		})
-		.then(employee => {
-			res.render('employee-edit', { employee });
-		})
-		.catch(err => {
-			next(err);
-		});
+	// res.render('employee-add');
+	console.log('not set up yet!');
 };
