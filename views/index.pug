@@ -1,14 +1,16 @@
 doctype html
 html
-  head
-    meta(charset="utf-8")
-    meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
-    title Bangazon Workforce Managament
-    link(rel='stylesheet', href='public/bootstrap/css/bootstrap.min.css')
-    include stylesheets.pug
-  body
-    include nav.pug
-    block content
-    script(src='public/jQuery/jquery.min.js')
-    script(src='public/popper/umd/popper.js')
-    script(src='public/bootstrap/js/bootstrap.min.js')
+	head
+		title Bangazon Workforce Managament
+		meta(charset="utf-8")
+		meta(name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no")
+		link(rel='stylesheet', href='/public/bootstrap/css/bootstrap.min.css')
+		link(rel='stylesheet' href='/public/css/main.css')
+	body
+		include nav.pug
+		block content
+		script(src='/public/jQuery/jquery.min.js')
+		script(src='/public/popper/umd/popper.js')
+		script(src='/public/bootstrap/js/bootstrap.min.js')
+
+
