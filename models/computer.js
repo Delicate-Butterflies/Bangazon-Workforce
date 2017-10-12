@@ -2,9 +2,9 @@
 
 module.exports = function(sequelize, DataTypes) {
   var computer = sequelize.define('computer', {
-    manufacturer: DataTypes.STRING,
-    make: DataTypes.STRING,
-    purchase_date: DataTypes.DATEONLY
+    purchase_date: DataTypes.DATEONLY,
+    decommission_date: DataTypes.DATEONLY,
+    serial_number: DataTypes.STRING
   });
 
   computer.associate = models => {

@@ -8,12 +8,6 @@ module.exports = {
         primaryKey: true,
         type: Sequelize.INTEGER
       },
-      // manufacturer: {
-      //   type: Sequelize.STRING
-      // },
-      // make: {
-      //   type: Sequelize.STRING
-      // },
       purchase_date: {
         type: Sequelize.DATEONLY
       },
