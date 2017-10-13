@@ -3,8 +3,18 @@ extends index.pug
 block content
 	.container
 		h1 Create New Department
-			form(action="/departments/add" method="post")
-		.form-group
-			label(class="form-control-label" for="department") Department Name
-			input(type="text" class="form-control" id="department" placeholder="insert department name here" name="department")
-		button(type="submit" class="btn btn-primary") Submit
+		form(action="/departments/add" method="post")
+			.form-group
+				label(class="form-control-label" for="department") Department Name
+				input(type="text" class="form-control" id="department" placeholder="insert department name here" name="name")
+			.form-group
+				label(class="form-control-label" for="expense-budget") Expense Budget
+				input(type="number" class="form-control" id="expense-budget" placeholder="dollar amount of expense budge" name="expense_budget")
+			.form-group
+				label(class="form-control-label" for="supervisor") Supervisor
+				select(class="form-control" id="supervisor" name="supervisor_employee_id")
+					each employee in employees
+						option(value=employee.id) #{employee.first_name} #{employee.last_name}
+					else
+						option No employees available
+			button(type="submit" class="btn btn-primary") Submit

@@ -38,13 +38,25 @@ module.exports.getDepartmentById = (req, res, next) => {
 };
 
 module.exports.addDepartmentForm = (req, res, next) => {
-  res.render('department-add', {});
+  const { employee } = req.app.get('models');
+  employee.findAll()
+    .then((employees) => {
+      console.log('all employees', employees);
+      res.render('department-add', { employees });
+    })
+    .catch(err => {
+      next(err);
+    });
 };
 
 module.exports.createDepartment = (req, res, next) => {
   console.log('req.body', req.body);
   const { department } = req.app.get('models');
-  department.create(req.body).then(data => {
-    res.redirect('/departments');
-  });
+  department.create(req.body)
+    .then(data => {
+      res.redirect('/departments');
+    })
+    .catch(err => {
+      console.log('error', err);
+    });
 };
