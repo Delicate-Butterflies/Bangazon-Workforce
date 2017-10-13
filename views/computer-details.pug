@@ -24,4 +24,18 @@ block content
           tr
             td Decommission Date
             td #{computer.decommission_date}
-      a(href="#") Delete
+      button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteComputer") Delete
+
+  //- delete confirmation modal
+  div(class="modal fade" id="deleteComputer" tabindex="-1" role="dialog" aria-labelledby="deleteComputer" aria-hidden="true")
+    div(class="modal-dialog" role="document")
+      .modal-content
+        .modal-body
+          p Are you sure you want to delete #{computer.serial_number}?
+        .modal-footer
+          form(action=`/computers?_method=DELETE` method="post")
+            button(type="submit" class="btn btn-primary" data-dismiss="modal") Yes
+            button(type="submit" class="btn btn-primary" data-dismiss="modal") No
+
+//- form(action=`/computers?_method=DELETE` method="post")
+//- button(type="submit" class="btn btn-primary" href=`/computers/${computer.id}`) Delete

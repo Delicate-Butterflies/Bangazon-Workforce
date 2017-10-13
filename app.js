@@ -1,6 +1,7 @@
 'use strict';
 
 const express = require('express');
+// const methodOverride = require('method-override');
 const app = express();
 let bodyParser = require('body-parser');
 
@@ -26,6 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Begin middleware stack
 app.use(routes);
+// app.use(methodOverride('_method'));
 
 // Add a 404 error handler
 // Add error handler to pipe all server errors to from the routing middleware
