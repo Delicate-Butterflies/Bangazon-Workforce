@@ -5,7 +5,6 @@ module.exports.getComputers = (req, res, next) => {
   computer
     .findAll()
     .then(computers => {
-      console.log(computers);
       res.render('computers-list', { computers });
     })
     .catch(err => {
@@ -30,5 +29,13 @@ module.exports.showComputerForm = (req, res, next) => {
 };
 
 module.exports.addComputer = (req, res, next) => {
-  console.log('in progress');
+  const { computer } = req.app.get('models');
+  computer
+    .create(req.body)
+    .then(computer => {
+      console.log('posted');
+    })
+    .catch(err => {
+      next(err);
+    });
 };
