@@ -1,0 +1,13 @@
+extends index.pug
+
+block content
+  h1 Department List
+  .departments-table
+    table(class="table")
+      thead
+        tr
+          th Department
+      tbody
+        each department in departments
+          tr
+            td #{department.name}
