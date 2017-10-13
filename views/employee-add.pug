@@ -12,8 +12,8 @@ block content
 			label(class="form-control-label" for="start_date") Start Date
 			input(type="date" class="form-control" id="start_date" placeholder="Start Date" name="start_date" required)
 		div(class="form-group")
-			label(for="department_id") Department
-			select(class="form-control" id="department_id" name="department_id")
+			label(for="departmentId") Department
+			select(class="form-control" id="departmentId" name="departmentId")
 				each department in departments
 					option(value=department.id) #{department.name}
 		button(type="submit" class="btn btn-primary") Submit
