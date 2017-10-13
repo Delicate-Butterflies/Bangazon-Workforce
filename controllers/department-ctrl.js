@@ -20,25 +20,11 @@ module.exports.getDepartmentById = (req, res, next) => {
   department.findById(req.params.id)
     .then(department => {
       data.department = department;
-      return employee.findAll({ department_id: req.params.id })
+      return employee.findAll({ where: { department_id: req.params.id } })
     })
     .then(deptEmployees => {
       data.deptEmployees = deptEmployees;
       res.render('department-detail', data);
-    })
-    .catch(err => {
-      next(err);
-    });
-};
-
-module.exports.getEmployeeById = (req, res, next) => {
-  const { employee, department } = req.app.get('models');
-  employee
-    .findById(req.params.id, {
-      include: [{ model: department }]
-    })
-    .then(employee => {
-      res.render('employee-edit', { employee });
     })
     .catch(err => {
       next(err);
