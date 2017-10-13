@@ -2,6 +2,9 @@
 
 /* @module Employee List Controller */
 
+/**
+ * Gets all employees from the database and renders them.
+ */
 module.exports.getEmployees = (req, res, next) => {
   const { employee, department } = req.app.get('models');
   employee
@@ -14,6 +17,9 @@ module.exports.getEmployees = (req, res, next) => {
     });
 };
 
+/**
+ * Gets an employee by their Id and displays them for editing
+ */
 module.exports.getEmployeeById = (req, res, next) => {
   const { employee, department } = req.app.get('models');
   employee
@@ -28,6 +34,9 @@ module.exports.getEmployeeById = (req, res, next) => {
     });
 };
 
+/**
+ * Displays form for creating a new employee
+ */
 module.exports.showEmployeeForm = (req, res, next) => {
   const { department } = req.app.get('models');
   department.findAll().then(departments => {
@@ -35,6 +44,9 @@ module.exports.showEmployeeForm = (req, res, next) => {
   });
 };
 
+/**
+ * Adds an employee to the database then redirects to the list of employees
+ */
 module.exports.addEmployee = (req, res, next) => {
   const { employee } = req.app.get('models');
   employee.create(req.body).then(data => {
