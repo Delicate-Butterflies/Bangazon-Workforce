@@ -23,17 +23,8 @@ module.exports.getTrainingPrograms = (req, res, next) => {
 
 module.exports.postTrainingProgram = (req, res, next) => {
   const { training_program } = req.app.get('models');
-  // const programObj = {
-  //   createdAt: new Date().toISOString(),
-  //   end_date: '2018-02-26T06:18:18.445Z',
-  //   max_attendance: '9',
-  //   start_date: '2018-02-12T06:18:18.445Z',
-  //   title: 'get out there',
-  //   updatedAt: new Date().toISOString(),
-  //   description:
-  //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Sed cursus ante dapibus diam.Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Fusce nec tellus sed augue semper porta.'
-  // };
   const programObj = req.body;
+
   training_program
     .create(programObj)
     .then(addedProgram => {
