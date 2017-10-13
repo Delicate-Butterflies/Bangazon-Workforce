@@ -6,10 +6,11 @@
  * Get all departments and render 'departments-list'
  */
 module.exports.getDepartments = (req, res, next) => {
-  const { department } = req.app.get('models');
+  const { department, employee } = req.app.get('models');
   department
     .findAll()
     .then(departments => {
+      console.log('departments', departments);
       res.render('departments-list', { departments });
     })
     .catch(err => {
@@ -26,7 +27,7 @@ module.exports.getDepartmentById = (req, res, next) => {
   department.findById(req.params.id)
     .then(department => {
       data.department = department;
-      return employee.findAll({ where: { department_id: req.params.id } })
+      return employee.findAll({ where: { departmentId: req.params.id } })
     })
     .then(deptEmployees => {
       data.deptEmployees = deptEmployees;
