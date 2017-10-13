@@ -1,26 +1,35 @@
 extends index.pug
 block content
 	h1 Employee Details:
-	//- Name
-	//- Department
-	//- Computer
-	//- Trainging Programs
 	table(class="table")
 		tbody
 			tr
-				td Name:
-				td #{first_name} #{last_name}
-			//- tr
-			//- 	td Department:
-			//- 	td #{employee.department.name}
-			//- tr
-			//- 	td Computer:
-			//- 	td #{employee.computer.serial_number}
-			//- tr
-			//- 	td Training Programs:
-			//- each program in employee.training_program
-			//- tr
-			//- 	td #{program.name}
+				td
+					h4 Name:
+				td #{employee.first_name} #{employee.last_name}
+			tr
+				td
+					h4 Department:
+				td #{department.name}
+			tr
+				td
+					h4 Assigned Computer(s):
+					tr
+						td Serial Number
+						td Decommission Date
+					each computer in computers
+							//- check that decommission date is in future for current computers
+							- if (new Date(computer.decommission_date).toDateString() >= new Date().toDateString())
+								tr
+									td #{computer.serial_number}
+									td #{computer.decommission_date}
+			tr
+				td
+					h4 Training Programs:
+				each program in programs
+					tr
+						td #{program.title}
+						td #{program.start_date} thru #{program.end_date}
 	if errors
 		ul
 			for error in errors
