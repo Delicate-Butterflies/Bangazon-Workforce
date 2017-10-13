@@ -39,10 +39,10 @@ module.exports = {
         type: Sequelize.DATE
       },
       assign_date: {
-        type: Sequelize.DATE
+        type: Sequelize.DATEONLY
       },
       return_date: {
-        type: Sequelize.DATE
+        type: Sequelize.DATEONLY
       }
     });
   },

@@ -1,10 +1,11 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var training_program = sequelize.define('training_program', {
-    start_date: DataTypes.STRING,
-    end_date: DataTypes.STRING,
+    start_date: DataTypes.DATEONLY,
+    end_date: DataTypes.DATEONLY,
     max_attendance: DataTypes.INTEGER,
-    title: DataTypes.STRING
+    title: DataTypes.STRING,
+    description: DataTypes.STRING
   });
   training_program.associate = function(models) {
     training_program.belongsToMany(models.employee, {
