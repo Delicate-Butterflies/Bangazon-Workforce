@@ -1,6 +1,6 @@
 'use strict';
 
-/** @module Department List Controller */
+/** @module department-Ctrl */
 
 /**
  * Get all departments and render 'departments-list'
