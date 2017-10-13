@@ -1,6 +1,6 @@
 'use strict';
 
-/** @module Employee List Controller */
+/* @module Employee List Controller */
 
 module.exports.getEmployees = (req, res, next) => {
 	const { employee, department } = req.app.get('models');
@@ -29,10 +29,12 @@ module.exports.getEmployeeById = (req, res, next) => {
 };
 
 module.exports.showEmployeeForm = (req, res, next) => {
-	res.render('employee-add');
+	const { department } = req.app.get('models');
+	department.findAll().then(departments => {
+		res.render('employee-add', { departments });
+	});
 };
 
 module.exports.addEmployee = (req, res, next) => {
-	// res.render('employee-add');
-	console.log('not set up yet!');
+	// console.log('running add', req.body);
 };
