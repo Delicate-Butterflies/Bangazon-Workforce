@@ -30,10 +30,11 @@ module.exports.showComputerForm = (req, res, next) => {
 
 module.exports.addComputer = (req, res, next) => {
   const { computer } = req.app.get('models');
+  const computerObj = req.body;
   computer
-    .create(req.body)
+    .create(computerObj)
     .then(computer => {
-      console.log('posted');
+      res.redirect('/computers');
     })
     .catch(err => {
       next(err);
