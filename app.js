@@ -19,7 +19,8 @@ app.locals.globalWow = 'Express is, like, MAGIC'; //If we end up needing some va
 app.use('/public', express.static(__dirname + '/static'));
 
 let routes = require('./routes/');
-
+app.use(bodyParser.urlencoded({ extended: false }));
+app.use(bodyParser.json());
 // Begin middleware stack
 app.use(routes);
 
@@ -27,5 +28,5 @@ app.use(routes);
 // Add error handler to pipe all server errors to from the routing middleware
 
 app.listen(port, () => {
-	console.log(`listening on port ${port}`);
+  console.log(`listening on port ${port}`);
 });
