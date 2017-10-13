@@ -11,7 +11,8 @@
     "state_code": "NH",
     "street_address": "234 Joana Inlet",
     "updatedAt": "2017-10-11T02:36:34.655Z",
-    "zip_code": "12074"
+    "zip_code": "12074",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "New Woodrowfurt",
@@ -25,7 +26,8 @@
     "state_code": "OR",
     "street_address": "9789 Estell Creek",
     "updatedAt": "2017-10-11T02:36:34.655Z",
-    "zip_code": "65678"
+    "zip_code": "65678",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "North Racheltown",
@@ -39,7 +41,8 @@
     "state_code": "WV",
     "street_address": "9241 Toy Junctions",
     "updatedAt": "2017-10-11T02:36:34.655Z",
-    "zip_code": "82891"
+    "zip_code": "82891",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Hoegerville",
@@ -53,7 +56,8 @@
     "state_code": "LA",
     "street_address": "0855 Cyrus Stravenue",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "79367"
+    "zip_code": "79367",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Isabelville",
@@ -67,7 +71,8 @@
     "state_code": "AZ",
     "street_address": "624 Brionna Mountain",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "72882"
+    "zip_code": "72882",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Camylleberg",
@@ -81,7 +86,8 @@
     "state_code": "MI",
     "street_address": "2407 Mante Ports",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "-811"
+    "zip_code": "-811",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Douglasville",
@@ -95,7 +101,8 @@
     "state_code": "TX",
     "street_address": "0393 Turner Vista",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "51870"
+    "zip_code": "51870",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "South Aurore",
@@ -109,7 +116,8 @@
     "state_code": "AR",
     "street_address": "259 Arden Cove",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "79678"
+    "zip_code": "79678",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Genebury",
@@ -123,7 +131,8 @@
     "state_code": "SC",
     "street_address": "396 Yasmeen Via",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "43829"
+    "zip_code": "43829",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Melisaland",
@@ -137,7 +146,8 @@
     "state_code": "GA",
     "street_address": "5132 Aniya Extension",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "47395"
+    "zip_code": "47395",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Vernchester",
@@ -151,7 +161,8 @@
     "state_code": "FL",
     "street_address": "36494 Spinka Circles",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "76751"
+    "zip_code": "76751",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Heidenreichberg",
@@ -165,7 +176,8 @@
     "state_code": "VA",
     "street_address": "04085 Dejah Ford",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "67656"
+    "zip_code": "67656",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Koepphaven",
@@ -179,7 +191,8 @@
     "state_code": "IL",
     "street_address": "990 O'Reilly Knoll",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "70520"
+    "zip_code": "70520",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Hayleemouth",
@@ -193,7 +206,8 @@
     "state_code": "MO",
     "street_address": "605 Glen Orchard",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "1615"
+    "zip_code": "1615",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Lake Olen",
@@ -207,7 +221,8 @@
     "state_code": "ME",
     "street_address": "4488 Ari Port",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "-6037"
+    "zip_code": "-6037",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "East Tremaineton",
@@ -221,7 +236,8 @@
     "state_code": "IN",
     "street_address": "12957 Rolfson Mall",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "52694"
+    "zip_code": "52694",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Larsonburgh",
@@ -235,7 +251,8 @@
     "state_code": "CT",
     "street_address": "857 Reichel Summit",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "58420"
+    "zip_code": "58420",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Brownborough",
@@ -249,7 +266,8 @@
     "state_code": "CO",
     "street_address": "7978 Ryleigh Port",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "39225"
+    "zip_code": "39225",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Dalestad",
@@ -263,7 +281,8 @@
     "state_code": "NJ",
     "street_address": "81074 Nikita Forges",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "10892"
+    "zip_code": "10892",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Simonismouth",
@@ -277,7 +296,8 @@
     "state_code": "UT",
     "street_address": "96079 Weimann Station",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "19378"
+    "zip_code": "19378",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "East General",
@@ -291,7 +311,8 @@
     "state_code": "MI",
     "street_address": "67656 Henderson Streets",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "31364"
+    "zip_code": "31364",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "South Katlynn",
@@ -305,7 +326,8 @@
     "state_code": "KS",
     "street_address": "2382 Block Inlet",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "4933"
+    "zip_code": "4933",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Larkinshire",
@@ -319,7 +341,8 @@
     "state_code": "OR",
     "street_address": "30570 Hilpert Greens",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "14267"
+    "zip_code": "14267",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "East Rickshire",
@@ -333,7 +356,8 @@
     "state_code": "AK",
     "street_address": "119 Nathaniel Lakes",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "80774"
+    "zip_code": "80774",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Hammesshire",
@@ -347,6 +371,7 @@
     "state_code": "AK",
     "street_address": "979 Delilah Fork",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "22866"
+    "zip_code": "22866",
+    "start_date": "2016-12-12"
   }
 ]

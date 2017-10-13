@@ -2,7 +2,7 @@
 // To add updated_at attribute to the computers table which was not on boiler plate
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.addColumn('employees', 'start_date', Sequelize.STRING);
+    return queryInterface.addColumn('employees', 'start_date', Sequelize.DATEONLY);
   },
 
   down: (queryInterface, Sequelize) => {

@@ -1,8 +1,8 @@
 'use strict';
 module.exports = (sequelize, DataTypes) => {
   var training_program = sequelize.define('training_program', {
-    start_date: DataTypes.DATE,
-    end_date: DataTypes.DATE,
+    start_date: DataTypes.DATEONLY,
+    end_date: DataTypes.DATEONLY,
     max_attendance: DataTypes.INTEGER,
     title: DataTypes.STRING,
     description: DataTypes.STRING
