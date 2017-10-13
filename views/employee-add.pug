@@ -4,13 +4,13 @@ block content
 	form(action="/employees/add" method="post")
 		div(class="form-group")
 			label(class="form-control-label" for="first_name") First Name
-			input(type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name")
+			input(type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" required)
 		div(class="form-group")
 			label(class="form-control-label" for="last_name") Last Name
-			input(type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name")
+			input(type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name" required)
 		div(class="form-group")
 			label(class="form-control-label" for="start_date") Start Date
-			input(type="text" class="form-control" id="start_date" placeholder="Start Date" name="start_date")
+			input(type="text" class="form-control" id="start_date" placeholder="Start Date" name="start_date" requried)
 		div(class="form-group")
 			label(for="department_id") Department
 			select(class="form-control" id="department_id" name="department_id")
