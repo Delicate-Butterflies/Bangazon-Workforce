@@ -36,3 +36,15 @@ module.exports.getDepartmentById = (req, res, next) => {
       next(err);
     });
 };
+
+module.exports.addDepartmentForm = (req, res, next) => {
+  res.render('department-add', {});
+};
+
+module.exports.createDepartment = (req, res, next) => {
+  console.log('req.body', req.body);
+  const { department } = req.app.get('models');
+  department.create(req.body).then(data => {
+    res.redirect('/departments');
+  });
+};

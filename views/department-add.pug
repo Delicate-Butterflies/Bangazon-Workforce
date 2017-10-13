@@ -1,0 +1,10 @@
+extends index.pug
+
+block content
+	.container
+		h1 Create New Department
+			form(action="/departments/add" method="post")
+		.form-group
+			label(class="form-control-label" for="department") Department Name
+			input(type="text" class="form-control" id="department" placeholder="insert department name here" name="department")
+		button(type="submit" class="btn btn-primary") Submit
