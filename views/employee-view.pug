@@ -13,11 +13,12 @@ block content
 				td #{department.name}
 			tr
 				td
-					h4 Computer:
+					h4 Assigned Computer(s):
 					tr
 						td Serial Number
 						td Decommission Date
 					each computer in computers
+							check that decommission date is in future for current computers
 							- if (new Date(computer.decommission_date).toDateString() >= new Date().toDateString())
 								tr
 									td #{computer.serial_number}
@@ -29,7 +30,7 @@ block content
 					tr
 						td #{program.title}
 						td #{program.start_date} thru #{program.end_date}
-	//- if errors
+	if errors
 		ul
 			for error in errors
 				li!= error.msg
