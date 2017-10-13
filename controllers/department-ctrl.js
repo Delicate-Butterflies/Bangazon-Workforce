@@ -1,7 +1,10 @@
 'use strict';
 
-/** @module Employee List Controller */
+/** @module Department List Controller */
 
+/**
+ * Get all departments and render 'departments-list'
+ */
 module.exports.getDepartments = (req, res, next) => {
   const { department } = req.app.get('models');
   department
@@ -14,6 +17,9 @@ module.exports.getDepartments = (req, res, next) => {
     });
 };
 
+/**
+ * Get department name, get employees by specifice department and render 'department-detail'
+ */
 module.exports.getDepartmentById = (req, res, next) => {
   const { employee, department } = req.app.get('models');
   let data = {};
