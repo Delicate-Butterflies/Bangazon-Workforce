@@ -5,7 +5,11 @@
   "main": "index.js",
   "scripts": {
     "start": "nodemon app.js",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha --watch --recursive -R spec",
+    "teardown": "sequelize db:migrate:undo:all",
+    "build": "sequelize db:migrate",
+    "seed": "sequelize db:seed:all",
+    "rebuild": "npm run teardown && npm run build && npm run seed"
   },
   "keywords": [],
   "author": "",
@@ -18,6 +22,7 @@
     "express": "^4.16.1",
     "jsdoc": "^3.5.5",
     "mocha": "^4.0.1",
+    "npm": "^5.4.2",
     "pg": "^7.3.0",
     "pg-hstore": "^2.3.2",
     "popper.js": "^1.12.5",
