@@ -1,0 +1,30 @@
+extends index.pug
+block content
+	h1 Employee Details:
+	//- Name
+	//- Department
+	//- Computer
+	//- Trainging Programs
+	table(class="table")
+		tbody
+			tr
+				td Name:
+				td #{first_name} #{last_name}
+			//- tr
+			//- 	td Department:
+			//- 	td #{employee.department.name}
+			//- tr
+			//- 	td Computer:
+			//- 	td #{employee.computer.serial_number}
+			//- tr
+			//- 	td Training Programs:
+			//- each program in employee.training_program
+			//- tr
+			//- 	td #{program.name}
+	if errors
+		ul
+			for error in errors
+				li!= error.msg
+
+
+

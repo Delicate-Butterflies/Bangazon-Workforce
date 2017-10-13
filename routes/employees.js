@@ -6,11 +6,13 @@ const router = Router();
 const {
 	getEmployees,
 	showEmployeeForm,
-	addEmployee
+	addEmployee,
+	showEmployeeDetails
 } = require('../controllers/employee-ctrl');
 
 // employee list
 router.get('/employees', getEmployees);
+router.get('/employees/:id', showEmployeeDetails);
 
 // add employee (form)
 router.get('/employees/add', showEmployeeForm);

@@ -14,14 +14,16 @@ module.exports.getEmployees = (req, res, next) => {
 		});
 };
 
-module.exports.getEmployeeById = (req, res, next) => {
-	const { employee, department } = req.app.get('models');
+module.exports.showEmployeeDetails = (req, res, next) => {
+	const { employee } = req.app.get('models');
 	employee
-		.findById(req.params.id, {
-			include: [{ model: department }]
+		.findAll({
+			include: [{ all: true }],
+			where: { id: req.params.id }
 		})
 		.then(employee => {
-			res.render('employee-edit', { employee });
+			console.log('employee', employee);
+			// res.render('employee-view', { employee });
 		})
 		.catch(err => {
 			next(err);
