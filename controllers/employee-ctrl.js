@@ -1,6 +1,6 @@
 'use strict';
 
-/* @module Employee List Controller */
+/** @module Employee List Controller */
 
 /**
  * Gets all employees from the database and renders them.
@@ -17,6 +17,9 @@ module.exports.getEmployees = (req, res, next) => {
 		});
 };
 
+/**
+ * Gets employee details and send them to template for rendering.
+ */
 module.exports.showEmployeeDetails = (req, res, next) => {
 	const { employee } = req.app.get('models');
 	employee
@@ -24,9 +27,17 @@ module.exports.showEmployeeDetails = (req, res, next) => {
 			include: [{ all: true }],
 			where: { id: req.params.id }
 		})
-		.then(employee => {
-			console.log('employee', employee);
-			// res.render('employee-view', { employee });
+		.then(results => {
+			let employee = results[0].dataValues;
+			let department = employee.department;
+			let computers = employee.computers;
+			let programs = employee.training_programs;
+			res.render('employee-view', {
+				employee,
+				department,
+				computers,
+				programs
+			});
 		})
 		.catch(err => {
 			next(err);
@@ -65,7 +76,7 @@ module.exports.showEmployeeForm = (req, res, next) => {
  */
 module.exports.addEmployee = (req, res, next) => {
 	const { employee } = req.app.get('models');
-	employee.create(req.body).then(data => {
+	employee.create(req.body).then(() => {
 		res.redirect('/employees');
 	});
 };
