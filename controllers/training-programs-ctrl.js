@@ -33,7 +33,6 @@ module.exports.postTrainingProgram = (req, res, next) => {
   //     'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Sed cursus ante dapibus diam.Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Fusce nec tellus sed augue semper porta.'
   // };
   const programObj = req.body;
-  console.log(programObj);
   const { training_program } = req.app.get('models');
   training_program
     .create(programObj)
@@ -41,8 +40,7 @@ module.exports.postTrainingProgram = (req, res, next) => {
       res.status(200).json(addedProgram);
     })
     .catch(err => {
-      console.log(err);
-      next(err); //Ship this nastyness off to our error handler at the bottom of the middleware stack in app.js
+      next(err);
     });
   // console.log('Added');
 };
