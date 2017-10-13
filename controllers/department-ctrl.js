@@ -41,7 +41,8 @@ module.exports.addDepartmentForm = (req, res, next) => {
   const { employee } = req.app.get('models');
   employee.findAll()
     .then((employees) => {
-      console.log('all employees', employees);
+      // console.log('all employees', employees);
+      employees.unshift({ placeholder: "-- SELECT AN EMPLOYEE TO SUPERVISE THE DEPARTMENT --", id: "" });
       res.render('department-add', { employees });
     })
     .catch(err => {
