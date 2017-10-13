@@ -28,7 +28,7 @@ module.exports.postTrainingProgram = (req, res, next) => {
   training_program
     .create(programObj)
     .then(addedProgram => {
-      res.status(200).json(addedProgram);
+      res.redirect('/training');
     })
     .catch(err => {
       next(err);
