@@ -1,0 +1,16 @@
+extends index.pug
+
+block content
+  h1 Department List
+  .departments-table
+    table(class="table")
+      thead
+        tr
+          th Department
+          th Details
+      tbody
+        each department in departments
+          tr
+            td #{department.name}
+            td
+                a(type="button" class="btn btn-link" href=`/departments/${department.id}`) View

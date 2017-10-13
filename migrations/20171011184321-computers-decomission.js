@@ -3,7 +3,7 @@
 
 module.exports = {
   up: (queryInterface, Sequelize) => {
-    return queryInterface.addColumn('computers', 'decommission_date', Sequelize.DATE).then(function() {
+    return queryInterface.addColumn('computers', 'decommission_date', Sequelize.DATEONLY).then(function() {
       return queryInterface.addColumn('computers', 'serial_number', Sequelize.STRING);
     });
   },

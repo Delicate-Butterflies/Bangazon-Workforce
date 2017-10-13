@@ -9,10 +9,10 @@ module.exports = {
         type: Sequelize.INTEGER
       },
       start_date: {
-        type: Sequelize.STRING
+        type: Sequelize.DATEONLY
       },
       end_date: {
-        type: Sequelize.STRING
+        type: Sequelize.DATEONLY
       },
       max_attendance: {
         type: Sequelize.INTEGER
@@ -21,11 +21,11 @@ module.exports = {
         type: Sequelize.STRING
       },
       createdAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE
       },
       updatedAt: {
-        allowNull: false,
+        allowNull: true,
         type: Sequelize.DATE
       }
     });
