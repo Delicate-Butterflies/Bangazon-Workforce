@@ -10,7 +10,8 @@ module.exports = (sequelize, DataTypes) => {
     street_address: DataTypes.STRING,
     city_address: DataTypes.STRING,
     state_code: DataTypes.STRING,
-    zip_code: DataTypes.INTEGER
+    zip_code: DataTypes.INTEGER,
+    start_date: DataTypes.DATEONLY
   });
   /**
    *  employee and departments table have one to many relationship. An employee can be in a single department but a department can have multiple employees. belongsTo associates one to many relationship here.
@@ -19,7 +20,7 @@ module.exports = (sequelize, DataTypes) => {
     employee.belongsTo(models.department, {
       foreignKey: 'department_id',
       onDelete: 'CASCADE',
-      onUpdate: 'CASCASE'
+      onUpdate: 'CASCADE'
     });
 
     employee.belongsToMany(models.computer, {
