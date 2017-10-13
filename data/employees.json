@@ -5,14 +5,14 @@
     "department_id": "3",
     "email": "Bertha32@yahoo.com",
     "first_name": "Anderson",
-    "id": "1",
     "job_title": "Planner",
     "last_name": "Boyle",
     "phone_number": "769-495-0454",
     "state_code": "NH",
     "street_address": "234 Joana Inlet",
     "updatedAt": "2017-10-11T02:36:34.655Z",
-    "zip_code": "12074"
+    "zip_code": "12074",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "New Woodrowfurt",
@@ -20,14 +20,14 @@
     "department_id": "1",
     "email": "Lurline96@hotmail.com",
     "first_name": "Allen",
-    "id": "2",
     "job_title": "Representative",
     "last_name": "Stark",
     "phone_number": "535-597-2565",
     "state_code": "OR",
     "street_address": "9789 Estell Creek",
     "updatedAt": "2017-10-11T02:36:34.655Z",
-    "zip_code": "65678"
+    "zip_code": "65678",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "North Racheltown",
@@ -35,14 +35,14 @@
     "department_id": "8",
     "email": "Sage.Gutkowski37@yahoo.com",
     "first_name": "Tyree",
-    "id": "3",
     "job_title": "Orchestrator",
     "last_name": "Padberg",
     "phone_number": "061-366-4904",
     "state_code": "WV",
     "street_address": "9241 Toy Junctions",
     "updatedAt": "2017-10-11T02:36:34.655Z",
-    "zip_code": "82891"
+    "zip_code": "82891",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Hoegerville",
@@ -50,14 +50,14 @@
     "department_id": "2",
     "email": "Heidi_Frami@yahoo.com",
     "first_name": "Jada",
-    "id": "4",
     "job_title": "Associate",
     "last_name": "Senger",
     "phone_number": "477-510-3319",
     "state_code": "LA",
     "street_address": "0855 Cyrus Stravenue",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "79367"
+    "zip_code": "79367",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Isabelville",
@@ -65,14 +65,14 @@
     "department_id": "2",
     "email": "Asa_Heaney@hotmail.com",
     "first_name": "Efren",
-    "id": "5",
     "job_title": "Planner",
     "last_name": "Bechtelar",
     "phone_number": "272-162-3688",
     "state_code": "AZ",
     "street_address": "624 Brionna Mountain",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "72882"
+    "zip_code": "72882",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Camylleberg",
@@ -80,14 +80,14 @@
     "department_id": "8",
     "email": "Leilani_Quigley@gmail.com",
     "first_name": "Kaleb",
-    "id": "6",
     "job_title": "Director",
     "last_name": "Jones",
     "phone_number": "940-402-8554",
     "state_code": "MI",
     "street_address": "2407 Mante Ports",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "-811"
+    "zip_code": "-811",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Douglasville",
@@ -95,14 +95,14 @@
     "department_id": "4",
     "email": "Agustin_Prohaska@gmail.com",
     "first_name": "Alan",
-    "id": "7",
     "job_title": "Developer",
     "last_name": "Homenick",
     "phone_number": "608-992-4632",
     "state_code": "TX",
     "street_address": "0393 Turner Vista",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "51870"
+    "zip_code": "51870",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "South Aurore",
@@ -110,14 +110,14 @@
     "department_id": "8",
     "email": "Dandre20@hotmail.com",
     "first_name": "Buford",
-    "id": "8",
     "job_title": "Technician",
     "last_name": "Anderson",
     "phone_number": "821-949-5769",
     "state_code": "AR",
     "street_address": "259 Arden Cove",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "79678"
+    "zip_code": "79678",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Genebury",
@@ -125,14 +125,14 @@
     "department_id": "6",
     "email": "Serena_Feeney56@gmail.com",
     "first_name": "Alessia",
-    "id": "9",
     "job_title": "Producer",
     "last_name": "O'Connell",
     "phone_number": "043-223-8438",
     "state_code": "SC",
     "street_address": "396 Yasmeen Via",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "43829"
+    "zip_code": "43829",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Melisaland",
@@ -140,14 +140,14 @@
     "department_id": "1",
     "email": "Rahul_Kunde96@hotmail.com",
     "first_name": "Noemy",
-    "id": "10",
     "job_title": "Supervisor",
     "last_name": "Nicolas",
     "phone_number": "672-720-6599",
     "state_code": "GA",
     "street_address": "5132 Aniya Extension",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "47395"
+    "zip_code": "47395",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Vernchester",
@@ -155,14 +155,14 @@
     "department_id": "4",
     "email": "Delfina.Cronin@yahoo.com",
     "first_name": "Demarcus",
-    "id": "11",
     "job_title": "Representative",
     "last_name": "Anderson",
     "phone_number": "513-950-9287",
     "state_code": "FL",
     "street_address": "36494 Spinka Circles",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "76751"
+    "zip_code": "76751",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Heidenreichberg",
@@ -170,14 +170,14 @@
     "department_id": "6",
     "email": "Lora_Wisoky14@hotmail.com",
     "first_name": "Myra",
-    "id": "12",
     "job_title": "Executive",
     "last_name": "Cole",
     "phone_number": "676-110-1340",
     "state_code": "VA",
     "street_address": "04085 Dejah Ford",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "67656"
+    "zip_code": "67656",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Koepphaven",
@@ -185,14 +185,14 @@
     "department_id": "7",
     "email": "Otto_Corwin94@yahoo.com",
     "first_name": "Derrick",
-    "id": "13",
     "job_title": "Technician",
     "last_name": "Dietrich",
     "phone_number": "984-911-9530",
     "state_code": "IL",
     "street_address": "990 O'Reilly Knoll",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "70520"
+    "zip_code": "70520",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Hayleemouth",
@@ -200,14 +200,14 @@
     "department_id": "5",
     "email": "Ardella_Kautzer24@yahoo.com",
     "first_name": "Foster",
-    "id": "14",
     "job_title": "Producer",
     "last_name": "Ledner",
     "phone_number": "602-114-8556",
     "state_code": "MO",
     "street_address": "605 Glen Orchard",
     "updatedAt": "2017-10-11T02:36:34.656Z",
-    "zip_code": "1615"
+    "zip_code": "1615",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Lake Olen",
@@ -215,14 +215,14 @@
     "department_id": "6",
     "email": "Kurt.Smitham@hotmail.com",
     "first_name": "Horacio",
-    "id": "15",
     "job_title": "Facilitator",
     "last_name": "Stokes",
     "phone_number": "281-792-0093",
     "state_code": "ME",
     "street_address": "4488 Ari Port",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "-6037"
+    "zip_code": "-6037",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "East Tremaineton",
@@ -230,14 +230,14 @@
     "department_id": "6",
     "email": "Macy_Beer95@hotmail.com",
     "first_name": "Dovie",
-    "id": "16",
     "job_title": "Associate",
     "last_name": "Nolan",
     "phone_number": "164-895-5562",
     "state_code": "IN",
     "street_address": "12957 Rolfson Mall",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "52694"
+    "zip_code": "52694",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Larsonburgh",
@@ -245,14 +245,14 @@
     "department_id": "7",
     "email": "Yadira.Gottlieb70@gmail.com",
     "first_name": "Dixie",
-    "id": "17",
     "job_title": "Director",
     "last_name": "Rowe",
     "phone_number": "209-376-5989",
     "state_code": "CT",
     "street_address": "857 Reichel Summit",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "58420"
+    "zip_code": "58420",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Brownborough",
@@ -260,14 +260,14 @@
     "department_id": "4",
     "email": "Bettie_Runolfsson@yahoo.com",
     "first_name": "Grayson",
-    "id": "18",
     "job_title": "Officer",
     "last_name": "Stark",
     "phone_number": "784-235-6106",
     "state_code": "CO",
     "street_address": "7978 Ryleigh Port",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "39225"
+    "zip_code": "39225",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Dalestad",
@@ -275,14 +275,14 @@
     "department_id": "4",
     "email": "Tremaine80@hotmail.com",
     "first_name": "Maybell",
-    "id": "19",
     "job_title": "Coordinator",
     "last_name": "Miller",
     "phone_number": "379-063-9631",
     "state_code": "NJ",
     "street_address": "81074 Nikita Forges",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "10892"
+    "zip_code": "10892",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Simonismouth",
@@ -290,14 +290,14 @@
     "department_id": "2",
     "email": "Newell.Gottlieb@gmail.com",
     "first_name": "Winston",
-    "id": "20",
     "job_title": "Assistant",
     "last_name": "Berge",
     "phone_number": "286-507-1300",
     "state_code": "UT",
     "street_address": "96079 Weimann Station",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "19378"
+    "zip_code": "19378",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "East General",
@@ -305,14 +305,14 @@
     "department_id": "6",
     "email": "Kamille25@gmail.com",
     "first_name": "Jon",
-    "id": "21",
     "job_title": "Developer",
     "last_name": "Osinski",
     "phone_number": "215-778-0994",
     "state_code": "MI",
     "street_address": "67656 Henderson Streets",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "31364"
+    "zip_code": "31364",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "South Katlynn",
@@ -320,14 +320,14 @@
     "department_id": "3",
     "email": "Kiara.Stroman@hotmail.com",
     "first_name": "Betty",
-    "id": "22",
     "job_title": "Assistant",
     "last_name": "Bogan",
     "phone_number": "181-588-6137",
     "state_code": "KS",
     "street_address": "2382 Block Inlet",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "4933"
+    "zip_code": "4933",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Larkinshire",
@@ -335,14 +335,14 @@
     "department_id": "3",
     "email": "Paris82@yahoo.com",
     "first_name": "Peter",
-    "id": "23",
     "job_title": "Administrator",
     "last_name": "Ziemann",
     "phone_number": "894-948-1331",
     "state_code": "OR",
     "street_address": "30570 Hilpert Greens",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "14267"
+    "zip_code": "14267",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "East Rickshire",
@@ -350,14 +350,14 @@
     "department_id": "4",
     "email": "Madyson_Schowalter0@gmail.com",
     "first_name": "Eudora",
-    "id": "24",
     "job_title": "Liaison",
     "last_name": "Marquardt",
     "phone_number": "829-951-5152",
     "state_code": "AK",
     "street_address": "119 Nathaniel Lakes",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "80774"
+    "zip_code": "80774",
+    "start_date": "2016-12-12"
   },
   {
     "city_address": "Hammesshire",
@@ -365,13 +365,13 @@
     "department_id": "3",
     "email": "Anderson_Mraz@gmail.com",
     "first_name": "Joel",
-    "id": "25",
     "job_title": "Director",
     "last_name": "Runolfsson",
     "phone_number": "269-614-5587",
     "state_code": "AK",
     "street_address": "979 Delilah Fork",
     "updatedAt": "2017-10-11T02:36:34.657Z",
-    "zip_code": "22866"
+    "zip_code": "22866",
+    "start_date": "2016-12-12"
   }
 ]
