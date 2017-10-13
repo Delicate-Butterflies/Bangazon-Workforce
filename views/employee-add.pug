@@ -4,39 +4,18 @@ block content
 	form(action="/employees/add" method="post")
 		div(class="form-group")
 			label(class="form-control-label" for="first_name") First Name
-			input(type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name")
+			input(type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" required)
 		div(class="form-group")
 			label(class="form-control-label" for="last_name") Last Name
-			input(type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name")
+			input(type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name" required)
 		div(class="form-group")
 			label(class="form-control-label" for="start_date") Start Date
-			input(type="text" class="form-control" id="start_date" placeholder="Start Date" name="start_date")
+			input(type="date" class="form-control" id="start_date" placeholder="Start Date" name="start_date" required)
 		div(class="form-group")
 			label(for="department_id") Department
 			select(class="form-control" id="department_id" name="department_id")
 				each department in departments
 					option(value=department.id) #{department.name}
-		div(class="form-group")
-			label(class="form-control-label" for="job_title") Job Title
-			input(type="text" class="form-control" id="job_title" placeholder="Job Title" name="job_title")
-		div(class="form-group")
-			label(class="form-control-label" for="email") Email
-			input(type="text" class="form-control" id="email" placeholder="Email" name="email")
-		div(class="form-group")
-			label(class="form-control-label" for="phone_number") Phone Number
-			input(type="text" class="form-control" id="phone_number" placeholder="Phone Number" name="phone_number")
-		div(class="form-group")
-			label(class="form-control-label" for="street_address") Street Address
-			input(type="text" class="form-control" id="street_address" placeholder="Street Address" name="street_address")
-		div(class="form-group")
-			label(class="form-control-label" for="city_address") City
-			input(type="text" class="form-control" id="city_address" placeholder="City" name="city_address")
-		div(class="form-group")
-			label(class="form-control-label" for="state_code") State Code (2 letter)
-			input(type="text" class="form-control" id="state_code" placeholder="XX" name="state_code")
-		div(class="form-group")
-			label(class="form-control-label" for="zip_code") Zip Code
-			input(type="text" class="form-control" id="zip_code" placeholder="Zip Code" name="zip_code")
 		button(type="submit" class="btn btn-primary") Submit
 	if errors
 		ul
