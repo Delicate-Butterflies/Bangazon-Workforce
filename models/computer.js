@@ -11,7 +11,7 @@ module.exports = function(sequelize, DataTypes) {
 
   computer.associate = models => {
     computer.belongsToMany(models.employee, {
-      as: 'assigned_computer',
+      // as: 'assigned_computer',
       through: 'employees_computers',
       onDelete: 'CASCADE',
       onUpdate: 'CASCADE'

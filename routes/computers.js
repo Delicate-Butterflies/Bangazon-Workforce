@@ -3,7 +3,13 @@
 const { Router } = require('express');
 const router = Router();
 
-const { getComputers, getComputerById, showComputerForm, addComputer } = require('../controllers/computer-ctrl');
+const {
+  getComputers,
+  getComputerById,
+  showComputerForm,
+  addComputer,
+  deleteComputer
+} = require('../controllers/computer-ctrl');
 
 // get all computers
 router.get('/computers', getComputers);
@@ -14,5 +20,8 @@ router.get('/computers/:id', getComputerById);
 // add computer (form)
 router.get('/computers-add', showComputerForm);
 router.post('/computers-add', addComputer);
+
+// delete computer
+router.post('/computers/:id', deleteComputer);
 
 module.exports = router;

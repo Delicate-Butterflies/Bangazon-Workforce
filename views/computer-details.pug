@@ -30,12 +30,15 @@ block content
   div(class="modal fade" id="deleteComputer" tabindex="-1" role="dialog" aria-labelledby="deleteComputer" aria-hidden="true")
     div(class="modal-dialog" role="document")
       .modal-content
-        .modal-body
-          p Are you sure you want to delete #{computer.serial_number}?
-        .modal-footer
-          form(action=`/computers?_method=DELETE` method="post")
-            button(type="submit" class="btn btn-primary" data-dismiss="modal") Yes
+        if computer.employees[0]
+          .modal-body
+            p Assigned to #{computer.employees[0].first_name} #{computer.employees[0].last_name}. Cannot delete.
+            .modal-footer
+              button(type="submit" class="btn btn-primary" data-dismiss="modal") OK
+        else
+          .modal-body
+            p Are you sure you want to delete #{computer.serial_number}?
+          .modal-footer
+            form(method="POST" action=`/computers/${computer.id}?_method=DELETE`)
+              button(type="submit" class="btn btn-primary") Yes
             button(type="submit" class="btn btn-primary" data-dismiss="modal") No
-
-//- form(action=`/computers?_method=DELETE` method="post")
-//- button(type="submit" class="btn btn-primary" href=`/computers/${computer.id}`) Delete
