@@ -9,7 +9,7 @@ module.exports = (sequelize, DataTypes) => {
 	});
 	training_program.associate = function(models) {
 		training_program.belongsToMany(models.employee, {
-			as: 'signedupPrograms',
+			// as: 'signedupPrograms',
 			through: 'employees_trainings',
 			onDelete: 'CASCADE',
 			onUpdate: 'CASCADE'
