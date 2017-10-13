@@ -1,6 +1,6 @@
 'use strict';
 
-/** @module Employee List Controller */
+/* @module Employee List Controller */
 
 module.exports.getEmployees = (req, res, next) => {
 	const { employee, department } = req.app.get('models');
