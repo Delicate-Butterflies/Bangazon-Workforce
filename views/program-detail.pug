@@ -2,6 +2,8 @@ extends index.pug
 
 block content
 	h1 #{program.title}
+	form(action=`/training/${program.id}?_method=DELETE`, method="post")
+		button(type="submit" href="/training") Delete
 	.trainingProgram-table
 		table(class="table")
 			thead

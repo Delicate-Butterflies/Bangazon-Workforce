@@ -71,3 +71,12 @@ module.exports.getProgramById = (req, res, next) => {
       next(err);
     });
 };
+
+module.exports.deleteProgram = (req, res, next) => {
+  console.log('id', req.params.id);
+  const { training_program, employee } = req.app.get('models');
+  training_program.destroy({ include: [{ model: employee }], where: { id: req.params.id } }).then(data => {
+    console.log(data);
+    res.redirect('/training');
+  });
+};
