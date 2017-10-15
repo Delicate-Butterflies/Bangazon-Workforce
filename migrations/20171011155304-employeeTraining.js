@@ -21,7 +21,7 @@ module.exports = {
 				onUpdate: 'CASCADE',
 				onDelete: 'CASCADE'
 			},
-			programId: {
+			trainingProgramId: {
 				type: Sequelize.INTEGER,
 				allowNull: false,
 				references: {
