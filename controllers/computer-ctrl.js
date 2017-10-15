@@ -1,5 +1,10 @@
 'use strict';
 
+/** @module employee-Ctrl */
+
+/**
+ * Get all computers and render 'computers-list'
+ */
 module.exports.getComputers = (req, res, next) => {
   const { computer } = req.app.get('models');
   computer
@@ -12,14 +17,14 @@ module.exports.getComputers = (req, res, next) => {
     });
 };
 
+/**
+ * Get a single computer and employee associated with computer
+ */
 module.exports.getComputerById = (req, res, next) => {
   const { computer, employee } = req.app.get('models');
   computer
     .findOne({ where: { id: req.params.id }, include: [{ model: employee }] })
     .then(computer => {
-      // res.status(200).json(computer);
-      // // console.log()
-      // // console.log(computer);
       res.render('computer-details', { computer });
     })
     .catch(err => {
@@ -27,10 +32,16 @@ module.exports.getComputerById = (req, res, next) => {
     });
 };
 
+/**
+ * Show form that allows user to add a computer
+ */
 module.exports.showComputerForm = (req, res, next) => {
   res.render('computer-add');
 };
 
+/**
+ * Post new computer then redirect user to all computers view
+ */
 module.exports.addComputer = (req, res, next) => {
   const { computer } = req.app.get('models');
   const computerObj = req.body;
@@ -44,6 +55,9 @@ module.exports.addComputer = (req, res, next) => {
     });
 };
 
+/**
+ * Delete computer then redirect user to all computers view
+ */
 module.exports.deleteComputer = (req, res, next) => {
   console.log('reached computer module');
   const { computer } = req.app.get('models');
@@ -57,5 +71,3 @@ module.exports.deleteComputer = (req, res, next) => {
       next(err);
     });
 };
-
-function employeeComputerCheck(computerId) {}

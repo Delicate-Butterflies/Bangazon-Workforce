@@ -8,10 +8,11 @@ module.exports = function(sequelize, DataTypes) {
     manufacturer: DataTypes.STRING,
     model: DataTypes.STRING
   });
-
+  /**
+   *  computers and employees tables have many to many relationships and are associated through the employee-computer join table
+   */
   computer.associate = models => {
     computer.belongsToMany(models.employee, {
-      // as: 'assigned_computer',
       through: 'employees_computers',
       onDelete: 'CASCADE',
       onUpdate: 'CASCADE'

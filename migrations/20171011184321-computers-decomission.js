@@ -1,6 +1,6 @@
 'use strict';
-// To add created_at attribute to the computers table which was not on boiler plate
 
+// To add decommission_date, serial_number attributes to the computers table which was not on boiler plate
 module.exports = {
   up: (queryInterface, Sequelize) => {
     return queryInterface.addColumn('computers', 'decommission_date', Sequelize.DATEONLY).then(function() {

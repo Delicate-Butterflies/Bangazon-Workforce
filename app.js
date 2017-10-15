@@ -27,6 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Begin middleware stack
 app.use(routes);
+// allows delete funtion in forms by overiding the post method
 app.use(methodOverride('_method'));
 
 // Add a 404 error handler

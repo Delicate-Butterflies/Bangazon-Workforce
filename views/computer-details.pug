@@ -32,7 +32,7 @@ block content
       .modal-content
         if computer.employees[0]
           .modal-body
-            p Assigned to #{computer.employees[0].first_name} #{computer.employees[0].last_name}. Cannot delete.
+            p Unable to delete #{computer.serial_number}. This computer is assigned to #{computer.employees[0].first_name} #{computer.employees[0].last_name}.
             .modal-footer
               button(type="submit" class="btn btn-primary" data-dismiss="modal") OK
         else
