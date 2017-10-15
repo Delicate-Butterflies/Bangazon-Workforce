@@ -8,7 +8,12 @@
 module.exports.getDepartments = (req, res, next) => {
   const { department, employee } = req.app.get('models');
   department
-    .findAll()
+    .findAll({
+      include: [{
+        model: employee,
+        where: { isSupervisor: true }
+      }]
+    })
     .then(departments => {
       console.log('departments', departments);
       res.render('departments-list', { departments });

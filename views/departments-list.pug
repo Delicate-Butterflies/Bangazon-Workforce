@@ -8,10 +8,14 @@ block content
       thead
         tr
           th Department
+          th Supervisor
+          th Expense Budget
           th Details
       tbody
         each department in departments
           tr
             td #{department.name}
+            td #{department.employees[0].first_name} #{department.employees[0].last_name}
+            td $#{department.expense_budget}
             td
               a(type="button" class="btn btn-link" href=`/departments/${department.id}`) View
