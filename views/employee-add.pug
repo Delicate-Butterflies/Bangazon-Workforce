@@ -1,7 +1,7 @@
 extends index.pug
 block content
 	h1 Add Employee:
-	form(action="/employees/add" method="post")
+	form(action="/employees-add" method="post")
 		div(class="form-group")
 			label(class="form-control-label" for="first_name") First Name
 			input(type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" required)

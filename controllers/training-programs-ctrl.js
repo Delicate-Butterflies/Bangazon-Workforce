@@ -15,7 +15,8 @@ module.exports.getTrainingPrograms = (req, res, next) => {
         start_date: {
           $gt: currentDate //$gt stands for greater than operation. It checks if start date is greater than current date.
         }
-      }
+      },
+      order: ['start_date']
     })
     .then(programs => {
       res.render('programs-list', { programs }); //renders programs-list using the template
@@ -45,8 +46,22 @@ module.exports.postTrainingProgram = (req, res, next) => {
 /**
  * getForm function gets the form that will take input to add training programs.
  */
-module.exports.getForm = (req, res) => {
-  res.render('program-add');
+module.exports.getForm = (req, res, next) => {
+  if (req.params.id) {
+    const { training_program } = req.app.get('models');
+    training_program
+      .findById(req.params.id, {
+        // include: [{ model: department }]
+      })
+      .then(program => {
+        program = program.dataValues;
+        console.log(program);
+        res.render('program-edit', { program });
+      })
+      .catch(err => {
+        next(err);
+      });
+  } else res.render('program-add');
 };
 
 /**
@@ -62,9 +77,6 @@ module.exports.getProgramById = (req, res, next) => {
       data.trainees = data.program.employees.map(trainee => {
         return Object.assign({}, trainee.dataValues);
       });
-      console.log(data);
-      // console.log(data);
-      // console.log(data.trainees[2].employee.employees_trainings);
       res.render('program-detail', data);
     })
     .catch(err => {
@@ -80,6 +92,21 @@ module.exports.deleteProgram = (req, res, next) => {
   training_program
     .destroy({ include: [{ model: employee }], where: { id: req.params.id } })
     .then(() => {
+      res.redirect('/training');
+    })
+    .catch(err => {
+      next(err);
+    });
+};
+
+/**
+ * Update training programs
+ */
+module.exports.updateProgram = (req, res, next) => {
+  const { training_program } = req.app.get('models');
+  training_program
+    .update(req.body, { where: { id: req.params.id } })
+    .then(message => {
       res.redirect('/training');
     })
     .catch(err => {
