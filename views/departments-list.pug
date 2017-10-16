@@ -2,15 +2,24 @@ extends index.pug
 
 block content
   h1 Department List
+    a(type="button" class="btn btn-link" href=`/departments/add`) Create Department
   .departments-table
     table(class="table")
       thead
         tr
           th Department
+          th Supervisor
+          th Expense Budget
           th Details
       tbody
         each department in departments
           tr
             td #{department.name}
             td
-                a(type="button" class="btn btn-link" href=`/departments/${department.id}`) View
+              if department.employees[0]
+                span #{department.employees[0].first_name} #{department.employees[0].last_name}
+              else
+                span none
+            td $#{department.expense_budget}
+            td
+              a(type="button" class="btn btn-link" href=`/departments/${department.id}`) View

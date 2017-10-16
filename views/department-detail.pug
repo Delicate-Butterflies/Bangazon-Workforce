@@ -8,8 +8,12 @@ block content
 					tr
 						th First Name
 						th Last Name
+						th Supervisor
 				tbody
 					each employee in deptEmployees
 						tr
 							td #{employee.first_name}
 							td #{employee.last_name}
+							td
+								if employee.isSupervisor
+									span *

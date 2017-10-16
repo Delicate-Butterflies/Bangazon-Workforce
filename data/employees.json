@@ -12,7 +12,8 @@
 		"street_address": "234 Joana Inlet",
 		"updatedAt": "2017-10-11T02:36:34.655Z",
 		"zip_code": "12074",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "true"
 	},
 	{
 		"city_address": "New Woodrowfurt",
@@ -27,7 +28,8 @@
 		"street_address": "9789 Estell Creek",
 		"updatedAt": "2017-10-11T02:36:34.655Z",
 		"zip_code": "65678",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "true"
 	},
 	{
 		"city_address": "North Racheltown",
@@ -42,7 +44,8 @@
 		"street_address": "9241 Toy Junctions",
 		"updatedAt": "2017-10-11T02:36:34.655Z",
 		"zip_code": "82891",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "true"
 	},
 	{
 		"city_address": "Hoegerville",
@@ -57,7 +60,8 @@
 		"street_address": "0855 Cyrus Stravenue",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "79367",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "true"
 	},
 	{
 		"city_address": "Isabelville",
@@ -72,7 +76,8 @@
 		"street_address": "624 Brionna Mountain",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "72882",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Camylleberg",
@@ -87,7 +92,8 @@
 		"street_address": "2407 Mante Ports",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "-811",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Douglasville",
@@ -102,7 +108,8 @@
 		"street_address": "0393 Turner Vista",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "51870",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "true"
 	},
 	{
 		"city_address": "South Aurore",
@@ -117,7 +124,8 @@
 		"street_address": "259 Arden Cove",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "79678",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Genebury",
@@ -132,7 +140,8 @@
 		"street_address": "396 Yasmeen Via",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "43829",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "true"
 	},
 	{
 		"city_address": "Melisaland",
@@ -147,7 +156,8 @@
 		"street_address": "5132 Aniya Extension",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "47395",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Vernchester",
@@ -162,7 +172,8 @@
 		"street_address": "36494 Spinka Circles",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "76751",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Heidenreichberg",
@@ -177,7 +188,8 @@
 		"street_address": "04085 Dejah Ford",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "67656",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Koepphaven",
@@ -192,7 +204,8 @@
 		"street_address": "990 O'Reilly Knoll",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "70520",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "true"
 	},
 	{
 		"city_address": "Hayleemouth",
@@ -207,7 +220,8 @@
 		"street_address": "605 Glen Orchard",
 		"updatedAt": "2017-10-11T02:36:34.656Z",
 		"zip_code": "1615",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "true"
 	},
 	{
 		"city_address": "Lake Olen",
@@ -222,7 +236,8 @@
 		"street_address": "4488 Ari Port",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "-6037",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "East Tremaineton",
@@ -237,7 +252,8 @@
 		"street_address": "12957 Rolfson Mall",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "52694",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Larsonburgh",
@@ -252,7 +268,8 @@
 		"street_address": "857 Reichel Summit",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "58420",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Brownborough",
@@ -267,7 +284,8 @@
 		"street_address": "7978 Ryleigh Port",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "39225",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Dalestad",
@@ -282,7 +300,8 @@
 		"street_address": "81074 Nikita Forges",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "10892",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Simonismouth",
@@ -297,7 +316,8 @@
 		"street_address": "96079 Weimann Station",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "19378",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "East General",
@@ -312,7 +332,8 @@
 		"street_address": "67656 Henderson Streets",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "31364",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "South Katlynn",
@@ -327,7 +348,8 @@
 		"street_address": "2382 Block Inlet",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "4933",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Larkinshire",
@@ -342,7 +364,8 @@
 		"street_address": "30570 Hilpert Greens",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "14267",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "East Rickshire",
@@ -357,7 +380,8 @@
 		"street_address": "119 Nathaniel Lakes",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "80774",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	},
 	{
 		"city_address": "Hammesshire",
@@ -372,6 +396,7 @@
 		"street_address": "979 Delilah Fork",
 		"updatedAt": "2017-10-11T02:36:34.657Z",
 		"zip_code": "22866",
-		"start_date": "2016-12-12"
+		"start_date": "2016-12-12",
+		"isSupervisor": "false"
 	}
 ]
