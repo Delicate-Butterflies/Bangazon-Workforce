@@ -43,6 +43,12 @@ This system allows users to view, create, edit, and delete a list of: employees,
 
 ## Usage directions
 
+### Main Menu
+Users will land on the home page of Bangazon Workforce Management where they will see a breif outline
+of the functionality of the database
+
+<img width="1419" alt="homepagess" src="https://user-images.githubusercontent.com/21187281/31623710-f5e28c44-b265-11e7-9c08-33bc7a5b7087.png">
+
 
 
 
