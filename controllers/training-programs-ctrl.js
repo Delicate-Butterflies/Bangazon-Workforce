@@ -15,7 +15,8 @@ module.exports.getTrainingPrograms = (req, res, next) => {
         start_date: {
           $gt: currentDate //$gt stands for greater than operation. It checks if start date is greater than current date.
         }
-      }
+      },
+      order: ['start_date']
     })
     .then(programs => {
       res.render('programs-list', { programs }); //renders programs-list using the template
@@ -101,4 +102,16 @@ module.exports.deleteProgram = (req, res, next) => {
 /**
  * Update training programs
  */
-module.exports.updateProgram = (req, res, next) => {};
+module.exports.updateProgram = (req, res, next) => {
+  const { training_program } = req.app.get('models');
+  // const program = req.body;
+  // program.id = req.params.id;
+  training_program
+    .update(req.body, { where: { id: req.params.id } })
+    .then(message => {
+      res.redirect('/training');
+    })
+    .catch(err => {
+      next(err);
+    });
+};

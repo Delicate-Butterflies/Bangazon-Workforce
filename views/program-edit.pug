@@ -3,7 +3,7 @@ extends index.pug
 block content
 	.container
 		h1 Edit Training Program
-		form(action="/training-add" method="post")
+		form(action=`/training/${program.id}/edit?_method=PUT`, method="post")
 			.form-group
 				label(class="form-control-label" for="title") Title
 				input(type="text" class="form-control" id="title" placeholder="Title" name="title" value=program.title)
