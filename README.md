@@ -1,4 +1,92 @@
-## BANGAZON-WORKFORCE
+# BANGAZON WORKFORCE HUMAN RESOURCES INFORMATION SYSTEM
+
+## BANGAZON WORKFORCE HRIS SYSTEM
+
+This system allows users to view, create, edit, and delete a list of: employees, departments, employee utilized computers, and employee training programs.
+
+## Table of Contents
+1. [Software Requirements](#software-requirements)
+1. [Insallation](#installation)
+1. [Get Started](#get-started)
+1. [Helper Applications](#helper-applications)
+1. [Third Party Libraries](#third-party-libraries)
+1. [Usage Directions](#usage-directions)
+1. [Credits](#credits)
+1. [Contribute to the CLI](#contribute-to-cli)
+
+## Software Requirements
+- [Node.js](https://nodejs.org/en/)
+- [npm](https://www.npmjs.com/)
+
+## Installation
+- To clone the project down, run  ```git clone [repo link]```
+- Run ```npm install``` from the root of the directory to install all of the dependencies
+
+## Get Started
+- set up the database using ```npm run db:reset``` command in terminal
+- run ```npm start``` from the terminal
+
+## Helper Applications
+- [PostgreSQL](http://www.postgresapp.com)
+
+## Third Party Libraries
+- [express](https://www.expressjs.com)
+- [pug](https://www.pugjs.org)
+- [sequelize](https://www.docs.sequelizejs.com)
+- [body-parser](https://www.npmjs.com/package/body-parser)
+- [bootstrap](https://www.getbootstrap.com)
+- [popper.js](https://www.popperjs.org)
+- [chai](https://www.chaijs.com)
+- [mocha](https://www.mochajs.org)
+- [dotenv](https://www.npmjs.com/package/dotenv)
+- [jsdoc](https://www.usejsdoc.org)
+
+## Usage directions
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 ### Contributing
