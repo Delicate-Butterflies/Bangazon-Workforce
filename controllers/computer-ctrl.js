@@ -21,15 +21,16 @@ module.exports.getComputers = (req, res, next) => {
  * Get a single computer and employees associated with computer
  */
 module.exports.getComputerById = (req, res, next) => {
-  const { computer, employee } = req.app.get('models');
+  const { computer, employee, employee_computer } = req.app.get('models');
   computer
     .findAll({
       include: [{ model: employee }],
       where: { id: req.params.id }
     })
-    .then(computer => {
-      res.status(200).json(computer);
-      // res.render('computer-details', { computer });
+    .then(results => {
+      let computer = results[0].dataValues;
+      // res.status(200).json(computer);
+      res.render('computer-details', { computer });
     })
     .catch(err => {
       next(err);
