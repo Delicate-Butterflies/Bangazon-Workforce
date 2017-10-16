@@ -1,41 +1,75 @@
 extends index.pug
 block content
 	h1 Employee Details:
-	table(class="table")
-		tbody
-			tr
-				td
-					h4 Name:
-				td
-					p 	first Name: #{employee.first_name}
-				td last Name:
-					input(type="text" class="form-control" id="last_name" placeholder=`${employee.last_name}` name="first_name" required)
-			tr
-				td
-					h4 Department:
-					td department_name
-				//- td #{department.name}
-				td
-					select(form='departments', name='departments')
-			tr
-				td
-					h4 Assigned Computer(s):
-					tr
-						td Serial Number
-						td Decommission Date
-					each computer in computers
-							//- check that decommission date is in future for current computers
-							- if (new Date(computer.decommission_date).toDateString() >= new Date().toDateString())
-								tr
-									td #{computer.serial_number}
-									td #{computer.decommission_date}
-			tr
-				td
-					h4 Training Programs:
-				each program in programs
-					tr
-						td #{program.title}
-						td #{program.start_date} thru #{program.end_date}
+	form(action=`/employee/${data.employee.id}?_method=PUT`, method="post")
+		table(class="table")
+			tbody
+				tr
+					td First Name:
+					td #{data.employee.first_name}
+				tr
+					td Last Name:
+					td
+						input(type="text" class="form-control" id="last_name" placeholder=`${data.employee.last_name}` name="first_name" required)
+				tr
+					td
+						h4 Department:
+						//- td department.name
+					td #{data.employee.department.name}
+				tr
+					td
+						h4 Change Department
+					td
+						select(class="form-control" id="department" name="department" required)
+							each department in data.departments
+								if data.employee.department.id == department.id
+									option(value=department.id selected) #{department.name}
+								else
+									option(value=department.id) #{department.name}
+				tr
+					td
+						h4 Assigned Computer(s):
+						tr
+							td Serial Number
+							- var compArray = [];
+							each computer in data.employee.computers
+								//- check that decommission date is in future for current computers
+								- if (new Date(computer.decommission_date).toDateString() >= new Date().toDateString())
+									tr
+										- compArray.push(computer.id)
+										td #{computer.serial_number}
+										td
+											label Mark Returned
+												input(type="checkbox" id=`${computer.id}` name='id')
+						tr
+							td Select Computer
+							td
+								select(class="form-control" id="computer" name="computer" required)
+									each comp in compArray
+										each computer in data.computers
+											- if (comp !== computer.id)
+												option(value=computer.id) #{computer.serial_number}
+						tr
+							td
+								h4 Training Programs:
+							- var programArray = [];
+							each program in data.employee.training_programs
+								if ( new Date(program.start_date) > new Date())
+									- programArray.push(program.id);
+									tr
+										td
+											input(type="checkbox" id=`${program.id}` name='id' checked)
+										td #{program.title}
+										td #{program.start_date} thru #{program.end_date}
+							each prog in data.programs
+								- if (programArray.indexOf(prog.id) === -1 && ( new Date(prog.start_date) > new Date()))
+									tr
+										td
+											input(type="checkbox" id=`${prog.id}` name='id')
+										td #{prog.title}
+										td #{prog.start_date} thru #{prog.end_date}
+		button(type="submit" class="btn") Save Changes
+
 	if errors
 		ul
 			for error in errors

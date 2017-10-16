@@ -48,13 +48,26 @@ module.exports.showEmployeeDetails = (req, res, next) => {
  * Gets an employee by their Id and displays them for editing
  */
 module.exports.editEmployeeDetails = (req, res, next) => {
-  const { employee, department } = req.app.get('models');
+  const { employee, department, computer, training_program } = req.app.get('models');
+  const data = {};
   employee
-    .findById(req.params.id, {
-      include: [{ model: department }]
+    .findAll({
+      include: [{ all: true }],
+      where: { id: req.params.id }
     })
     .then(employee => {
-      res.render('employee-edit', { employee });
+      data.employee = employee[0].dataValues;
+      department.findAll().then(departments => {
+        data.departments = departments;
+        computer.findAll().then(computers => {
+          data.computers = computers;
+          training_program.findAll().then(programs => {
+            data.programs = programs;
+            // console.log(res.json(data));
+            res.render('employee-edit', { data });
+          });
+        });
+      });
     })
     .catch(err => {
       next(err);
