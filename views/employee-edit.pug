@@ -1,36 +1,41 @@
 extends index.pug
 block content
-	h1 Employee Details:
-	form(action=`/employee/${data.employee.id}?_method=PUT`, method="post")
+	h2 Edit Employee Details:
+	form(action=`/employees/${data.employee.id}/edit?_method=PUT`, method="post")
 		table(class="table")
 			tbody
 				tr
-					td First Name:
+					td
+						h5 First Name:
+					td
+						h5 Last Name:
+				tr
 					td #{data.employee.first_name}
-				tr
-					td Last Name:
 					td
-						input(type="text" class="form-control" id="last_name" placeholder=`${data.employee.last_name}` name="first_name" required)
+						input(type="text" class="form-control" id="last_name" value=`${data.employee.last_name}` name="first_name" required)
 				tr
 					td
-						h4 Department:
-						//- td department.name
+						h4 Department
+				tr
+					td
+						h5 Current Department
+					td
+						h5 Change Department
+				tr
 					td #{data.employee.department.name}
-				tr
 					td
-						h4 Change Department
-					td
-						select(class="form-control" id="department" name="department" required)
+						select(class="form-control" id="department" name="department_id" required)
 							each department in data.departments
-								if data.employee.department.id == department.id
-									option(value=department.id selected) #{department.name}
-								else
+								if data.employee.department.id != department.id
 									option(value=department.id) #{department.name}
 				tr
 					td
 						h4 Assigned Computer(s):
 						tr
-							td Serial Number
+							td
+								h6 Serial Number
+							td
+								h6 Mark as returned
 							- var compArray = [];
 							each computer in data.employee.computers
 								//- check that decommission date is in future for current computers
@@ -39,12 +44,13 @@ block content
 										- compArray.push(computer.id)
 										td #{computer.serial_number}
 										td
-											label Mark Returned
-												input(type="checkbox" id=`${computer.id}` name='id')
+												input(type="checkbox" id=`${computer.id}` name='computer_id' value= `${computer.id}`)
 						tr
-							td Select Computer
 							td
-								select(class="form-control" id="computer" name="computer" required)
+								h5 Select new Computer
+						tr
+							td
+								select(class="form-control" id="computer" name="computer_id" value=`${computer.id}`)
 									each comp in compArray
 										each computer in data.computers
 											- if (comp !== computer.id)
@@ -52,20 +58,27 @@ block content
 						tr
 							td
 								h4 Training Programs:
+						tr
+							td
+								h5 Select
+							td
+								h5 Title
+							td
+								h5 Dates
 							- var programArray = [];
 							each program in data.employee.training_programs
 								if ( new Date(program.start_date) > new Date())
 									- programArray.push(program.id);
 									tr
 										td
-											input(type="checkbox" id=`${program.id}` name='id' checked)
+											input(type="checkbox" id=`${program.id}` name='program_id' value=`${program.id}` checked)
 										td #{program.title}
 										td #{program.start_date} thru #{program.end_date}
 							each prog in data.programs
 								- if (programArray.indexOf(prog.id) === -1 && ( new Date(prog.start_date) > new Date()))
 									tr
 										td
-											input(type="checkbox" id=`${prog.id}` name='id')
+											input(type="checkbox" id=`${prog.id}` name='program_id' value=`${prog.id}`)
 										td #{prog.title}
 										td #{prog.start_date} thru #{prog.end_date}
 		button(type="submit" class="btn") Save Changes

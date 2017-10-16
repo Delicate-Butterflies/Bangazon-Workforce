@@ -94,7 +94,6 @@ module.exports.addEmployee = (req, res, next) => {
   });
 };
 
-// module.exports.editEmployeeDetails = (req, res, next) => {
-//   console.log('called');
-//   res.render('employee-edit');
-// };
+module.exports.saveEmployeeDetails = (req, res, next) => {
+  console.log(res.json(req.body));
+};

@@ -8,7 +8,8 @@ const {
   showEmployeeForm,
   addEmployee,
   showEmployeeDetails,
-  editEmployeeDetails
+  editEmployeeDetails,
+  saveEmployeeDetails
 } = require('../controllers/employee-ctrl');
 
 // employee list
@@ -21,4 +22,5 @@ router.post('/employees/add', addEmployee);
 
 // show edit employee by id
 router.get('/employees/:id/edit', editEmployeeDetails);
+router.post('/employees/:id/edit', saveEmployeeDetails);
 module.exports = router;
