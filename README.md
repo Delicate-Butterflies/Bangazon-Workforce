@@ -1,4 +1,4 @@
-# BANGAZON WORKFORCE HUMAN RESOURCES INFORMATION SYSTEM
+# BANGAZON WORKFORCE MANAGEMENT
 
 ## BANGAZON WORKFORCE HRIS SYSTEM
 
@@ -49,7 +49,79 @@ of the functionality of the database
 
 <img width="1419" alt="homepagess" src="https://user-images.githubusercontent.com/21187281/31623710-f5e28c44-b265-11e7-9c08-33bc7a5b7087.png">
 
+### View a List of Employees (#1)
+Users may access a list of all employees in the database by clicking the 'Employees' tab in the navigation menu
 
+<img width="1431" alt="employeelistss" src="https://user-images.githubusercontent.com/21187281/31623643-b7085062-b265-11e7-9a77-8caf90e1b11b.png">
+
+### Add an Employee to Database (#2)
+Comment
+
+SS
+
+### View Employee Details (#3)
+Comment
+
+SS
+
+### Edit Employee Information (#4)
+Comment
+
+SS
+
+### View All Departments (#5)
+Comment
+
+SS
+
+### Create a Department (#6)
+Comment
+
+SS
+
+### View Department Details (#7)
+Comment
+
+SS
+
+### View/Create/Delete Computers (#8)
+Comment
+
+SS
+
+### View Training Programs & Create a Training Program (#9)
+Comment
+
+SS
+
+### View & Edit Training Program Details (#10)
+Comment
+
+SS
+
+### Delete Future Training Programs (#11)
+Comment
+
+SS
+
+## Credits
+### Project Manager
+- [Jufe Brown-Tsai](https://github.com/Jufebrown)
+
+### CLI Developers
+- [Megan Brown](https://github.com/megbrown)
+- [Arwa Kuterwadliwala](https://github.com/Arwask)
+- [Jon Roberts](https://github.com/thejonroberts)
+- [Sam Baker](https://github.com/SamBDev)
+- [Josh Lloyd](https://github.com/joshualloyd)
+- [Alana Smith](https://github.com/missalana00)
+
+## Contribute to CLI
+- Fork - issue tickets and pull requests are welcome
+- Follow the template for PR requests
+- Tab size 2
+
+<p align="center">&copy; 2017 Delicate-Butterflys</p>
 
 
 
