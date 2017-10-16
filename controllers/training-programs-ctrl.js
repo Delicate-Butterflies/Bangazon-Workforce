@@ -45,7 +45,7 @@ module.exports.postTrainingProgram = (req, res, next) => {
 /**
  * getForm function gets the form that will take input to add training programs.
  */
-module.exports.getForm = (req, res, next) => {
+module.exports.getForm = (req, res) => {
   res.render('program-add');
 };
 
@@ -66,6 +66,21 @@ module.exports.getProgramById = (req, res, next) => {
       // console.log(data);
       // console.log(data.trainees[2].employee.employees_trainings);
       res.render('program-detail', data);
+    })
+    .catch(err => {
+      next(err);
+    });
+};
+
+/**
+ * Delete training programs and associated employee training data'
+ */
+module.exports.deleteProgram = (req, res, next) => {
+  const { training_program, employee } = req.app.get('models');
+  training_program
+    .destroy({ include: [{ model: employee }], where: { id: req.params.id } })
+    .then(() => {
+      res.redirect('/training');
     })
     .catch(err => {
       next(err);

@@ -3,6 +3,7 @@
 const express = require('express');
 const app = express();
 let bodyParser = require('body-parser');
+var methodOverride = require('method-override');
 
 require('dotenv').config();
 const port = process.env.PORT || 8080;
@@ -26,7 +27,7 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Begin middleware stack
 app.use(routes);
-
+app.use(methodOverride('_method'));
 // Add a 404 error handler
 // Add error handler to pipe all server errors to from the routing middleware
 
