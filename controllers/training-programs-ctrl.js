@@ -46,7 +46,8 @@ module.exports.postTrainingProgram = (req, res, next) => {
  * getForm function gets the form that will take input to add training programs.
  */
 module.exports.getForm = (req, res) => {
-  res.render('program-add');
+  if (req.params.id) res.render('programs-edit');
+  else res.render('program-add');
 };
 
 /**
@@ -86,3 +87,8 @@ module.exports.deleteProgram = (req, res, next) => {
       next(err);
     });
 };
+
+/**
+ * Update training programs
+ */
+module.exports.updateProgram = (req, res, next) => {};
