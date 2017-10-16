@@ -44,13 +44,14 @@ block content
 										- compArray.push(computer.id)
 										td #{computer.serial_number}
 										td
-												input(type="checkbox" id=`${computer.id}` name='computer_id' value= `${computer.id}`)
+											input(type="checkbox" id=`${computer.id}` name='removed_computer_id' value= `${computer.id}`)
 						tr
 							td
 								h5 Select new Computer
 						tr
 							td
-								select(class="form-control" id="computer" name="computer_id" value=`${computer.id}`)
+								select(class="form-control" id="computer" name="added_computer_id" value=`${id}`)
+									option(value="null") -----None------
 									each comp in compArray
 										each computer in data.computers
 											- if (comp !== computer.id)
@@ -60,27 +61,41 @@ block content
 								h4 Training Programs:
 						tr
 							td
-								h5 Select
+								h5 Attending training programs
+						tr
 							td
 								h5 Title
 							td
 								h5 Dates
+							td
+								h5 Remove
 							- var programArray = [];
 							each program in data.employee.training_programs
 								if ( new Date(program.start_date) > new Date())
 									- programArray.push(program.id);
 									tr
-										td
-											input(type="checkbox" id=`${program.id}` name='program_id' value=`${program.id}` checked)
 										td #{program.title}
 										td #{program.start_date} thru #{program.end_date}
+										td
+											input(type="checkbox" id=`${program.id}` name='removed_program_id' value=`${program.id}`)
+											label
+						tr
+							td
+								h5 Enroll in training programs
+						tr
+							td
+								h5 Title
+							td
+								h5 Dates
+							td
+								h5 Select
 							each prog in data.programs
 								- if (programArray.indexOf(prog.id) === -1 && ( new Date(prog.start_date) > new Date()))
 									tr
-										td
-											input(type="checkbox" id=`${prog.id}` name='program_id' value=`${prog.id}`)
 										td #{prog.title}
 										td #{prog.start_date} thru #{prog.end_date}
+										td
+											input(type="checkbox" id=`${prog.id}` name='added_program_id' value=`${prog.id}`)
 		button(type="submit" class="btn") Save Changes
 
 	if errors
