@@ -55,14 +55,18 @@ Users may access a list of all employees in the database by clicking the 'Employ
 <img width="1431" alt="employeelistss" src="https://user-images.githubusercontent.com/21187281/31623643-b7085062-b265-11e7-9a77-8caf90e1b11b.png">
 
 ### Add an Employee to Database (#2)
-Comment
+Users may add an employee to the employee list by clicking the 'Add Employee' at the
+top of the employee list. They will be redirected to a form they can fill out and submit with the
+new employee's information.
 
-SS
+<img width="1439" alt="addemployeess" src="https://user-images.githubusercontent.com/21187281/31634369-db603a2e-b288-11e7-8e42-34cbc23dd349.png">
 
 ### View Employee Details (#3)
-Comment
+Users may view individual employee details by clicking the 'View' button to the right of an individuals
+name on the employee list. They will then be able to see an employee's name, associated department,
+assigned computers,and training programs the employee has attended.
 
-SS
+<img width="1431" alt="employeedetailsss" src="https://user-images.githubusercontent.com/21187281/31634609-c038c576-b289-11e7-8de5-33bb84804f1a.png">
 
 ### Edit Employee Information (#4)
 Comment
