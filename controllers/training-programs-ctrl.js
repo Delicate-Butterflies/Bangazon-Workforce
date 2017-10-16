@@ -104,8 +104,6 @@ module.exports.deleteProgram = (req, res, next) => {
  */
 module.exports.updateProgram = (req, res, next) => {
   const { training_program } = req.app.get('models');
-  // const program = req.body;
-  // program.id = req.params.id;
   training_program
     .update(req.body, { where: { id: req.params.id } })
     .then(message => {
