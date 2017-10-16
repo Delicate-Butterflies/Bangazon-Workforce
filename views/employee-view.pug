@@ -1,6 +1,7 @@
 extends index.pug
 block content
 	h1 Employee Details:
+	a(type="button" class="btn btn-link" href=`/employees/${employee.id}/edit`) Edit Employee
 	table(class="table")
 		tbody
 			tr

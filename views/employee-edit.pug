@@ -1,5 +1,46 @@
 extends index.pug
-
 block content
-	h1 Edit Employee Info
-	#{employee}
+	h1 Employee Details:
+	table(class="table")
+		tbody
+			tr
+				td
+					h4 Name:
+				td
+					p 	first Name: #{employee.first_name}
+				td last Name:
+					input(type="text" class="form-control" id="last_name" placeholder=`${employee.last_name}` name="first_name" required)
+			tr
+				td
+					h4 Department:
+					td department_name
+				//- td #{department.name}
+				td
+					select(form='departments', name='departments')
+			tr
+				td
+					h4 Assigned Computer(s):
+					tr
+						td Serial Number
+						td Decommission Date
+					each computer in computers
+							//- check that decommission date is in future for current computers
+							- if (new Date(computer.decommission_date).toDateString() >= new Date().toDateString())
+								tr
+									td #{computer.serial_number}
+									td #{computer.decommission_date}
+			tr
+				td
+					h4 Training Programs:
+				each program in programs
+					tr
+						td #{program.title}
+						td #{program.start_date} thru #{program.end_date}
+	if errors
+		ul
+			for error in errors
+				li!= error.msg
+
+
+
+
