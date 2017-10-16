@@ -45,9 +45,22 @@ module.exports.postTrainingProgram = (req, res, next) => {
 /**
  * getForm function gets the form that will take input to add training programs.
  */
-module.exports.getForm = (req, res) => {
-  if (req.params.id) res.render('programs-edit');
-  else res.render('program-add');
+module.exports.getForm = (req, res, next) => {
+  if (req.params.id) {
+    const { training_program } = req.app.get('models');
+    training_program
+      .findById(req.params.id, {
+        // include: [{ model: department }]
+      })
+      .then(program => {
+        program = program.dataValues;
+        console.log(program);
+        res.render('program-edit', { program });
+      })
+      .catch(err => {
+        next(err);
+      });
+  } else res.render('program-add');
 };
 
 /**
@@ -63,9 +76,6 @@ module.exports.getProgramById = (req, res, next) => {
       data.trainees = data.program.employees.map(trainee => {
         return Object.assign({}, trainee.dataValues);
       });
-      console.log(data);
-      // console.log(data);
-      // console.log(data.trainees[2].employee.employees_trainings);
       res.render('program-detail', data);
     })
     .catch(err => {
