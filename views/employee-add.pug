@@ -1,5 +1,26 @@
 extends index.pug
-
 block content
 	h1 Add Employee:
-	p test
+	form(action="/employees/add" method="post")
+		div(class="form-group")
+			label(class="form-control-label" for="first_name") First Name
+			input(type="text" class="form-control" id="first_name" placeholder="First Name" name="first_name" required)
+		div(class="form-group")
+			label(class="form-control-label" for="last_name") Last Name
+			input(type="text" class="form-control" id="last_name" placeholder="Last Name" name="last_name" required)
+		div(class="form-group")
+			label(class="form-control-label" for="start_date") Start Date
+			input(type="date" class="form-control" id="start_date" placeholder="Start Date" name="start_date" required)
+		div(class="form-group")
+			label(for="departmentId") Department
+			select(class="form-control" id="departmentId" name="departmentId")
+				each department in departments
+					option(value=department.id) #{department.name}
+		button(type="submit" class="btn btn-primary") Submit
+	if errors
+		ul
+			for error in errors
+				li!= error.msg
+
+
+
