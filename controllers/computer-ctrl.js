@@ -17,6 +17,18 @@ module.exports.getComputers = (req, res, next) => {
     });
 };
 
+function computerStatus(computer) {
+  let empCompArr = computer.employees;
+  let returnDateArray = [];
+  empCompArr.forEach(function(obj) {
+    returnDateArray.push(obj.employees_computers.return_date);
+  });
+  console.log('returnDataArray', returnDateArray);
+  let status = returnDateArray.includes(null);
+  console.log('status', status);
+  return status;
+}
+
 /**
  * Get a single computer and employees associated with computer
  */
@@ -29,6 +41,7 @@ module.exports.getComputerById = (req, res, next) => {
     })
     .then(results => {
       let computer = results[0].dataValues;
+      computer.status = computerStatus(computer);
       // res.status(200).json(computer);
       res.render('computer-details', { computer });
     })

@@ -30,11 +30,21 @@ block content
   div(class="modal fade" id="deleteComputer" tabindex="-1" role="dialog" aria-labelledby="deleteComputer" aria-hidden="true")
     div(class="modal-dialog" role="document")
       .modal-content
-        if computer.employees[0]
+        //- is currently assigned - need to check null value of return date of any item on array
+        if computer.status
           .modal-body
-            p Unable to delete #{computer.serial_number}. This computer is assigned to #{computer.employees[0].first_name} #{computer.employees[0].last_name}.
+            p Unable to delete #{computer.serial_number}. This computer is currently assigned.
             .modal-footer
               button(type="submit" class="btn btn-primary" data-dismiss="modal") OK
+        //- has been assigned before but not currently assigned
+        else if computer.employees[0]
+          .modal-body
+            p Unable to delete #{computer.serial_number}. This computer has previously been assigned. Would you like to decommision?
+          .modal-footer
+            form(method="POST" action=`/computers/${computer.id}?_method=PUT`)
+              button(type="submit" class="btn btn-primary") Yes
+            button(type="submit" class="btn btn-primary" data-dismiss="modal") No
+        //- has never been assigned
         else
           .modal-body
             p Are you sure you want to delete #{computer.serial_number}?
