@@ -45,6 +45,44 @@ module.exports.postTrainingProgram = (req, res, next) => {
 /**
  * getForm function gets the form that will take input to add training programs.
  */
-module.exports.getForm = (req, res, next) => {
+module.exports.getForm = (req, res) => {
   res.render('program-add');
+};
+
+/**
+ * Get training program name, get employees by specifice department, and render 'program-detail'
+ */
+module.exports.getProgramById = (req, res, next) => {
+  const { training_program, employee } = req.app.get('models');
+  let data = {};
+  training_program
+    .findAll({ include: [{ model: employee }], where: { id: req.params.id } })
+    .then(programEmployees => {
+      data.program = programEmployees[0].dataValues;
+      data.trainees = data.program.employees.map(trainee => {
+        return Object.assign({}, trainee.dataValues);
+      });
+      console.log(data);
+      // console.log(data);
+      // console.log(data.trainees[2].employee.employees_trainings);
+      res.render('program-detail', data);
+    })
+    .catch(err => {
+      next(err);
+    });
+};
+
+/**
+ * Delete training programs and associated employee training data'
+ */
+module.exports.deleteProgram = (req, res, next) => {
+  const { training_program, employee } = req.app.get('models');
+  training_program
+    .destroy({ include: [{ model: employee }], where: { id: req.params.id } })
+    .then(() => {
+      res.redirect('/training');
+    })
+    .catch(err => {
+      next(err);
+    });
 };
