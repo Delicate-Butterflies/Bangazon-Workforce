@@ -1,0 +1,33 @@
+extends index.pug
+
+block content
+	h1 #{program.title}
+	form(action=`/training/${program.id}?_method=DELETE`, method="post")
+		button(type="submit" href="/training") Delete
+	.trainingProgram-table
+		table(class="table")
+			thead
+				tr
+					th Title
+					th Description
+					th Start Date
+					th End Date
+					th Maximum Attendance
+			tbody
+				tr
+					td #{program.title}
+					td #{program.description}
+					td #{program.start_date}
+					td #{program.end_date}
+					td #{program.max_attendance}
+	.employees-table
+			table(class="table")
+				thead
+					tr
+						th First Name
+						th Last Name
+				tbody
+					each employee in trainees
+						tr
+							td #{employee.first_name}
+							td #{employee.last_name}
