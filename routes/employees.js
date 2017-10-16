@@ -17,8 +17,8 @@ router.get('/employees', getEmployees);
 router.get('/employees/:id', showEmployeeDetails);
 
 // add employee (form)
-router.get('/employees/add', showEmployeeForm);
-router.post('/employees/add', addEmployee);
+router.get('/employees-add', showEmployeeForm);
+router.post('/employees-add', addEmployee);
 
 // show edit employee by id
 router.get('/employees/:id/edit', editEmployeeDetails);
