@@ -20,7 +20,8 @@ block content
 						td Decommission Date
 					each computer in computers
 							//- check that decommission date is in future for current computers
-							- if (new Date(computer.decommission_date).toDateString() >= new Date().toDateString())
+							- let now = new Date().toDateString();
+							- if (new Date(computer.decommission_date).toDateString() >= now)
 								tr
 									td #{computer.serial_number}
 									td #{computer.decommission_date}

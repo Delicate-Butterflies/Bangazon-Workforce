@@ -117,35 +117,51 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 		)
 		.then(() => {
 			if (removed_program_id) {
-				if (typeof removed_program_id === 'string') {
-					removed_program_id = [removed_program_id];
-				}
-				// 	//remove emp_tp rows
 				employee
 					.findById(req.params.id)
 					.then(user => {
 						user.removeTraining_program(removed_program_id);
 					})
-					.then(data => {
-						res.redirect(`/employees/${req.params.id}`);
+					// .then(data => {
+					// 	res.redirect(`/employees/${req.params.id}`);
+					// })
+					.catch(err => {
+						next(err);
+					});
+			}
+		})
+		.then(() => {
+			if (added_program_id) {
+				employee
+					.findById(req.params.id)
+					.then(user => {
+						user.addTraining_program(added_program_id);
 					})
 					.catch(err => {
 						next(err);
 					});
 			}
 		})
-		// if (added_program_id)
-		// 	//add emp_tp rows
-		// .then(() => {
-		// 	if (removed_computer_id) {
-		// 		// remove emp_comp rows
-		// 	}
-		// })
+		.then(() => {
+			if (removed_computer_id) {
+				employee
+					.findById(req.params.id)
+					.then(user => {
+						let return_date = new Date().toDateString();
+						user.updateAssigned_computer(removed_computer_id, {
+							return_date
+						});
+					})
+					.catch(err => {
+						next(err);
+					});
+			}
+		})
 		// if (added_computer_id)
 		// 	//add emp_comp rows
 		.then(data => {
 			// console.log('DATA', data);
-			// res.redirect(`/employees/${req.params.id}`);
+			res.redirect(`/employees/${req.params.id}`);
 		})
 		.catch(err => {
 			next(err);
