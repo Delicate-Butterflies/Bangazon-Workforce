@@ -101,15 +101,14 @@ new computer's manufacturer, model, serial number, and purchase date.
 <img width="1437" alt="addcomputerss" src="https://user-images.githubusercontent.com/21187281/31675049-26f0c986-b329-11e7-8dfd-7657134d9783.png">
 
 ### Delete a Computer from the Database (#8)
-Comment
+Users may delete a computer from the computers list by first clicking on the serial number of the individual computer they wish to delete and then clicking the 'Delete' button.
 
-SS
-
+<img width="1434" alt="deletecomputerss" src="https://user-images.githubusercontent.com/21187281/31675500-7407c1ba-b32a-11e7-94b4-bda92ea33a0b.png">
 
 ### View All Training Programs (#9)
-Comment
+Users may access a list of all training programs in the database with their associated program descriptions, and start and end dates by clicking the 'Training' tab in the navigation menu.
 
-SS
+<img width="1436" alt="trainingprogramslistss" src="https://user-images.githubusercontent.com/21187281/31675702-10d25d52-b32b-11e7-819f-70c3cd841b0b.png">
 
 
 ### Add a Training Program to the Database (#9)
@@ -124,7 +123,7 @@ Comment
 SS
 
 
-### Delete Future Training Programs (#11)
+### Delete a Training Program (#11)
 Comment
 
 SS
