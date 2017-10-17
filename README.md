@@ -69,12 +69,12 @@ assigned computers,and training programs the employee has attended.
 <img width="1431" alt="employeedetailsss" src="https://user-images.githubusercontent.com/21187281/31634609-c038c576-b289-11e7-8de5-33bb84804f1a.png">
 
 ### Edit Employee Information (#4)
-Comment
+Users may edit employee information by clicking the 'Edit' button undeneath 'Employee Details'. They will then be able to edit na employee's name, association with department, and assigned compute(s).
 
-SS
+<img width="1436" alt="editemployeedetailsss" src="https://user-images.githubusercontent.com/21187281/31635199-8fc34888-b28b-11e7-9059-72dad277aa5e.png">
 
 ### View All Departments (#5)
-Comment
+Users may access a list of all departments in the database by clicking the 'Departments' tab in the navigation menu.
 
 SS
 
