@@ -58,7 +58,7 @@ block content
 									option(value="null") -----None------
 									//- each comp in compArray
 									each computer in data.computers
-										- if (computer !== computer.id)
+										//- - if (compArray.indexOf(computer.id) === -1)
 										option(value=computer.id) #{computer.serial_number}
 						tr
 							td

@@ -81,12 +81,12 @@ module.exports.editEmployeeDetails = (req, res, next) => {
 						}
 					})
 					.then(computers => {
-						console.log(res.json(computers));
+						// console.log(res.json(computers));
 						data.computers = computers;
 						training_program.findAll().then(programs => {
 							data.programs = programs;
 							// console.log(res.json(data));
-							// res.render('employee-edit', { data });
+							res.render('employee-edit', { data });
 						});
 					});
 			});
@@ -199,22 +199,28 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 		})
 		.then(() => {
 			if (added_computer_id) {
-				employees_computers
-					.add(
-						{
-							assigned_date: Sequelize.NOW(),
-							employeeId: req.params.id,
-							computerId: added_computer_id,
-							return_date: null
-						}
-						// {
-						// 	where: {
-						// 		employeeId: req.params.id,
-						// 		computerId: added_computer_id
-						// 	}
-						// }
-					)
-					.then(data => {})
+				// employees_computers
+				// let return_date = Sequelize.NOW();
+				employee
+					.findById(req.params.id)
+					.then(userInfo => {
+						// let currentDate = new Date().toDateString();
+						userInfo.addComputer(added_computer_id).then(returnedAdd => {
+							// console.log(res.json(rowID));
+							employees_computers.update(
+								{
+									assigned_date: `${new Date().toDateString()}`,
+									return_date: null
+								},
+								{
+									where: {
+										employeeId: req.params.id,
+										computerId: added_computer_id
+									}
+								}
+							);
+						});
+					})
 					.catch(err => {
 						next(err);
 					});

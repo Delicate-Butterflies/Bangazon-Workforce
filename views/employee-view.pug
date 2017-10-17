@@ -19,6 +19,7 @@ block content
 						td Serial Number
 						td Decommission Date
 						td Returned
+						td Assigned
 					each computer in computers
 							//- check that decommission date is in future for current computers
 							//- - let now = new Date().toDateString();
@@ -27,6 +28,7 @@ block content
 								td #{computer.serial_number}
 								td #{computer.decommission_date}
 								td #{computer.employees_computers.return_date}
+								td #{computer.employees_computers.assigned_date}
 			tr
 				td
 					h4 Training Programs:
