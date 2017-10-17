@@ -145,7 +145,7 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 		)
 		.then(() => {
 			if (removed_program_id) {
-				employee
+				return employee
 					.findById(req.params.id)
 					.then(user => {
 						user.removeTraining_program(removed_program_id);
