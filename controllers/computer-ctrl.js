@@ -23,9 +23,7 @@ function computerStatus(computer) {
   empCompArr.forEach(function(obj) {
     returnDateArray.push(obj.employees_computers.return_date);
   });
-  console.log('returnDataArray', returnDateArray);
   let status = returnDateArray.includes(null);
-  console.log('status', status);
   return status;
 }
 
@@ -73,13 +71,19 @@ module.exports.addComputer = (req, res, next) => {
     });
 };
 
-/**
- * Delete computer then redirect user to all computers view
- */
-module.exports.deleteComputer = (req, res, next) => {
-  console.log('reached computer module');
+module.exports.removeComputer = (req, res, next) => {
+  if (req.body._method === 'DELETE') {
+    console.log('delete?', req.body);
+    deleteComputer(req, res, next);
+  } else {
+    console.log('put?', req.body);
+    decomissionComputer(req, res, next);
+  }
+};
+
+function deleteComputer(req, res, next) {
+  console.log('got to delete');
   const { computer } = req.app.get('models');
-  console.log(req.params.id);
   computer
     .destroy({ where: { id: req.params.id } })
     .then(computer => {
@@ -88,4 +92,19 @@ module.exports.deleteComputer = (req, res, next) => {
     .catch(err => {
       next(err);
     });
-};
+}
+
+function decomissionComputer(req, res, next) {
+  console.log('got to decommission');
+  const { computer } = req.app.get('models');
+  let today = new Date();
+  today.toISOString().substr(0, 10);
+  computer
+    .update({ decommission_date: today }, { where: { id: req.params.id } })
+    .then(computer => {
+      res.redirect('/computers');
+    })
+    .catch(err => {
+      next(err);
+    });
+}

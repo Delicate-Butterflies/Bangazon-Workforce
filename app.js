@@ -27,8 +27,19 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 // Begin middleware stack
 app.use(routes);
-// allows delete funtion in forms by overiding the post method
-app.use(methodOverride('_method'));
+
+// allows delete and put function in forms by overiding the post method
+// app.use(methodOverride('_method'));
+
+app.use(bodyParser.urlencoded());
+app.use(
+  methodOverride(function(req, res) {
+    if (req.body && typeof req.body === 'object' && '_method' in req.body) {
+      let method = req.body._method;
+      return method;
+    }
+  })
+);
 
 // Add a 404 error handler
 // Add error handler to pipe all server errors to from the routing middleware

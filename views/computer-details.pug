@@ -24,6 +24,7 @@ block content
           tr
             td Decommission Date
             td #{computer.decommission_date}
+    if computer.decommission_date === null
       button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteComputer") Delete
 
   //- delete confirmation modal
@@ -39,16 +40,16 @@ block content
         //- has been assigned before but not currently assigned
         else if computer.employees[0]
           .modal-body
-            p Unable to delete #{computer.serial_number}. This computer has previously been assigned. Would you like to decommision?
+            p Unable to delete #{computer.serial_number}. This computer has previously been assigned. Would you like to decommision instead?
           .modal-footer
-            form(method="POST" action=`/computers/${computer.id}?_method=PUT`)
-              button(type="submit" class="btn btn-primary") Yes
-            button(type="submit" class="btn btn-primary" data-dismiss="modal") No
+            form(method="POST" action=`/computers/${computer.id}` enctype="application/x-www-form-urlencoded")
+              button(type="submit" class="btn btn-primary" name="_method" value="PUT") Yes
+            button(type="submit" class="btn btn-primary" data-dismiss="modal" ) No
         //- has never been assigned
         else
           .modal-body
             p Are you sure you want to delete #{computer.serial_number}?
           .modal-footer
-            form(method="POST" action=`/computers/${computer.id}?_method=DELETE`)
-              button(type="submit" class="btn btn-primary") Yes
+            form(method="POST" action=`/computers/${computer.id}` enctype="application/x-www-form-urlencoded")
+              button(type="submit" class="btn btn-primary" name="_method" value="DELETE") Yes
             button(type="submit" class="btn btn-primary" data-dismiss="modal") No
