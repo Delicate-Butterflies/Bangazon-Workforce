@@ -126,7 +126,6 @@ module.exports.addEmployee = (req, res, next) => {
 };
 
 module.exports.saveEmployeeDetails = (req, res, next) => {
-	// console.log(res.json(req.body));
 	let {
 		last_name,
 		department_id,
