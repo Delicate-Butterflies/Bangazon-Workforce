@@ -9,7 +9,8 @@
     "teardown": "sequelize db:migrate:undo:all",
     "build": "sequelize db:migrate",
     "seed": "sequelize db:seed:all",
-    "rebuild": "npm run teardown && npm run build && npm run seed"
+    "rebuild": "npm run teardown && npm run build && npm run seed",
+    "docs": "jsdoc ./controllers -c conf.json"
   },
   "keywords": [],
   "author": "",

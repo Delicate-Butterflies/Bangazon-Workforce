@@ -1,6 +1,6 @@
 'use strict';
 
-/** @module department-Ctrl */
+/** @module Department Controller */
 
 /**
  * Get all departments and render 'departments-list'
@@ -9,10 +9,12 @@ module.exports.getDepartments = (req, res, next) => {
   const { department, employee } = req.app.get('models');
   department
     .findAll({
-      include: [{
-        model: employee,
-        where: { isSupervisor: true }
-      }]
+      include: [
+        {
+          model: employee,
+          where: { isSupervisor: true }
+        }
+      ]
     })
     .then(departments => {
       res.render('departments-list', { departments });
@@ -28,10 +30,11 @@ module.exports.getDepartments = (req, res, next) => {
 module.exports.getDepartmentById = (req, res, next) => {
   const { employee, department } = req.app.get('models');
   let data = {};
-  department.findById(req.params.id)
+  department
+    .findById(req.params.id)
     .then(department => {
       data.department = department;
-      return employee.findAll({ where: { departmentId: req.params.id } })
+      return employee.findAll({ where: { departmentId: req.params.id } });
     })
     .then(deptEmployees => {
       data.deptEmployees = deptEmployees;
@@ -47,9 +50,10 @@ module.exports.getDepartmentById = (req, res, next) => {
  */
 module.exports.addDepartmentForm = (req, res, next) => {
   const { employee } = req.app.get('models');
-  employee.findAll({ where: { isSupervisor: false } })
-    .then((employees) => {
-      employees.unshift({ placeholder: "-- SELECT AN EMPLOYEE TO SUPERVISE THE DEPARTMENT --", id: "" });
+  employee
+    .findAll({ where: { isSupervisor: false } })
+    .then(employees => {
+      employees.unshift({ placeholder: '-- SELECT AN EMPLOYEE TO SUPERVISE THE DEPARTMENT --', id: '' });
       res.render('department-add', { employees });
     })
     .catch(err => {
@@ -63,10 +67,11 @@ module.exports.addDepartmentForm = (req, res, next) => {
 module.exports.createDepartment = (req, res, next) => {
   const { department, employee } = req.app.get('models');
   let deptId = null;
-  department.create(req.body)
+  department
+    .create(req.body)
     .then(data => {
       deptId = data.id;
-      return employee.findOne({ where: { id: req.body.supervisor_employee_id } })
+      return employee.findOne({ where: { id: req.body.supervisor_employee_id } });
     })
     .then(employee => {
       return employee.update({ isSupervisor: true, departmentId: deptId });
