@@ -55,7 +55,7 @@ block content
 						tr
 							td
 								select(class="form-control" id="computer" name="added_computer_id" value=`${id}`)
-									option(value="null") -----None------
+									option(value=0) -----None------
 									//- each comp in compArray
 									each computer in data.computers
 										//- - if (compArray.indexOf(computer.id) === -1)

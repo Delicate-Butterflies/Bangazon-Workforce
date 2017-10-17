@@ -50,13 +50,9 @@ module.exports.showEmployeeDetails = (req, res, next) => {
  * Gets an employee by their Id and displays them for editing
  */
 module.exports.editEmployeeDetails = (req, res, next) => {
-	const {
-		employee,
-		department,
-		computer,
-		training_program,
-		employees_computers
-	} = req.app.get('models');
+	const { employee, department, computer, training_program } = req.app.get(
+		'models'
+	);
 	const data = {};
 	employee
 		.findAll({
@@ -66,7 +62,6 @@ module.exports.editEmployeeDetails = (req, res, next) => {
 		.then(results => {
 			data.employee = results[0].dataValues;
 			department.findAll().then(departments => {
-				let currentDate = new Date().toDateString();
 				data.departments = departments;
 				computer
 					.findAll({
@@ -140,9 +135,7 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 		removed_program_id,
 		added_program_id
 	} = req.body;
-	const { employee, training_program, employees_computers } = req.app.get(
-		'models'
-	);
+	const { employee, employees_computers } = req.app.get('models');
 	employee
 		.update(
 			{ last_name, department_id },
@@ -158,9 +151,6 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 					.then(user => {
 						user.removeTraining_program(removed_program_id);
 					})
-					// .then(data => {
-					// 	res.redirect(`/employees/${req.params.id}`);
-					// })
 					.catch(err => {
 						next(err);
 					});
@@ -180,7 +170,6 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 		})
 		.then(() => {
 			if (removed_computer_id) {
-				// let return_date = Sequelize.NOW();
 				employees_computers
 					.update(
 						{ return_date: Sequelize.NOW() },
@@ -191,46 +180,33 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 							}
 						}
 					)
-					.then(data => {})
 					.catch(err => {
 						next(err);
 					});
 			}
 		})
 		.then(() => {
-			if (added_computer_id) {
-				// employees_computers
-				// let return_date = Sequelize.NOW();
+			if (added_computer_id != 0) {
 				employee
 					.findById(req.params.id)
 					.then(userInfo => {
-						// let currentDate = new Date().toDateString();
-						userInfo.addComputer(added_computer_id).then(returnedAdd => {
-							// console.log(res.json(rowID));
-							employees_computers.update(
-								{
-									assigned_date: `${new Date().toDateString()}`,
+						userInfo
+							.addComputer(added_computer_id, {
+								through: {
+									assign_date: `${new Date().toDateString()}`,
 									return_date: null
-								},
-								{
-									where: {
-										employeeId: req.params.id,
-										computerId: added_computer_id
-									}
 								}
-							);
-						});
+							})
+							.then(() => {
+								res.redirect(`/employees/${req.params.id}`);
+							});
 					})
 					.catch(err => {
 						next(err);
 					});
+			} else {
+				res.redirect(`/employees/${req.params.id}`);
 			}
-		})
-		// if (added_computer_id)
-		// 	//add emp_comp rows
-		.then(data => {
-			// console.log('DATA', data);
-			res.redirect(`/employees/${req.params.id}`);
 		})
 		.catch(err => {
 			next(err);
