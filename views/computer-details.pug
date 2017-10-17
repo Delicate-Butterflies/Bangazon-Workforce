@@ -32,7 +32,7 @@ block content
     div(class="modal-dialog" role="document")
       .modal-content
         //- is currently assigned - need to check null value of return date of any item on array
-        if computer.status
+        if computer.currentlyAssignedStatus
           .modal-body
             p Unable to delete #{computer.serial_number}. This computer is currently assigned.
             .modal-footer

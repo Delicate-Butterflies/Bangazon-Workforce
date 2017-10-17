@@ -17,14 +17,17 @@ module.exports.getComputers = (req, res, next) => {
     });
 };
 
+/**
+ * determine if there is a null value present for the return_date of any computer/employee relationship indicating a computer is actively used
+ */
 function computerStatus(computer) {
   let empCompArr = computer.employees;
   let returnDateArray = [];
   empCompArr.forEach(function(obj) {
     returnDateArray.push(obj.employees_computers.return_date);
   });
-  let status = returnDateArray.includes(null);
-  return status;
+  let currentlyAssignedStatus = returnDateArray.includes(null);
+  return currentlyAssignedStatus;
 }
 
 /**
@@ -39,7 +42,7 @@ module.exports.getComputerById = (req, res, next) => {
     })
     .then(results => {
       let computer = results[0].dataValues;
-      computer.status = computerStatus(computer);
+      computer.currentlyAssignedStatus = computerStatus(computer);
       // res.status(200).json(computer);
       res.render('computer-details', { computer });
     })
@@ -71,18 +74,21 @@ module.exports.addComputer = (req, res, next) => {
     });
 };
 
+/**
+ * Determine which method to call, put or delete, based on the request body (method override)
+ */
 module.exports.removeComputer = (req, res, next) => {
   if (req.body._method === 'DELETE') {
-    console.log('delete?', req.body);
     deleteComputer(req, res, next);
   } else {
-    console.log('put?', req.body);
     decomissionComputer(req, res, next);
   }
 };
 
+/**
+ * Delete new computer then redirect user to all computers view
+ */
 function deleteComputer(req, res, next) {
-  console.log('got to delete');
   const { computer } = req.app.get('models');
   computer
     .destroy({ where: { id: req.params.id } })
@@ -94,8 +100,10 @@ function deleteComputer(req, res, next) {
     });
 }
 
+/**
+ * Update computer with decommission date then redirect user to all computers view
+ */
 function decomissionComputer(req, res, next) {
-  console.log('got to decommission');
   const { computer } = req.app.get('models');
   let today = new Date();
   today.toISOString().substr(0, 10);

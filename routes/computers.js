@@ -23,10 +23,7 @@ router.get('/computers/:id', getComputerById);
 router.get('/computers-add', showComputerForm);
 router.post('/computers-add', addComputer);
 
-// delete computer (method-override) with post method
+// delete and put computer (method-override) with post method
 router.post('/computers/:id', removeComputer);
-
-// put computer (method-override) with post method
-// router.post('/computers/:id', decomissionComputer);
 
 module.exports = router;

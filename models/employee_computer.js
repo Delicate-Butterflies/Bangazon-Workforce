@@ -5,9 +5,5 @@ module.exports = (sequelize, DataTypes) => {
     return_date: DataTypes.DATEONLY
   });
 
-  // employees_computers.associate = models => {
-  //   employees_computers.belongsTo(models.computer);
-  // };
-
   return employees_computers;
 };
