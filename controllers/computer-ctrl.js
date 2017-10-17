@@ -8,7 +8,7 @@
 module.exports.getComputers = (req, res, next) => {
   const { computer } = req.app.get('models');
   computer
-    .findAll()
+    .findAll({ order: ['id'] })
     .then(computers => {
       res.render('computers-list', { computers });
     })
