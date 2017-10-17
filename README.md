@@ -142,52 +142,6 @@ Users may delete a training program from the training programs list by first cli
 - Follow the template for PR requests
 - Tab size 2
 
-<p align="center">&copy; 2017 Delicate-Butterflys</p>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 ### Contributing
 
 #### Sequelize config.json:
@@ -196,3 +150,5 @@ You may need to add your psql username and password the the development database
 #### Note on Model/Migration creation:
 We are using snake_case for our database attribute names.  By default, sequelize uses camelCase, which comes into play for the auto-generated updatedAt and createdAt attributes.  To avoid this, please use the --underscored argument when creating the model via sequelize cli. Example:
 ```sequelize model:create --name [model] --underscored --attributes [attributes].```
+
+<p align="center">&copy; 2017 Delicate-Butterflys</p>
