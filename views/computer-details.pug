@@ -1,0 +1,55 @@
+extends index.pug
+
+block content
+  .container
+    h1 Computer Details
+    .computers-table
+      table(class="table")
+        thead
+          tr
+            th(colspan="2") #{computer.serial_number}
+        tbody
+          tr
+            td ID
+            td #{computer.id}
+          tr
+            td Manufacturer
+            td #{computer.manufacturer}
+          tr
+            td Model
+            td #{computer.model}
+          tr
+            td Purchase Date
+            td #{computer.purchase_date}
+          tr
+            td Decommission Date
+            td #{computer.decommission_date}
+    if computer.decommission_date === null
+      button(type="button" class="btn btn-primary" data-toggle="modal" data-target="#deleteComputer") Delete
+
+  //- delete confirmation modal
+  div(class="modal fade" id="deleteComputer" tabindex="-1" role="dialog" aria-labelledby="deleteComputer" aria-hidden="true")
+    div(class="modal-dialog" role="document")
+      .modal-content
+        //- is currently assigned - need to check null value of return date of any item on array
+        if computer.currentlyAssignedStatus
+          .modal-body
+            p Unable to delete #{computer.serial_number}. This computer is currently assigned.
+            .modal-footer
+              button(type="submit" class="btn btn-primary" data-dismiss="modal") OK
+        //- has been assigned before but not currently assigned
+        else if computer.employees[0]
+          .modal-body
+            p Unable to delete #{computer.serial_number}. This computer has previously been assigned. Would you like to decommision instead?
+          .modal-footer
+            form(method="POST" action=`/computers/${computer.id}` enctype="application/x-www-form-urlencoded")
+              button(type="submit" class="btn btn-primary" name="_method" value="PUT") Yes
+            button(type="submit" class="btn btn-primary" data-dismiss="modal" ) No
+        //- has never been assigned
+        else
+          .modal-body
+            p Are you sure you want to delete #{computer.serial_number}?
+          .modal-footer
+            form(method="POST" action=`/computers/${computer.id}` enctype="application/x-www-form-urlencoded")
+              button(type="submit" class="btn btn-primary" name="_method" value="DELETE") Yes
+            button(type="submit" class="btn btn-primary" data-dismiss="modal") No

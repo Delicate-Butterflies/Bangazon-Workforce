@@ -1,0 +1,19 @@
+extends index.pug
+
+block content
+	.container
+		h1 Create New Computer
+		form(action="/computers-add" method="post")
+			.form-group
+				label(class="form-control-label" for="manufacturer") Manufacturer
+				input(type="text" class="form-control" id="manufacturer" placeholder="Manufacturer" name="manufacturer")
+			.form-group
+				label(class="form-control-label" for="model") Model
+				input(type="text" class="form-control" id="model" placeholder="Model" name="model")
+			.form-group
+				label(class="form-control-label" for="serial_number") Serial Number
+				input(type="text" class="form-control" id="serial_number" placeholder="Serial Number" name="serial_number")
+			.form-group
+				label(class="form-control-label" for="purchase_date") Purchase Date
+				input(type="date" class="form-control" id="purchase_date" name="purchase_date")
+			button(type="submit" class="btn btn-primary") Submit
