@@ -55,8 +55,8 @@ Users may access a list of all employees in the database by clicking the 'Employ
 <img width="1431" alt="employeelistss" src="https://user-images.githubusercontent.com/21187281/31623643-b7085062-b265-11e7-9a77-8caf90e1b11b.png">
 
 ### Add an Employee to Database (#2)
-Users may add an employee to the employee list by clicking the 'Add Employee' at the
-top of the employee list. They will be redirected to a form they can fill out and submit with the
+Users may add an employee to the employee list by clicking the 'Add Employee' button at the
+top of the employee list. They will be redirected to a form that they can fill out and submit with the
 new employee's information.
 
 <img width="1439" alt="addemployeess" src="https://user-images.githubusercontent.com/21187281/31634369-db603a2e-b288-11e7-8e42-34cbc23dd349.png">
@@ -76,37 +76,60 @@ Users may edit employee information by clicking the 'Edit' button undeneath 'Emp
 ### View All Departments (#5)
 Users may access a list of all departments in the database by clicking the 'Departments' tab in the navigation menu.
 
-SS
+<img width="1439" alt="departmentlistss" src="https://user-images.githubusercontent.com/21187281/31672490-505f127a-b322-11e7-94bb-2c7f1dfdf723.png">
 
 ### Create a Department (#6)
-Comment
+Users may create a new department and add it to the departments list by clicking the 'Create Department' button. They will be redirected to a form that they can fill out and submit with the
+new department name, the department's expense budget, and the department supervisor.
 
-SS
+<img width="1429" alt="createnewdeptss" src="https://user-images.githubusercontent.com/21187281/31672851-3bd3ddf8-b323-11e7-89f2-80e57ee7f13b.png">
 
 ### View Department Details (#7)
+Users may view individual department details by clicking the 'View' button to the right of an individual department name on the departments list. They will then be able to see a list of employees that belong to that department.
+
+<img width="1436" alt="deptdetailsss" src="https://user-images.githubusercontent.com/21187281/31673218-4481e0d4-b324-11e7-9f31-cdaafbf3c6fe.png">
+
+### View All Computers (#8)
 Comment
 
 SS
 
-### View/Create/Delete Computers (#8)
+
+### Add a Computer to the Database (#8)
 Comment
 
 SS
 
-### View Training Programs & Create a Training Program (#9)
+
+### Delete a Computer from the Database (#8)
 Comment
 
 SS
 
-### View & Edit Training Program Details (#10)
+
+### View All Training Programs (#9)
 Comment
 
 SS
+
+
+### Add a Training Program to the Database (#9)
+Comment
+
+SS
+
+
+### Edit Training Program Details (#10)
+Comment
+
+SS
+
 
 ### Delete Future Training Programs (#11)
 Comment
 
 SS
+
 
 ## Credits
 ### Project Manager
