@@ -1,0 +1,21 @@
+{
+  "tags": {
+    "allowUnknownTags": true
+  },
+  "source": {
+    "includePattern": ".+\\.js(doc|x)?$",
+    "excludePattern": "(^|\\/|\\\\)_"
+  },
+  "plugins": [],
+  "templates": {
+    "cleverLinks": false,
+    "monospaceLinks": false,
+    "default": {
+      "outputSourceFiles": true
+    }
+  },
+  "opts": {
+    "destination": "./docs/", // same as -d ./docs/
+    "recurse": true // same as -r
+  }
+}

@@ -1,6 +1,6 @@
 'use strict';
 
-/** @module Employee List Controller */
+/** @module Employee Controller */
 
 /**
  * Gets all employees from the database and renders them.
