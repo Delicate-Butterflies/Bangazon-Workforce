@@ -76,6 +76,20 @@ module.exports.editEmployeeDetails = (req, res, next) => {
 		});
 };
 
+module.exports.getEmployeeById = (req, res, next) => {
+	const { employee, department } = req.app.get('models');
+	employee
+		.findById(req.params.id, {
+			include: [{ model: department }]
+		})
+		.then(employee => {
+			res.render('employee-edit', { employee });
+		})
+		.catch(err => {
+			next(err);
+		});
+};
+
 /**
  * Displays form for creating a new employee
  */

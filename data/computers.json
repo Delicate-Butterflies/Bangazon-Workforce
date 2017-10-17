@@ -1,282 +1,362 @@
 [
   {
     "createdAt": "2017-08-20T07:44:25.383Z",
-    "decommission_date": "2018-08-04",
+    "decommission_date": null,
     "purchase_date": "2017-08-14",
     "serial_number": "8310a465-64f5-4ddc-8c73-99b4e3fea914",
-    "updatedAt": "2017-10-10T20:06:39.671Z"
+    "updatedAt": "2017-10-10T20:06:39.671Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-07-29T12:42:44.658Z",
-    "decommission_date": "2018-01-26",
+    "decommission_date": null,
     "purchase_date": "2017-04-26",
     "serial_number": "bcbb5cbd-d0c1-4de0-b119-2c43c180d526",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-09-17T16:07:20.046Z",
-    "decommission_date": "2018-02-13",
+    "decommission_date": null,
     "purchase_date": "2017-09-28",
     "serial_number": "940061f4-143b-488e-9178-41c486e358c6",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-21T10:11:16.341Z",
-    "decommission_date": "2018-07-14",
+    "decommission_date": "2017-10-01",
     "purchase_date": "2017-08-10",
     "serial_number": "3253d4f6-c0c4-44fe-a09f-746a89d9e5db",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-09T23:27:01.678Z",
-    "decommission_date": "2018-08-30",
+    "decommission_date": null,
     "purchase_date": "2017-10-03",
     "serial_number": "88bf4b6a-9f1e-4214-a3c2-17e76bd1e3ec",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-24T04:04:04.118Z",
-    "decommission_date": "2018-04-19",
+    "decommission_date": null,
     "purchase_date": "2017-06-17",
     "serial_number": "b6c022fc-0d67-47fb-b072-b74f7e82c533",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-10T23:04:45.635Z",
-    "decommission_date": "2018-02-21",
+    "decommission_date": null,
     "purchase_date": "2017-05-09",
     "serial_number": "3b243e23-4348-4559-848d-cd8b992d1560",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-02-09T20:23:21.310Z",
-    "decommission_date": "2018-07-05",
+    "decommission_date": null,
     "purchase_date": "2017-03-06",
     "serial_number": "2e5fa552-683d-4cc3-9b75-25d40c2fb419",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-04-17T17:19:11.569Z",
-    "decommission_date": "2018-02-23",
+    "decommission_date": null,
     "purchase_date": "2017-07-05",
     "serial_number": "4b355328-a67e-483e-8f06-1530755ab421",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-02T01:17:17.645Z",
-    "decommission_date": "2018-07-14",
+    "decommission_date": null,
     "purchase_date": "2016-12-28",
     "serial_number": "18652380-2247-483f-83c4-592e2ab5f353",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-29T01:44:53.341Z",
-    "decommission_date": "2018-04-16",
+    "decommission_date": null,
     "purchase_date": "2016-11-10",
     "serial_number": "1d23dcc4-a0da-4eda-9b30-29a2d6b9df7d",
-    "updatedAt": "2017-10-10T20:06:39.672Z"
+    "updatedAt": "2017-10-10T20:06:39.672Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-02T23:33:08.799Z",
-    "decommission_date": "2018-04-06",
+    "decommission_date": null,
     "purchase_date": "2016-11-12",
     "serial_number": "06695462-e60f-4e89-9b09-bc83cf20283e",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-30T13:41:33.905Z",
-    "decommission_date": "2017-11-18",
+    "decommission_date": null,
     "purchase_date": "2017-06-28",
     "serial_number": "b01e5eb9-dfad-4199-abe2-06a251192cbd",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-23T16:28:04.677Z",
-    "decommission_date": "2017-10-28",
+    "decommission_date": null,
     "purchase_date": "2016-10-11",
     "serial_number": "193fcac0-c721-49ed-a66f-ba60b5706fa9",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-15T14:33:44.136Z",
-    "decommission_date": "2018-07-13",
+    "decommission_date": null,
     "purchase_date": "2016-10-29",
     "serial_number": "57f8b295-a939-4801-93e3-cb95d03e5ffb",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-03T13:39:19.064Z",
-    "decommission_date": "2018-07-05",
+    "decommission_date": null,
     "purchase_date": "2017-03-27",
     "serial_number": "19bc1184-82c8-4fe9-9819-4d2c8c88215a",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-12-03T23:50:25.718Z",
-    "decommission_date": "2018-05-17",
+    "decommission_date": null,
     "purchase_date": "2017-03-14",
     "serial_number": "b139fac4-d175-4be0-ad1b-27e4eae6064c",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-26T21:54:05.779Z",
-    "decommission_date": "2018-03-19",
+    "decommission_date": null,
     "purchase_date": "2016-12-25",
     "serial_number": "88b89ac1-ed7d-4eb4-ab14-4fa8d1b944db",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-09-10T13:56:26.111Z",
-    "decommission_date": "2018-03-28",
+    "decommission_date": null,
     "purchase_date": "2017-04-13",
     "serial_number": "58e18791-15c3-4465-b758-c750d62cfad8",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-04-06T14:18:31.746Z",
-    "decommission_date": "2018-01-20",
+    "decommission_date": null,
     "purchase_date": "2017-04-24",
     "serial_number": "7f96ee9c-c250-413a-a4d8-23211bd0cd8e",
-    "updatedAt": "2017-10-10T20:06:39.675Z"
+    "updatedAt": "2017-10-10T20:06:39.675Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-01-09T23:41:46.320Z",
-    "decommission_date": "2018-03-11",
+    "decommission_date": null,
     "purchase_date": "2017-08-20",
     "serial_number": "d1cf98ca-0106-4456-8860-712eda9ccda4",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-11T03:42:41.714Z",
-    "decommission_date": "2018-08-10",
+    "decommission_date": null,
     "purchase_date": "2017-04-04",
     "serial_number": "f3b65053-23ff-48bb-b32f-8e545d059c68",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-23T13:09:21.934Z",
-    "decommission_date": "2017-11-09",
+    "decommission_date": null,
     "purchase_date": "2016-11-16",
     "serial_number": "0e1d0cc0-c61f-4e0a-9d1c-9a4b81da4380",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-09-21T21:12:48.470Z",
-    "decommission_date": "2018-03-12",
+    "decommission_date": null,
     "purchase_date": "2016-11-13",
     "serial_number": "3e08e034-514b-4425-b0db-84bf0b8b3c4e",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-01-28T16:26:23.747Z",
-    "decommission_date": "2018-09-22",
+    "decommission_date": null,
     "purchase_date": "2017-02-13",
     "serial_number": "5b84bd31-8481-46fb-a12c-afbab5cae61c",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-07-07T00:39:06.547Z",
-    "decommission_date": "2018-06-28",
+    "decommission_date": null,
     "purchase_date": "2017-01-09",
     "serial_number": "c0ed38a8-ef83-43f4-9c6e-4fa36a27264b",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-07-25T15:22:34.111Z",
-    "decommission_date": "2018-04-30",
+    "decommission_date": null,
     "purchase_date": "2017-01-28",
     "serial_number": "400ca462-bcf6-447a-b865-f0dddad2dcd5",
-    "updatedAt": "2017-10-10T20:06:39.676Z"
+    "updatedAt": "2017-10-10T20:06:39.676Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-23T17:05:27.059Z",
-    "decommission_date": "2017-12-13",
+    "decommission_date": null,
     "purchase_date": "2017-04-13",
     "serial_number": "3adf9c3e-5777-4c5c-8f1f-24acf1d29e56",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-04T07:37:34.996Z",
-    "decommission_date": "2018-09-02",
+    "decommission_date": null,
     "purchase_date": "2017-03-07",
     "serial_number": "061f8451-021a-4fa9-bf03-14c72533ab75",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-06-12T16:30:47.029Z",
-    "decommission_date": "2018-01-17",
+    "decommission_date": null,
     "purchase_date": "2017-02-06",
     "serial_number": "d99e363c-67ee-4539-97be-80d32cb0103b",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-27T02:46:59.396Z",
-    "decommission_date": "2017-11-29",
+    "decommission_date": null,
     "purchase_date": "2017-04-30",
     "serial_number": "6fdbeeee-bb61-4d86-b169-ee383223634c",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-06-23T06:18:14.287Z",
-    "decommission_date": "2018-06-30",
+    "decommission_date": null,
     "purchase_date": "2017-04-10",
     "serial_number": "bee2993f-cda0-43c3-b6be-736a92ca9e70",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-26T00:54:50.950Z",
-    "decommission_date": "2018-07-24",
+    "decommission_date": null,
     "purchase_date": "2017-02-25",
     "serial_number": "45dc35d2-045d-4dbf-adce-3bcd74ec898f",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-07-14T16:21:44.224Z",
-    "decommission_date": "2018-07-28",
+    "decommission_date": null,
     "purchase_date": "2017-05-31",
     "serial_number": "9e73a569-28d9-4c3e-a818-0b307faee0ea",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-26T08:55:16.545Z",
-    "decommission_date": "2018-08-02",
+    "decommission_date": null,
     "purchase_date": "2016-11-14",
     "serial_number": "49f25eef-e2ff-4d3a-8449-0d92af6ad8f6",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-02-22T12:02:08.748Z",
-    "decommission_date": "2018-09-18",
+    "decommission_date": null,
     "purchase_date": "2017-04-25",
     "serial_number": "aa4454fe-e8bc-41ec-b0ed-aaf967915627",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-02-08T23:47:31.040Z",
-    "decommission_date": "2018-01-17",
+    "decommission_date": null,
     "purchase_date": "2016-12-02",
     "serial_number": "9a05b102-8d0f-4c4d-ad89-d97650fe8fdc",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2016-11-18T18:52:42.000Z",
-    "decommission_date": "2018-02-23",
+    "decommission_date": null,
     "purchase_date": "2017-05-26",
     "serial_number": "beb6beb1-c7eb-407e-955f-7204ae8a7e38",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-05-21T10:29:34.909Z",
-    "decommission_date": "2018-08-08",
+    "decommission_date": null,
     "purchase_date": "2017-05-30",
     "serial_number": "f547b74c-7bf4-478b-a0d6-88ce62348aea",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   },
   {
     "createdAt": "2017-08-03T16:17:11.036Z",
-    "decommission_date": "2018-09-05",
+    "decommission_date": null,
     "purchase_date": "2017-02-25",
     "serial_number": "79e008ac-bdbb-4347-ac7e-6a8332695fda",
-    "updatedAt": "2017-10-10T20:06:39.677Z"
+    "updatedAt": "2017-10-10T20:06:39.677Z",
+    "manufacturer": "Apple",
+    "model": "MacBook Pro"
   }
 ]
