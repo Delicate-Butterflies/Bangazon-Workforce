@@ -128,7 +128,7 @@ module.exports.addEmployee = (req, res, next) => {
 module.exports.saveEmployeeDetails = (req, res, next) => {
 	let {
 		last_name,
-		department_id,
+		departmentId,
 		removed_computer_id,
 		added_computer_id,
 		removed_program_id,
@@ -137,10 +137,10 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 	const { employee, employees_computers } = req.app.get('models');
 	employee
 		.update(
-			{ last_name, department_id },
+			{ last_name, departmentId },
 			{
 				where: { id: req.params.id },
-				fields: { last_name, department_id }
+				fields: { last_name, departmentId }
 			}
 		)
 		.then(() => {

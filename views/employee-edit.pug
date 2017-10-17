@@ -24,7 +24,7 @@ block content
 				tr
 					td #{data.employee.department.name}
 					td
-						select(class="form-control" id="department" name="department_id" required)
+						select(class="form-control" id="departmentId" name="departmentId" required)
 							each department in data.departments
 								if data.employee.department.id == department.id
 									option(value=department.id selected) #{department.name}
