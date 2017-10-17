@@ -110,23 +110,21 @@ Users may access a list of all training programs in the database with their asso
 
 <img width="1436" alt="trainingprogramslistss" src="https://user-images.githubusercontent.com/21187281/31675702-10d25d52-b32b-11e7-819f-70c3cd841b0b.png">
 
-
 ### Add a Training Program to the Database (#9)
-Comment
+Users may add a new training program to the training programs list by clicking the 'Add Training Program' button at the top of the training programs list. They will be redirected to a form that they can fill out and submit with the
+new training programs's title, max attendance number, description, start and end date.
 
-SS
-
+<img width="1437" alt="createtrainingss" src="https://user-images.githubusercontent.com/21187281/31676140-4bc99a8c-b32c-11e7-99ed-fef22ad641bc.png">
 
 ### Edit Training Program Details (#10)
-Comment
+Users may
 
-SS
-
+<img width="1438" alt="edittrainingss" src="https://user-images.githubusercontent.com/21187281/31676164-6168fbda-b32c-11e7-8291-073c6ef29d79.png">
 
 ### Delete a Training Program (#11)
 Comment
 
-SS
+<img width="1438" alt="edittrainingss" src="https://user-images.githubusercontent.com/21187281/31676164-6168fbda-b32c-11e7-8291-073c6ef29d79.png">
 
 
 ## Credits
