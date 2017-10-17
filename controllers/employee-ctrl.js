@@ -2,6 +2,8 @@
 
 /** @module Employee List Controller */
 
+var Sequelize = require('sequelize');
+
 /**
  * Gets all employees from the database and renders them.
  */
@@ -48,27 +50,45 @@ module.exports.showEmployeeDetails = (req, res, next) => {
  * Gets an employee by their Id and displays them for editing
  */
 module.exports.editEmployeeDetails = (req, res, next) => {
-	const { employee, department, computer, training_program } = req.app.get(
-		'models'
-	);
+	const {
+		employee,
+		department,
+		computer,
+		training_program,
+		employees_computers
+	} = req.app.get('models');
 	const data = {};
 	employee
 		.findAll({
 			include: [{ all: true }],
 			where: { id: req.params.id }
 		})
-		.then(employee => {
-			data.employee = employee[0].dataValues;
+		.then(results => {
+			data.employee = results[0].dataValues;
 			department.findAll().then(departments => {
+				let currentDate = new Date().toDateString();
 				data.departments = departments;
-				computer.findAll().then(computers => {
-					data.computers = computers;
-					training_program.findAll().then(programs => {
-						data.programs = programs;
-						// console.log(res.json(data));
-						res.render('employee-edit', { data });
+				computer
+					.findAll({
+						include: [
+							{
+								model: employee
+							}
+						],
+						where: {
+							$return_date$: { $ne: null },
+							decommission_date: null
+						}
+					})
+					.then(computers => {
+						console.log(res.json(computers));
+						data.computers = computers;
+						training_program.findAll().then(programs => {
+							data.programs = programs;
+							// console.log(res.json(data));
+							// res.render('employee-edit', { data });
+						});
 					});
-				});
 			});
 		})
 		.catch(err => {
@@ -120,7 +140,9 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 		removed_program_id,
 		added_program_id
 	} = req.body;
-	const { employee, training_program } = req.app.get('models');
+	const { employee, training_program, employees_computers } = req.app.get(
+		'models'
+	);
 	employee
 		.update(
 			{ last_name, department_id },
@@ -158,14 +180,41 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 		})
 		.then(() => {
 			if (removed_computer_id) {
-				employee
-					.findById(req.params.id)
-					.then(user => {
-						let return_date = new Date().toDateString();
-						user.updateAssigned_computer(removed_computer_id, {
-							return_date
-						});
-					})
+				// let return_date = Sequelize.NOW();
+				employees_computers
+					.update(
+						{ return_date: Sequelize.NOW() },
+						{
+							where: {
+								employeeId: req.params.id,
+								computerId: removed_computer_id
+							}
+						}
+					)
+					.then(data => {})
+					.catch(err => {
+						next(err);
+					});
+			}
+		})
+		.then(() => {
+			if (added_computer_id) {
+				employees_computers
+					.add(
+						{
+							assigned_date: Sequelize.NOW(),
+							employeeId: req.params.id,
+							computerId: added_computer_id,
+							return_date: null
+						}
+						// {
+						// 	where: {
+						// 		employeeId: req.params.id,
+						// 		computerId: added_computer_id
+						// 	}
+						// }
+					)
+					.then(data => {})
 					.catch(err => {
 						next(err);
 					});
