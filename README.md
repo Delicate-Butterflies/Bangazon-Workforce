@@ -1,5 +1,4 @@
 # BANGAZON WORKFORCE MANAGEMENT
-
 ## BANGAZON WORKFORCE HRIS SYSTEM
 
 This system allows users to view, create, edit, and delete a list of: employees, departments, employee utilized computers, and employee training programs.
@@ -23,8 +22,8 @@ This system allows users to view, create, edit, and delete a list of: employees,
 - Run ```npm install``` from the root of the directory to install all of the dependencies
 
 ## Get Started
-- set up the database using ```npm run db:reset``` command in terminal
-- run ```npm start``` from the terminal
+- Set up the database using ```npm run db:reset``` command in terminal
+- Run ```npm start``` from the terminal
 
 ## Helper Applications
 - [PostgreSQL](http://www.postgresapp.com)
@@ -41,11 +40,11 @@ This system allows users to view, create, edit, and delete a list of: employees,
 - [dotenv](https://www.npmjs.com/package/dotenv)
 - [jsdoc](https://www.usejsdoc.org)
 
-## Usage directions
+## Usage Directions
 
 ### Main Menu
 Users will land on the home page of Bangazon Workforce Management where they will see a breif outline
-of the functionality of the database
+of the functionality of the database.
 
 <img width="1419" alt="homepagess" src="https://user-images.githubusercontent.com/21187281/31623710-f5e28c44-b265-11e7-9c08-33bc7a5b7087.png">
 
@@ -62,14 +61,14 @@ new employee's information.
 <img width="1439" alt="addemployeess" src="https://user-images.githubusercontent.com/21187281/31634369-db603a2e-b288-11e7-8e42-34cbc23dd349.png">
 
 ### View Employee Details (#3)
-Users may view individual employee details by clicking the 'View' button to the right of an individuals
+Users may view individual employee details by clicking the 'View' button to the right of an individual's
 name on the employee list. They will then be able to view an employee's name, associated department,
-assigned computers, and training programs the employee has attended.
+assigned computer(s), and training programs the employee has attended or is signed up to attend.
 
 <img width="1431" alt="employeedetailsss" src="https://user-images.githubusercontent.com/21187281/31634609-c038c576-b289-11e7-8de5-33bb84804f1a.png">
 
 ### Edit Employee Information (#4)
-Users may edit employee information by clicking the 'Edit' button undeneath 'Employee Details'. They will then be able to edit an employee's name, association with department, and assigned computer(s).
+Users may edit employee information by clicking the 'Edit' button underneath 'Employee Details'. They will then be able to edit an employee's name, association with department, and assigned computer(s).
 
 <img width="1436" alt="editemployeedetailsss" src="https://user-images.githubusercontent.com/21187281/31635199-8fc34888-b28b-11e7-9059-72dad277aa5e.png">
 
@@ -80,7 +79,7 @@ Users may access a list of all departments in the database by clicking the 'Depa
 
 ### Add a Department (#6)
 Users may add a new department to the departments list by clicking the 'Create Department' button. They will be redirected to a form that they can fill out and submit with the
-new department name, the department's expense budget, and the department supervisor.
+new department name, the department's expense budget, and the department's supervisor.
 
 <img width="1429" alt="createnewdeptss" src="https://user-images.githubusercontent.com/21187281/31672851-3bd3ddf8-b323-11e7-89f2-80e57ee7f13b.png">
 
@@ -106,7 +105,7 @@ Users may delete a computer from the computers list by first clicking on the ser
 <img width="1434" alt="deletecomputerss" src="https://user-images.githubusercontent.com/21187281/31675500-7407c1ba-b32a-11e7-94b4-bda92ea33a0b.png">
 
 ### View All Training Programs (#9)
-Users may access a list of all training programs in the database with their associated program descriptions, and start and end dates by clicking the 'Training' tab in the navigation menu.
+Users may access a list of all training programs in the database with their associated program descriptions, start and end dates by clicking the 'Training' tab in the navigation menu.
 
 <img width="1436" alt="trainingprogramslistss" src="https://user-images.githubusercontent.com/21187281/31675702-10d25d52-b32b-11e7-819f-70c3cd841b0b.png">
 
@@ -117,15 +116,14 @@ new training programs's title, max attendance number, description, start and end
 <img width="1437" alt="createtrainingss" src="https://user-images.githubusercontent.com/21187281/31676140-4bc99a8c-b32c-11e7-99ed-fef22ad641bc.png">
 
 ### Edit Training Program Details (#10)
-Users may
+Users may edit a training program by first clicking the 'View' button to the right of the individual training program they wish to edit on the training programs list and then clicking the 'Edit' button.
 
-<img width="1438" alt="edittrainingss" src="https://user-images.githubusercontent.com/21187281/31676164-6168fbda-b32c-11e7-8291-073c6ef29d79.png">
+<img width="1435" alt="edittrainingss" src="https://user-images.githubusercontent.com/21187281/31676364-fff38540-b32c-11e7-93de-dabd7c0687ce.png">
 
 ### Delete a Training Program (#11)
-Comment
+Users may delete a training program from the training programs list by first clicking the 'View' button to the right of the individual training program they wish to delete and then clicking the 'Delete' button.
 
-<img width="1438" alt="edittrainingss" src="https://user-images.githubusercontent.com/21187281/31676164-6168fbda-b32c-11e7-8291-073c6ef29d79.png">
-
+<img width="1438" alt="deletetrainingss" src="https://user-images.githubusercontent.com/21187281/31676366-033ac29a-b32d-11e7-8197-923a7b5dbc01.png">
 
 ## Credits
 ### Project Manager
