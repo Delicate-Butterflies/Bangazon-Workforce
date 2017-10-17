@@ -1,5 +1,5 @@
 # BANGAZON WORKFORCE MANAGEMENT
-## BANGAZON WORKFORCE HRIS SYSTEM
+## BANGAZON WORKFORCE HUMAN RESOURCES INFORMATION SYSTEM
 
 This system allows users to view, create, edit, and delete a list of: employees, departments, employee utilized computers, and employee training programs.
 
@@ -129,7 +129,7 @@ Users may delete a training program from the training programs list by first cli
 ### Project Manager
 - [Jufe Brown-Tsai](https://github.com/Jufebrown)
 
-### CLI Developers
+### Workforce App Developers
 - [Megan Brown](https://github.com/megbrown)
 - [Arwa Kuterwadliwala](https://github.com/Arwask)
 - [Jon Roberts](https://github.com/thejonroberts)
@@ -137,7 +137,7 @@ Users may delete a training program from the training programs list by first cli
 - [Josh Lloyd](https://github.com/joshualloyd)
 - [Alana Smith](https://github.com/missalana00)
 
-## Contribute to CLI
+## Contribute to Workforce App
 - Fork - issue tickets and pull requests are welcome
 - Follow the template for PR requests
 - Tab size 2
