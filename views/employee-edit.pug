@@ -2,7 +2,7 @@ extends index.pug
 block content
 	h2 Edit Employee Details:
 	form(action=`/employees/${data.employee.id}/edit?_method=PUT`, method="post")
-		table(class="table")
+		table(class="table borderless")
 			tbody
 				tr
 					td
@@ -26,8 +26,11 @@ block content
 					td
 						select(class="form-control" id="department" name="department_id" required)
 							each department in data.departments
-								if data.employee.department.id != department.id
+								if data.employee.department.id == department.id
+									option(value=department.id selected) #{department.name}
+								else
 									option(value=department.id) #{department.name}
+
 				tr
 					td
 						h4 Assigned Computer(s):
@@ -54,7 +57,7 @@ block content
 									option(value="null") -----None------
 									each comp in compArray
 										each computer in data.computers
-											- if (comp !== computer.id)
+											- if (comp == computer.id)
 												option(value=computer.id) #{computer.serial_number}
 						tr
 							td
