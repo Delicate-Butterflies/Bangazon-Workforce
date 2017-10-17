@@ -49,8 +49,8 @@ of the functionality of the database
 
 <img width="1419" alt="homepagess" src="https://user-images.githubusercontent.com/21187281/31623710-f5e28c44-b265-11e7-9c08-33bc7a5b7087.png">
 
-### View a List of Employees (#1)
-Users may access a list of all employees in the database by clicking the 'Employees' tab in the navigation menu
+### View All Employees (#1)
+Users may access a list of all employees in the database by clicking the 'Employees' tab in the navigation menu.
 
 <img width="1431" alt="employeelistss" src="https://user-images.githubusercontent.com/21187281/31623643-b7085062-b265-11e7-9a77-8caf90e1b11b.png">
 
@@ -63,13 +63,13 @@ new employee's information.
 
 ### View Employee Details (#3)
 Users may view individual employee details by clicking the 'View' button to the right of an individuals
-name on the employee list. They will then be able to see an employee's name, associated department,
-assigned computers,and training programs the employee has attended.
+name on the employee list. They will then be able to view an employee's name, associated department,
+assigned computers, and training programs the employee has attended.
 
 <img width="1431" alt="employeedetailsss" src="https://user-images.githubusercontent.com/21187281/31634609-c038c576-b289-11e7-8de5-33bb84804f1a.png">
 
 ### Edit Employee Information (#4)
-Users may edit employee information by clicking the 'Edit' button undeneath 'Employee Details'. They will then be able to edit na employee's name, association with department, and assigned compute(s).
+Users may edit employee information by clicking the 'Edit' button undeneath 'Employee Details'. They will then be able to edit an employee's name, association with department, and assigned computer(s).
 
 <img width="1436" alt="editemployeedetailsss" src="https://user-images.githubusercontent.com/21187281/31635199-8fc34888-b28b-11e7-9059-72dad277aa5e.png">
 
@@ -78,28 +78,27 @@ Users may access a list of all departments in the database by clicking the 'Depa
 
 <img width="1439" alt="departmentlistss" src="https://user-images.githubusercontent.com/21187281/31672490-505f127a-b322-11e7-94bb-2c7f1dfdf723.png">
 
-### Create a Department (#6)
-Users may create a new department and add it to the departments list by clicking the 'Create Department' button. They will be redirected to a form that they can fill out and submit with the
+### Add a Department (#6)
+Users may add a new department to the departments list by clicking the 'Create Department' button. They will be redirected to a form that they can fill out and submit with the
 new department name, the department's expense budget, and the department supervisor.
 
 <img width="1429" alt="createnewdeptss" src="https://user-images.githubusercontent.com/21187281/31672851-3bd3ddf8-b323-11e7-89f2-80e57ee7f13b.png">
 
 ### View Department Details (#7)
-Users may view individual department details by clicking the 'View' button to the right of an individual department name on the departments list. They will then be able to see a list of employees that belong to that department.
+Users may view individual department details by clicking the 'View' button to the right of an individual department name on the departments list. They will then be able to see a list of employees that belong to that specific department.
 
 <img width="1436" alt="deptdetailsss" src="https://user-images.githubusercontent.com/21187281/31673218-4481e0d4-b324-11e7-9f31-cdaafbf3c6fe.png">
 
 ### View All Computers (#8)
-Comment
+Users may access a list of all computers in the database with their associated serial numbers by clicking the 'Computers' tab in the navigation menu.
 
-SS
-
+<img width="1434" alt="viewallcomputersss" src="https://user-images.githubusercontent.com/21187281/31674578-c6c83022-b327-11e7-98a9-d61eb080787a.png">
 
 ### Add a Computer to the Database (#8)
-Comment
+Users may add a new computer to the computers list by clicking the 'Create New' button at the top of the computers list. They will be redirected to a form that they can fill out and submit with the
+new computer's manufacturer, model, serial number, and purchase date.
 
-SS
-
+<img width="1437" alt="addcomputerss" src="https://user-images.githubusercontent.com/21187281/31675049-26f0c986-b329-11e7-8dfd-7657134d9783.png">
 
 ### Delete a Computer from the Database (#8)
 Comment
