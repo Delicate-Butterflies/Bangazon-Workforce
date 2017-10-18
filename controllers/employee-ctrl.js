@@ -47,6 +47,21 @@ module.exports.showEmployeeDetails = (req, res, next) => {
 };
 
 /**
+ * Checks a computer for availabity:  If never assigned, or currently unassigned, passes true.
+ */
+function computerCheck(computer) {
+	let check = true;
+	if (computer.employees.length > 0) {
+		computer.employees.forEach(employee => {
+			if (employee.employees_computers.return_date === null) {
+				check = false;
+			}
+		});
+	}
+	return check;
+}
+
+/**
  * Gets an employee by their Id and displays them for editing
  */
 module.exports.editEmployeeDetails = (req, res, next) => {
@@ -65,22 +80,27 @@ module.exports.editEmployeeDetails = (req, res, next) => {
 				data.departments = departments;
 				computer
 					.findAll({
+						where: {
+							decommission_date: null
+						},
 						include: [
 							{
 								model: employee
 							}
-						],
-						where: {
-							$return_date$: { $ne: null },
-							decommission_date: null
-						}
+						]
 					})
 					.then(computers => {
-						data.computers = computers;
+						let unassignedComputers = computers.filter(computer => {
+							return computerCheck(computer);
+						});
+						data.computers = unassignedComputers;
 						training_program.findAll().then(programs => {
 							data.programs = programs;
 							res.render('employee-edit', { data });
 						});
+					})
+					.catch(err => {
+						next(err);
 					});
 			});
 		})
@@ -220,7 +240,7 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 						userInfo
 							.addComputer(added_computer_id, {
 								through: {
-									assign_date: `${new Date().toDateString()}`,
+									assign_date: Sequelize.NOW(),
 									return_date: null
 								}
 							})
