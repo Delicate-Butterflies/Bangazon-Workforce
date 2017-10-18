@@ -13,10 +13,11 @@ block content
 			.form-group
 				label(class="form-control-label" for="description") Description
 				input(type="text" class="form-control" id="description" placeholder="Description" name="description")
+				- const date = new Date().toISOString().substr(0,10);
 			.form-group
 				label(class="form-control-label" for="start_date") Start Date
-				input(type="date" class="form-control" id="start_date" placeholder="YYYY-MM-DD" name="start_date")
+				input(type="date" class="form-control" id="start_date" placeholder="YYYY-MM-DD" name="start_date" min=date required)
 			.form-group
 				label(class="form-control-label" for="end_date") End Date
-				input(type="date" class="form-control" id="end_date" placeholder="YYYY-MM-DD" name="end_date")
+				input(type="date" class="form-control" id="end_date" placeholder="YYYY-MM-DD" name="end_date" min=date required)
 			button(type="submit" class="btn btn-primary") Submit

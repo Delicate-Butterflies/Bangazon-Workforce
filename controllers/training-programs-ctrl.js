@@ -13,7 +13,7 @@ module.exports.getTrainingPrograms = (req, res, next) => {
       //findAll finda all the training programs
       where: {
         start_date: {
-          $gt: currentDate //$gt stands for greater than operation. It checks if start date is greater than current date.
+          $gte: currentDate //$gt stands for greater than operation. It checks if start date is greater than current date.
         }
       },
       order: ['start_date']
@@ -32,7 +32,6 @@ module.exports.getTrainingPrograms = (req, res, next) => {
 module.exports.postTrainingProgram = (req, res, next) => {
   const { training_program } = req.app.get('models');
   const programObj = req.body;
-
   training_program
     .create(programObj)
     .then(() => {
