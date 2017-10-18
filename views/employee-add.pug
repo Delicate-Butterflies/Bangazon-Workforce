@@ -13,7 +13,8 @@ block content
 			input(type="date" class="form-control" id="start_date" placeholder="Start Date" name="start_date" required)
 		div(class="form-group")
 			label(for="departmentId") Department
-			select(class="form-control" id="departmentId" name="departmentId")
+			select(class="form-control" id="departmentId" name="departmentId" required)
+				option(value='') -- Please assign employee to a department --
 				each department in departments
 					option(value=department.id) #{department.name}
 		button(type="submit" class="btn btn-primary") Submit

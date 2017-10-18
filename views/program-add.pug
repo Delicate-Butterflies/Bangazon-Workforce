@@ -6,17 +6,17 @@ block content
 		form(action="/training-add" method="post")
 			.form-group
 				label(class="form-control-label" for="title") Title
-				input(type="text" class="form-control" id="title" placeholder="Title" name="title")
+				input(type="text" class="form-control" id="title" placeholder="Title" name="title" required)
 			.form-group
 				label(class="form-control-label" for="max_attendance") Max Attendance
-				input(type="number" class="form-control" id="max_attendance" placeholder="Max Attendance" name="max_attendance")
+				input(type="number" class="form-control" id="max_attendance" placeholder="Max Attendance" name="max_attendance" required)
 			.form-group
 				label(class="form-control-label" for="description") Description
-				input(type="text" class="form-control" id="description" placeholder="Description" name="description")
+				input(type="text" class="form-control" id="description" placeholder="Description" name="description" required)
 			.form-group
-				label(class="form-control-label" for="start_date") Start Date
-				input(type="date" class="form-control" id="start_date" placeholder="YYYY-MM-DD" name="start_date")
+				label(class="form-control-label" for="start_date") Start Date (must be in future)
+				input(type="date" class="form-control" id="start_date" placeholder="YYYY-MM-DD" name="start_date" required)
 			.form-group
-				label(class="form-control-label" for="end_date") End Date
-				input(type="date" class="form-control" id="end_date" placeholder="YYYY-MM-DD" name="end_date")
+				label(class="form-control-label" for="end_date") End Date (must be after Start Date)
+				input(type="date" class="form-control" id="end_date" placeholder="YYYY-MM-DD" name="end_date" required)
 			button(type="submit" class="btn btn-primary") Submit
