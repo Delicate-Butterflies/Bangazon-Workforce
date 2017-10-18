@@ -76,11 +76,9 @@ module.exports.editEmployeeDetails = (req, res, next) => {
 						}
 					})
 					.then(computers => {
-						// console.log(res.json(computers));
 						data.computers = computers;
 						training_program.findAll().then(programs => {
 							data.programs = programs;
-							// console.log(res.json(data));
 							res.render('employee-edit', { data });
 						});
 					});
@@ -91,6 +89,9 @@ module.exports.editEmployeeDetails = (req, res, next) => {
 		});
 };
 
+/**
+ * Gets employee by ID
+ */
 module.exports.getEmployeeById = (req, res, next) => {
 	const { employee, department } = req.app.get('models');
 	employee
@@ -110,9 +111,14 @@ module.exports.getEmployeeById = (req, res, next) => {
  */
 module.exports.showEmployeeForm = (req, res, next) => {
 	const { department } = req.app.get('models');
-	department.findAll().then(departments => {
-		res.render('employee-add', { departments });
-	});
+	department
+		.findAll()
+		.then(departments => {
+			res.render('employee-add', { departments });
+		})
+		.catch(err => {
+			next(err);
+		});
 };
 
 /**
@@ -120,13 +126,20 @@ module.exports.showEmployeeForm = (req, res, next) => {
  */
 module.exports.addEmployee = (req, res, next) => {
 	const { employee } = req.app.get('models');
-	employee.create(req.body).then(() => {
-		res.redirect('/employees');
-	});
+	employee
+		.create(req.body)
+		.then(() => {
+			res.redirect('/employees');
+		})
+		.catch(err => {
+			next(err);
+		});
 };
 
+/**
+ * Saves data from form to database on form submit
+ */
 module.exports.saveEmployeeDetails = (req, res, next) => {
-	// console.log(res.json(req.body));
 	let {
 		last_name,
 		departmentId,
@@ -135,98 +148,106 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 		removed_program_id,
 		added_program_id
 	} = req.body;
-	const { employee, employees_computers, department } = req.app.get('models');
+	const { employee, employees_computers } = req.app.get('models');
 
 	let promisedUpdates = [];
 
 	if (removed_program_id) {
-		promisedUpdates.push(new Promise((resolve, reject) => {
-			employee
-				.findById(req.params.id)
-				.then(user => {
-					return user.removeTraining_program(removed_program_id);
-				})
-				.then(data => {
-					resolve(data);
-				})
-				.catch(err => {
-					reject(err);
-				});
-		}));
+		promisedUpdates.push(
+			new Promise((resolve, reject) => {
+				employee
+					.findById(req.params.id)
+					.then(user => {
+						return user.removeTraining_program(removed_program_id);
+					})
+					.then(data => {
+						resolve(data);
+					})
+					.catch(err => {
+						reject(err);
+					});
+			})
+		);
 	}
 
 	if (added_program_id) {
-		promisedUpdates.push(new Promise((resolve, reject) => {
-			employee
-				.findById(req.params.id)
-				.then(user => {
-					return user.addTraining_program(added_program_id);
-				})
-				.then(data => {
-					resolve(data);
-				})
-				.catch(err => {
-					reject(err);
-				});
-		}));
+		promisedUpdates.push(
+			new Promise((resolve, reject) => {
+				employee
+					.findById(req.params.id)
+					.then(user => {
+						return user.addTraining_program(added_program_id);
+					})
+					.then(data => {
+						resolve(data);
+					})
+					.catch(err => {
+						reject(err);
+					});
+			})
+		);
 	}
 
 	if (removed_computer_id) {
-		promisedUpdates.push(new Promise((resolve, reject) => {
-			employees_computers
-				.update(
-				{ return_date: Sequelize.NOW() },
-				{
-					where: {
-						employeeId: req.params.id,
-						computerId: removed_computer_id
-					}
-				}
-				)
-				.then(data => {
-					resolve(data);
-				})
-				.catch(err => {
-					reject(err);
-				});
-		}));
+		promisedUpdates.push(
+			new Promise((resolve, reject) => {
+				employees_computers
+					.update(
+						{ return_date: Sequelize.NOW() },
+						{
+							where: {
+								employeeId: req.params.id,
+								computerId: removed_computer_id
+							}
+						}
+					)
+					.then(data => {
+						resolve(data);
+					})
+					.catch(err => {
+						reject(err);
+					});
+			})
+		);
 	}
 
 	if (added_computer_id != 0) {
-		promisedUpdates.push(new Promise((resolve, reject) => {
-			employee
-				.findById(req.params.id)
-				.then(userInfo => {
-					userInfo
-						.addComputer(added_computer_id, {
-							through: {
-								assign_date: `${new Date().toDateString()}`,
-								return_date: null
-							}
-						})
-						.then(data => {
-							resolve(data);
-						});
-				})
-				.catch(err => {
-					reject(err);
-				});
-		}));
+		promisedUpdates.push(
+			new Promise((resolve, reject) => {
+				employee
+					.findById(req.params.id)
+					.then(userInfo => {
+						userInfo
+							.addComputer(added_computer_id, {
+								through: {
+									assign_date: `${new Date().toDateString()}`,
+									return_date: null
+								}
+							})
+							.then(data => {
+								resolve(data);
+							});
+					})
+					.catch(err => {
+						reject(err);
+					});
+			})
+		);
 	}
 
 	employee
 		.update(
-		{ last_name, departmentId },
-		{
-			where: { id: req.params.id },
-			fields: { last_name, departmentId }
-		}
+			{ last_name, departmentId },
+			{
+				where: { id: req.params.id },
+				fields: { last_name, departmentId }
+			}
 		)
 		.then(() => {
+			// use promise.all to ensure all changes made to db before sending to render
 			return Promise.all(promisedUpdates);
 		})
-		.then(values => {
-			console.log('values', values);
+		.then(() => {
 			res.redirect(`/employees/${req.params.id}`);
 		})
 		.catch(err => {
