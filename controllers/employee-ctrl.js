@@ -46,32 +46,28 @@ module.exports.showEmployeeDetails = (req, res, next) => {
 		});
 };
 
-function computerCheck(computerDetails) {
+/**
+ * Checks a computer for availabity:  If never assigned, or currently unassigned, passes true.
+ */
+function computerCheck(computer) {
 	let check = true;
-	computerDetails.employees.forEach(employee => {
-		console.log(
-			'employee rd',
-			employee.employees_computers.dataValues.return_date
-		);
-		if ((employee.employees_computers.dataValues.return_date = null)) {
-			return false;
-		} else {
-			check = true;
-		}
-	});
+	if (computer.employees.length > 0) {
+		computer.employees.forEach(employee => {
+			if (employee.employees_computers.return_date === null) {
+				check = false;
+			}
+		});
+	}
 	return check;
 }
+
 /**
  * Gets an employee by their Id and displays them for editing
  */
 module.exports.editEmployeeDetails = (req, res, next) => {
-	const {
-		employee,
-		department,
-		computer,
-		training_program,
-		employees_computers
-	} = req.app.get('models');
+	const { employee, department, computer, training_program } = req.app.get(
+		'models'
+	);
 	const data = {};
 	employee
 		.findAll({
@@ -84,29 +80,27 @@ module.exports.editEmployeeDetails = (req, res, next) => {
 				data.departments = departments;
 				computer
 					.findAll({
-						where: { decommission_date: null },
+						where: {
+							decommission_date: null
+						},
 						include: [
 							{
-								model: employee,
-								through: {
-									model: employees_computers,
-									where: {
-										return_date: { $ne: null }
-									}
-								}
+								model: employee
 							}
 						]
 					})
 					.then(computers => {
-						// console.log(res.json(computers));
-						let unassignedComputers = computers.filter(computerDetails => {
-							return computerCheck(computerDetails);
+						let unassignedComputers = computers.filter(computer => {
+							return computerCheck(computer);
 						});
 						data.computers = unassignedComputers;
 						training_program.findAll().then(programs => {
 							data.programs = programs;
 							res.render('employee-edit', { data });
 						});
+					})
+					.catch(err => {
+						next(err);
 					});
 			});
 		})
