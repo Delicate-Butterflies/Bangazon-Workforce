@@ -1,322 +1,322 @@
 [
-  {
-    "assign_date": "2016-10-16",
-    "computerId": "1",
-    "createdAt": "2017-08-06T09:03:40.326Z",
-    "employeeId": "11",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.677Z"
-  },
-  {
-    "assign_date": "2017-09-12",
-    "computerId": "2",
-    "createdAt": "2016-12-26T03:20:56.008Z",
-    "employeeId": "8",
-    "return_date": "2017-09-05",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-07-20",
-    "computerId": "1",
-    "createdAt": "2017-02-14T02:58:44.187Z",
-    "employeeId": "6",
-    "return_date": "2017-08-16",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-07-28",
-    "computerId": "4",
-    "createdAt": "2016-12-28T07:39:22.071Z",
-    "employeeId": "16",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-03-13",
-    "computerId": "5",
-    "createdAt": "2016-10-20T22:23:36.130Z",
-    "employeeId": "16",
-    "return_date": "2017-09-05",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-05-26",
-    "computerId": "6",
-    "createdAt": "2017-09-23T12:58:55.838Z",
-    "employeeId": "10",
-    "return_date": "2017-09-18",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2016-11-22",
-    "computerId": "7",
-    "createdAt": "2017-09-13T01:12:49.061Z",
-    "employeeId": "14",
-    "return_date": "2017-03-03",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2016-12-14",
-    "computerId": "8",
-    "createdAt": "2017-02-24T01:15:49.417Z",
-    "employeeId": "18",
-    "return_date": "2017-02-21",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-08-29",
-    "computerId": "9",
-    "createdAt": "2017-09-30T08:19:20.333Z",
-    "employeeId": "7",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-05-07",
-    "computerId": "10",
-    "createdAt": "2017-05-26T00:01:29.506Z",
-    "employeeId": "13",
-    "return_date": "2017-05-23",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-02-26",
-    "computerId": "11",
-    "createdAt": "2017-03-13T21:20:16.247Z",
-    "employeeId": "12",
-    "return_date": "2017-08-24",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2016-11-08",
-    "computerId": "12",
-    "createdAt": "2016-11-14T20:04:01.562Z",
-    "employeeId": "24",
-    "return_date": "2017-03-03",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2016-12-25",
-    "computerId": "13",
-    "createdAt": "2017-07-03T12:47:22.775Z",
-    "employeeId": "8",
-    "return_date": "2017-09-03",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-07-10",
-    "computerId": "14",
-    "createdAt": "2017-10-05T14:44:37.341Z",
-    "employeeId": "19",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2016-10-29",
-    "computerId": "15",
-    "createdAt": "2017-07-08T05:44:11.284Z",
-    "employeeId": "17",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-07-14",
-    "computerId": "16",
-    "createdAt": "2017-06-06T01:01:52.717Z",
-    "employeeId": "18",
-    "return_date": "2017-10-07",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-01-30",
-    "computerId": "17",
-    "createdAt": "2017-04-21T12:12:51.967Z",
-    "employeeId": "22",
-    "return_date": "2017-06-11",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-01-14",
-    "computerId": "18",
-    "createdAt": "2017-08-30T04:58:14.361Z",
-    "employeeId": "11",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-06-29",
-    "computerId": "19",
-    "createdAt": "2017-07-26T10:49:38.493Z",
-    "employeeId": "14",
-    "return_date": "2017-09-30",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-08-15",
-    "computerId": "20",
-    "createdAt": "2016-12-15T21:38:27.175Z",
-    "employeeId": "21",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-02-18",
-    "computerId": "21",
-    "createdAt": "2016-12-22T15:19:27.899Z",
-    "employeeId": "8",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-09-13",
-    "computerId": "22",
-    "createdAt": "2017-03-31T09:37:39.600Z",
-    "employeeId": "4",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2016-12-19",
-    "computerId": "23",
-    "createdAt": "2017-01-19T19:32:12.082Z",
-    "employeeId": "10",
-    "return_date": "2017-03-05",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-09-05",
-    "computerId": "24",
-    "createdAt": "2017-09-11T15:43:23.845Z",
-    "employeeId": "6",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-01-16",
-    "computerId": "25",
-    "createdAt": "2016-12-30T23:08:37.451Z",
-    "employeeId": "25",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-06-30",
-    "computerId": "26",
-    "createdAt": "2017-02-10T17:15:09.220Z",
-    "employeeId": "22",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2016-12-04",
-    "computerId": "27",
-    "createdAt": "2016-10-13T09:54:07.226Z",
-    "employeeId": "3",
-    "return_date": "2017-08-21",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2016-11-24",
-    "computerId": "28",
-    "createdAt": "2016-11-03T00:44:25.634Z",
-    "employeeId": "8",
-    "return_date": "2017-04-27",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-01-12",
-    "computerId": "29",
-    "createdAt": "2017-03-14T03:55:52.895Z",
-    "employeeId": "23",
-    "return_date": "2017-02-26",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-06-22",
-    "computerId": "30",
-    "createdAt": "2017-02-11T10:21:05.939Z",
-    "employeeId": "14",
-    "return_date": "2017-09-13",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-01-14",
-    "computerId": "31",
-    "createdAt": "2017-01-23T09:59:11.742Z",
-    "employeeId": "22",
-    "return_date": "2017-01-29",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-01-14",
-    "computerId": "32",
-    "createdAt": "2017-06-05T19:36:25.361Z",
-    "employeeId": "21",
-    "return_date": "2017-07-05",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-03-21",
-    "computerId": "33",
-    "createdAt": "2017-10-09T13:00:31.365Z",
-    "employeeId": "4",
-    "return_date": "2017-03-28",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-02-27",
-    "computerId": "34",
-    "createdAt": "2017-02-19T18:32:16.687Z",
-    "employeeId": "21",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-03-22",
-    "computerId": "35",
-    "createdAt": "2017-07-28T00:56:04.628Z",
-    "employeeId": "23",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-07-23",
-    "computerId": "36",
-    "createdAt": "2016-11-25T19:44:52.625Z",
-    "employeeId": "25",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-01-26",
-    "computerId": "37",
-    "createdAt": "2017-09-18T19:25:22.106Z",
-    "employeeId": "1",
-    "return_date": "2017-04-02",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-04-19",
-    "computerId": "38",
-    "createdAt": "2017-07-03T22:31:56.807Z",
-    "employeeId": "9",
-    "return_date": "2017-10-01",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-01-15",
-    "computerId": "39",
-    "createdAt": "2017-02-16T04:39:03.570Z",
-    "employeeId": "19",
-    "return_date": "2017-07-09",
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  },
-  {
-    "assign_date": "2017-08-31",
-    "computerId": "40",
-    "createdAt": "2017-01-01T17:56:21.069Z",
-    "employeeId": "16",
-    "return_date": null,
-    "updatedAt": "2017-10-10T20:06:39.678Z"
-  }
+	{
+		"assign_date": "2016-10-16",
+		"computerId": "1",
+		"createdAt": "2017-08-06T09:03:40.326Z",
+		"employeeId": "11",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.677Z"
+	},
+	{
+		"assign_date": "2017-09-12",
+		"computerId": "2",
+		"createdAt": "2016-12-26T03:20:56.008Z",
+		"employeeId": "8",
+		"return_date": "2017-09-05",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-20",
+		"computerId": "1",
+		"createdAt": "2017-02-14T02:58:44.187Z",
+		"employeeId": "6",
+		"return_date": "2017-08-16",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-28",
+		"computerId": "4",
+		"createdAt": "2016-12-28T07:39:22.071Z",
+		"employeeId": "16",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-03-13",
+		"computerId": "5",
+		"createdAt": "2016-10-20T22:23:36.130Z",
+		"employeeId": "16",
+		"return_date": "2017-09-05",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-05-26",
+		"computerId": "6",
+		"createdAt": "2017-09-23T12:58:55.838Z",
+		"employeeId": "10",
+		"return_date": "2017-09-18",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-11-22",
+		"computerId": "7",
+		"createdAt": "2017-09-13T01:12:49.061Z",
+		"employeeId": "14",
+		"return_date": "2017-03-03",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-12-14",
+		"computerId": "8",
+		"createdAt": "2017-02-24T01:15:49.417Z",
+		"employeeId": "18",
+		"return_date": "2017-02-21",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-08-29",
+		"computerId": "9",
+		"createdAt": "2017-09-30T08:19:20.333Z",
+		"employeeId": "7",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-05-07",
+		"computerId": "10",
+		"createdAt": "2017-05-26T00:01:29.506Z",
+		"employeeId": "13",
+		"return_date": "2017-05-23",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-02-26",
+		"computerId": "11",
+		"createdAt": "2017-03-13T21:20:16.247Z",
+		"employeeId": "12",
+		"return_date": "2017-08-24",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-11-08",
+		"computerId": "12",
+		"createdAt": "2016-11-14T20:04:01.562Z",
+		"employeeId": "24",
+		"return_date": "2017-03-03",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-12-25",
+		"computerId": "13",
+		"createdAt": "2017-07-03T12:47:22.775Z",
+		"employeeId": "8",
+		"return_date": "2017-09-03",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-10",
+		"computerId": "14",
+		"createdAt": "2017-10-05T14:44:37.341Z",
+		"employeeId": "19",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-10-29",
+		"computerId": "15",
+		"createdAt": "2017-07-08T05:44:11.284Z",
+		"employeeId": "17",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-14",
+		"computerId": "16",
+		"createdAt": "2017-06-06T01:01:52.717Z",
+		"employeeId": "18",
+		"return_date": "2017-10-07",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-30",
+		"computerId": "17",
+		"createdAt": "2017-04-21T12:12:51.967Z",
+		"employeeId": "22",
+		"return_date": "2017-06-11",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-14",
+		"computerId": "18",
+		"createdAt": "2017-08-30T04:58:14.361Z",
+		"employeeId": "11",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-06-29",
+		"computerId": "19",
+		"createdAt": "2017-07-26T10:49:38.493Z",
+		"employeeId": "14",
+		"return_date": "2017-09-30",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-08-15",
+		"computerId": "20",
+		"createdAt": "2016-12-15T21:38:27.175Z",
+		"employeeId": "21",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-02-18",
+		"computerId": "21",
+		"createdAt": "2016-12-22T15:19:27.899Z",
+		"employeeId": "8",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-09-13",
+		"computerId": "22",
+		"createdAt": "2017-03-31T09:37:39.600Z",
+		"employeeId": "4",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-12-19",
+		"computerId": "23",
+		"createdAt": "2017-01-19T19:32:12.082Z",
+		"employeeId": "10",
+		"return_date": "2017-03-05",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-09-05",
+		"computerId": "24",
+		"createdAt": "2017-09-11T15:43:23.845Z",
+		"employeeId": "6",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-16",
+		"computerId": "25",
+		"createdAt": "2016-12-30T23:08:37.451Z",
+		"employeeId": "25",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-06-30",
+		"computerId": "26",
+		"createdAt": "2017-02-10T17:15:09.220Z",
+		"employeeId": "22",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-12-04",
+		"computerId": "27",
+		"createdAt": "2016-10-13T09:54:07.226Z",
+		"employeeId": "3",
+		"return_date": "2017-08-21",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2016-11-24",
+		"computerId": "28",
+		"createdAt": "2016-11-03T00:44:25.634Z",
+		"employeeId": "8",
+		"return_date": "2017-04-27",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-12",
+		"computerId": "29",
+		"createdAt": "2017-03-14T03:55:52.895Z",
+		"employeeId": "23",
+		"return_date": "2017-02-26",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-06-22",
+		"computerId": "30",
+		"createdAt": "2017-02-11T10:21:05.939Z",
+		"employeeId": "14",
+		"return_date": "2017-09-13",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-14",
+		"computerId": "31",
+		"createdAt": "2017-01-23T09:59:11.742Z",
+		"employeeId": "22",
+		"return_date": "2017-01-29",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-14",
+		"computerId": "32",
+		"createdAt": "2017-06-05T19:36:25.361Z",
+		"employeeId": "21",
+		"return_date": "2017-07-05",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-03-21",
+		"computerId": "33",
+		"createdAt": "2017-10-09T13:00:31.365Z",
+		"employeeId": "4",
+		"return_date": "2017-03-28",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-02-27",
+		"computerId": "34",
+		"createdAt": "2017-02-19T18:32:16.687Z",
+		"employeeId": "21",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-03-22",
+		"computerId": "35",
+		"createdAt": "2017-07-28T00:56:04.628Z",
+		"employeeId": "23",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-07-23",
+		"computerId": "36",
+		"createdAt": "2016-11-25T19:44:52.625Z",
+		"employeeId": "25",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-26",
+		"computerId": "37",
+		"createdAt": "2017-09-18T19:25:22.106Z",
+		"employeeId": "1",
+		"return_date": "2017-04-02",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-04-19",
+		"computerId": "38",
+		"createdAt": "2017-07-03T22:31:56.807Z",
+		"employeeId": "9",
+		"return_date": "2017-10-01",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-01-15",
+		"computerId": "39",
+		"createdAt": "2017-02-16T04:39:03.570Z",
+		"employeeId": "19",
+		"return_date": "2017-07-09",
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	},
+	{
+		"assign_date": "2017-08-31",
+		"computerId": "40",
+		"createdAt": "2017-01-01T17:56:21.069Z",
+		"employeeId": "16",
+		"return_date": null,
+		"updatedAt": "2017-10-10T20:06:39.678Z"
+	}
 ]

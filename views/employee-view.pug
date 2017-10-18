@@ -1,6 +1,7 @@
 extends index.pug
 block content
 	h1 Employee Details:
+	a(type="button" class="btn btn-link" href=`/employees/${employee.id}/edit`) Edit Employee
 	table(class="table")
 		tbody
 			tr
@@ -17,12 +18,17 @@ block content
 					tr
 						td Serial Number
 						td Decommission Date
+						td Returned
+						td Assigned
 					each computer in computers
 							//- check that decommission date is in future for current computers
-							- if (new Date(computer.decommission_date).toDateString() >= new Date().toDateString())
-								tr
-									td #{computer.serial_number}
-									td #{computer.decommission_date}
+							//- - let now = new Date().toDateString();
+							//- - if (computer.employees_computers.return_date === null)
+							tr
+								td #{computer.serial_number}
+								td #{computer.decommission_date}
+								td #{computer.employees_computers.return_date}
+								td #{computer.employees_computers.assign_date}
 			tr
 				td
 					h4 Training Programs:

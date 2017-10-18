@@ -1,5 +1,112 @@
 extends index.pug
-
 block content
-	h1 Edit Employee Info
-	#{employee}
+	h2 Edit Employee Details:
+	form(action=`/employees/${data.employee.id}/edit?_method=PUT`, method="post")
+		table(class="table borderless")
+			tbody
+				tr
+					td
+						h5 First Name:
+					td
+						h5 Last Name:
+				tr
+					td #{data.employee.first_name}
+					td
+						input(type="text" class="form-control" id="last_name" value=`${data.employee.last_name}` name="last_name" required)
+				tr
+					td
+						h4 Department
+				tr
+					td
+						h5 Current Department
+					td
+						h5 Change Department
+				tr
+					td #{data.employee.department.name}
+					td
+						select(class="form-control" id="departmentId" name="departmentId" required)
+							each department in data.departments
+								if data.employee.department.id == department.id
+									option(value=department.id selected) #{department.name}
+								else
+									option(value=department.id) #{department.name}
+
+				tr
+					td
+						h4 Assigned Computer(s):
+						tr
+							td
+								h6 Serial Number
+							td
+								h6 Mark as returned
+							- var compArray = [];
+							each computer in data.employee.computers
+								//- check that decommission date is in future for current computers
+								- let now = new Date().toDateString();
+								- if (new Date(computer.decommission_date).toDateString() >= now && computer.employees_computers.return_date === null)
+										tr
+											- compArray.push(computer.id)
+											td #{computer.serial_number}
+											td
+												input(type="checkbox" id=`${computer.id}` name='removed_computer_id' value= `${computer.id}`)
+						tr
+							td
+								h5 Select new Computer
+						tr
+							td
+								select(class="form-control" id="computer" name="added_computer_id" value=`${id}`)
+									option(value=0) -----None------
+									//- each comp in compArray
+									each computer in data.computers
+										//- - if (compArray.indexOf(computer.id) === -1)
+										option(value=computer.id) #{computer.serial_number}
+						tr
+							td
+								h4 Training Programs:
+						tr
+							td
+								h5 Attending training programs
+						tr
+							td
+								h5 Title
+							td
+								h5 Dates
+							td
+								h5 Remove
+							- var programArray = [];
+							each program in data.employee.training_programs
+								if ( new Date(program.start_date) > new Date())
+									- programArray.push(program.id);
+									tr
+										td #{program.title}
+										td #{program.start_date} thru #{program.end_date}
+										td
+											input(type="checkbox" id=`${program.id}` name='removed_program_id' value=`${program.id}`)
+											label
+						tr
+							td
+								h5 Enroll in training programs
+						tr
+							td
+								h5 Title
+							td
+								h5 Dates
+							td
+								h5 Select
+							each prog in data.programs
+								- if (programArray.indexOf(prog.id) === -1 && ( new Date(prog.start_date) > new Date()))
+									tr
+										td #{prog.title}
+										td #{prog.start_date} thru #{prog.end_date}
+										td
+											input(type="checkbox" id=`${prog.id}` name='added_program_id' value=`${prog.id}`)
+		button(type="submit" class="btn") Save Changes
+
+	if errors
+		ul
+			for error in errors
+				li!= error.msg
+
+
+
+
