@@ -46,13 +46,32 @@ module.exports.showEmployeeDetails = (req, res, next) => {
 		});
 };
 
+function computerCheck(computerDetails) {
+	let check = true;
+	computerDetails.employees.forEach(employee => {
+		console.log(
+			'employee rd',
+			employee.employees_computers.dataValues.return_date
+		);
+		if ((employee.employees_computers.dataValues.return_date = null)) {
+			return false;
+		} else {
+			check = true;
+		}
+	});
+	return check;
+}
 /**
  * Gets an employee by their Id and displays them for editing
  */
 module.exports.editEmployeeDetails = (req, res, next) => {
-	const { employee, department, computer, training_program } = req.app.get(
-		'models'
-	);
+	const {
+		employee,
+		department,
+		computer,
+		training_program,
+		employees_computers
+	} = req.app.get('models');
 	const data = {};
 	employee
 		.findAll({
@@ -65,18 +84,25 @@ module.exports.editEmployeeDetails = (req, res, next) => {
 				data.departments = departments;
 				computer
 					.findAll({
+						where: { decommission_date: null },
 						include: [
 							{
-								model: employee
+								model: employee,
+								through: {
+									model: employees_computers,
+									where: {
+										return_date: { $ne: null }
+									}
+								}
 							}
-						],
-						where: {
-							$return_date$: { $ne: null },
-							decommission_date: null
-						}
+						]
 					})
 					.then(computers => {
-						data.computers = computers;
+						// console.log(res.json(computers));
+						let unassignedComputers = computers.filter(computerDetails => {
+							return computerCheck(computerDetails);
+						});
+						data.computers = unassignedComputers;
 						training_program.findAll().then(programs => {
 							data.programs = programs;
 							res.render('employee-edit', { data });
@@ -220,7 +246,7 @@ module.exports.saveEmployeeDetails = (req, res, next) => {
 						userInfo
 							.addComputer(added_computer_id, {
 								through: {
-									assign_date: `${new Date().toDateString()}`,
+									assign_date: Sequelize.NOW(),
 									return_date: null
 								}
 							})
