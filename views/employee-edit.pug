@@ -41,9 +41,7 @@ block content
 								h6 Mark as returned
 							- var compArray = [];
 							each computer in data.employee.computers
-								//- check that decommission date is in future for current computers
-								- let now = new Date().toDateString();
-								- if (new Date(computer.decommission_date).toDateString() >= now && computer.employees_computers.return_date === null)
+								- if (computer.employees_computers.return_date === null)
 										tr
 											- compArray.push(computer.id)
 											td #{computer.serial_number}
@@ -56,9 +54,7 @@ block content
 							td
 								select(class="form-control" id="computer" name="added_computer_id" value=`${id}`)
 									option(value=0) -----None------
-									//- each comp in compArray
 									each computer in data.computers
-										//- - if (compArray.indexOf(computer.id) === -1)
 										option(value=computer.id) #{computer.serial_number}
 						tr
 							td

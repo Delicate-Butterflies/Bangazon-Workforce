@@ -1,6 +1,6 @@
 'use strict';
 
-/** @module employee-Ctrl */
+/** @module Computer Controller */
 
 /**
  * Get all computers and render 'computers-list'

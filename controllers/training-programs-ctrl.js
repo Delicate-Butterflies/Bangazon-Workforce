@@ -1,6 +1,6 @@
 'use strict';
 
-/** @module TrainingPrograms List Controller */
+/** @module Training Programs Controller */
 
 /**
  * getTrainingProgram function gets all the training programs that are going to happen in future.
